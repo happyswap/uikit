@@ -115,7 +115,7 @@ export const links = [
       },
       {
         label: "Docs",
-        href: "https://HappySwapFinance.gitbook.io/happyswapfinance/",
+        href: "https://happyswapfinance.gitbook.io/happyswap//",
       },
       {
         label: "Blog",
