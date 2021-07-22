@@ -2993,11 +2993,11 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", secondary: "#16256b", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#487CFF", textDisabled: "#BDC2C4", textSubtle: "#16256b", borderColor: "#E9EAEB", card: "#FFFFFF", nav: "#16256b", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", secondary: "#16256b", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#487CFF", textDisabled: "#BDC2C4", textSubtle: "#16256b", borderColor: "#E9EAEB", card: "#FFFFFF", nav: "#16256b", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#EBC39B", secondary: "#EBC39B", background: "#221812", backgroundDisabled: "#424037", contrast: "#FFFFFF", invertedContrast: "#262513", input: "#483F5A", inputSecondary: "#8d8857", primaryDark: "#8f8104", tertiary: "#28444A", text: "#fcfae2", textDisabled: "#717161", textSubtle: "#EBC39B", borderColor: "#61634b", card: "#120D0A", nav: "#120D0A", gradients: {
-        bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#d8d1f6", secondary: "rgba(255,255,255,0.87)", background: "#5c35fc", backgroundDisabled: "#5c35fc", contrast: "#EEEEEE", invertedContrast: "#262513", input: "#483F5A", inputSecondary: "#7b22e2", primaryDark: "#6527a8", tertiary: "#846bf1", text: "#fcfae2", textDisabled: "#b3a5c7", textSubtle: "#DDDDDD", borderColor: "#61634b", card: "#5c35fc", nav: "#5c35fc", gradients: {
+        bubblegum: "linear-gradient(139.73deg, #A34FFE 0%, #5934FC 100%)",
     } });
 
 var light = {
