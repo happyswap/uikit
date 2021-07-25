@@ -2095,22 +2095,16 @@ var Logo = function (_a) {
     _a.isDark; __rest(_a, ["isDark"]);
     // const logoImg = isDark ? "/images/logo-dark.png" : "/images/logo.png";
     // const textColor = isDark ? "#FFFFFF" : "#432918";
-    return (React.createElement("svg", { width: "50", height: "50", xmlns: "http://www.w3.org/2000/svg", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 50 50" },
+    return (React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", width: "46", height: "46", xmlnsXlink: "http://www.w3.org/1999/xlink", viewBox: "0 0 50 50" },
         React.createElement("defs", null,
             React.createElement("radialGradient", { id: "b", cx: "141.476", cy: "110.241", r: "57.24", fx: "141.476", fy: "110.241", gradientTransform: "matrix(.38836 0 0 .39027 -29.962 -17.87)", gradientUnits: "userSpaceOnUse", xlinkHref: "#a" }),
             React.createElement("linearGradient", { id: "a" },
                 React.createElement("stop", { offset: "0", stopColor: "#ffbe00" }),
-                React.createElement("stop", { offset: "1", stopColor: "#ff7600" })),
-            React.createElement("filter", { id: "c", colorInterpolationFilters: "sRGB" },
-                React.createElement("feFlood", { floodColor: "#8444FD", floodOpacity: ".973", result: "flood" }),
-                React.createElement("feComposite", { in: "flood", in2: "SourceGraphic", operator: "in", result: "composite1" }),
-                React.createElement("feGaussianBlur", { in: "composite1", result: "blur", stdDeviation: "2" }),
-                React.createElement("feOffset", { result: "offset" }),
-                React.createElement("feComposite", { in: "SourceGraphic", in2: "offset", result: "composite2" }))),
+                React.createElement("stop", { offset: "1", stopColor: "#ff7600" }))),
         React.createElement("g", { paintOrder: "stroke fill markers" },
             React.createElement("ellipse", { cx: "24.981", cy: "25.155", fill: "#fff", rx: "24.624", ry: "24.746" }),
             React.createElement("ellipse", { cx: "24.981", cy: "25.155", fill: "url(#b)", rx: "22.23", ry: "22.339" }),
-            React.createElement("path", { fill: "#8444fd", d: "M97.03 79.744l7.111 7.11-8.788 8.788-7.11-7.11zm24.71-9.686l8.836 8.835-32.997 32.998-8.835-8.836zm0 0l16.703 16.702-8.765 8.764-16.701-16.701zm24.097 10.111l8.835 8.835-32.978 32.979-8.836-8.835zm-32.034 16.348l16.679 16.678-8.788 8.788-16.679-16.678zm34.278-.119l7.11 7.111-8.764 8.764-7.11-7.11z", filter: "url(#c)", transform: "matrix(.54485 0 0 .54485 -41.329 -26.81)" }))));
+            React.createElement("path", { fill: "#8444fd", d: "M11.539 16.638l3.874 3.874-4.788 4.788-3.875-3.874zm13.463-5.278l4.814 4.814-17.979 17.979-4.814-4.814zm0 0l9.1 9.1-4.775 4.776-9.1-9.1zm13.129 5.51l4.813 4.813-17.968 17.968-4.814-4.814zm-17.454 8.906l9.087 9.087-4.788 4.788-9.087-9.087zm18.676-.064l3.875 3.874-4.776 4.775-3.874-3.874z" }))));
 };
 var templateObject_1$z, templateObject_2$b;
 
@@ -2248,7 +2242,7 @@ MenuButton.defaultProps = {
 };
 var templateObject_1$A;
 
-var StyledLink$1 = styled(Link$1)(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .logo {\n    font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 400;\n    \n  }\n  .logo span:first-child{\n    font-weight: 600;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .logo {\n    font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 400;\n    \n  }\n  .logo span:first-child{\n    font-weight: 600;\n  }\n"])), function (_a) {
+var StyledLink$1 = styled(Link$1)(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .logo {\n    font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 400;\n    margin-left: 6px;\n    \n  }\n  .logo span:first-child{\n    font-weight: 600;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .logo {\n    font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 400;\n    margin-left: 6px;\n    \n  }\n  .logo span:first-child{\n    font-weight: 600;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
@@ -2265,7 +2259,7 @@ var Logo$1 = function (_a) {
             React.createElement("span", null, "HAPPY"),
             React.createElement("span", null, "SWAP"))));
     return (React.createElement(Flex, null,
-        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React.createElement(Icon$O, { width: "24px", color: "textSubtle" })) : (React.createElement(Icon$N, { width: "24px", color: "textSubtle" }))),
+        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "0px" }, isPushed ? (React.createElement(Icon$O, { width: "24px", color: "hamburger" })) : (React.createElement(Icon$N, { width: "24px", color: "hamburger" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Happyswap home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Happyswap home page" }, innerLogo))));
 };
 var Logo$2 = React.memo(Logo$1, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
@@ -2380,7 +2374,7 @@ var MenuEntry = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTem
     return theme.colors.textSubtle;
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.tertiary;
+    return theme.colors.menuHover;
 }, rainbowAnimation, function (_a) {
     var theme = _a.theme;
     return theme.colors.gradients.bubblegum;
@@ -2511,6 +2505,158 @@ var Panel = function (props) {
         React.createElement(PanelFooter, __assign({}, props))));
 };
 var templateObject_1$G;
+
+var Wrapper$1 = styled.div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
+var StyledNav = styled.nav(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0px 5px 4px #6666;\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0px 5px 4px #6666;\n"])), function (_a) {
+    var showMenu = _a.showMenu;
+    return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
+}, MENU_HEIGHT, function (_a) {
+    var theme = _a.theme;
+    return theme.nav.headBackground;
+});
+var BodyWrapper = styled.div(templateObject_3$9 || (templateObject_3$9 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
+var Inner = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"])), function (_a) {
+    var showMenu = _a.showMenu;
+    return (showMenu ? MENU_HEIGHT + "px" : 0);
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.nav;
+}, function (_a) {
+    var isPushed = _a.isPushed;
+    return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
+}, function (_a) {
+    var isPushed = _a.isPushed;
+    return "calc(100% - " + (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px)";
+});
+var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.nav;
+});
+var Menu = function (_a) {
+    var _b;
+    _a.account; _a.login; _a.logout; var isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links; _a.profile; var children = _a.children;
+    var isXl = useMatchBreakpoints().isXl;
+    var isMobile = isXl === false;
+    var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
+    var _d = useState(true), showMenu = _d[0], setShowMenu = _d[1];
+    var refPrevOffset = useRef(window.pageYOffset);
+    useEffect(function () {
+        var handleScroll = function () {
+            var currentOffset = window.pageYOffset;
+            var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
+            var isTopOfPage = currentOffset === 0;
+            // Always show the menu when user reach the top
+            if (isTopOfPage) {
+                setShowMenu(true);
+            }
+            // Avoid triggering anything at the bottom because of layout shift
+            else if (!isBottomOfPage) {
+                if (currentOffset < refPrevOffset.current) {
+                    // Has scroll up
+                    setShowMenu(true);
+                }
+                else {
+                    // Has scroll down
+                    setShowMenu(false);
+                }
+            }
+            refPrevOffset.current = currentOffset;
+        };
+        var throttledHandleScroll = throttle(handleScroll, 200);
+        window.addEventListener("scroll", throttledHandleScroll);
+        return function () {
+            window.removeEventListener("scroll", throttledHandleScroll);
+        };
+    }, []);
+    // Find the home link if provided
+    var homeLink = links.find(function (link) { return link.label === "Home"; });
+    return (React.createElement(Wrapper$1, null,
+        React.createElement(StyledNav, { showMenu: showMenu },
+            React.createElement(Logo$2, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/images/logo.png" }),
+            React.createElement(Flex, null)),
+        React.createElement(BodyWrapper, null,
+            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links }),
+            React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
+            React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
+};
+var templateObject_1$H, templateObject_2$f, templateObject_3$9, templateObject_4$3, templateObject_5$1;
+
+var ToastAction = function (_a) {
+    var action = _a.action;
+    if (action.url.startsWith("http")) {
+        return (React.createElement(Button, __assign({ as: "a", scale: "sm", href: action.url }, getExternalLinkProps()), action.text));
+    }
+    return (React.createElement(Button, { as: Link$1, scale: "sm", to: action.url }, action.text));
+};
+
+var types = {
+    SUCCESS: "success",
+    DANGER: "danger",
+    WARNING: "warning",
+    INFO: "info",
+};
+
+var _a$2;
+var alertTypeMap = (_a$2 = {},
+    _a$2[types.INFO] = variants$1.INFO,
+    _a$2[types.SUCCESS] = variants$1.SUCCESS,
+    _a$2[types.DANGER] = variants$1.DANGER,
+    _a$2[types.WARNING] = variants$1.WARNING,
+    _a$2);
+var StyledToast = styled.div(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"], ["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.mediaQueries.sm;
+});
+var Toast = function (_a) {
+    var toast = _a.toast, onRemove = _a.onRemove, style = _a.style, ttl = _a.ttl, props = __rest(_a, ["toast", "onRemove", "style", "ttl"]);
+    var timer = useRef();
+    var ref = useRef(null);
+    var removeHandler = useRef(onRemove);
+    var id = toast.id, title = toast.title, description = toast.description, type = toast.type, action = toast.action;
+    var handleRemove = useCallback(function () { return removeHandler.current(id); }, [id, removeHandler]);
+    var handleMouseEnter = function () {
+        clearTimeout(timer.current);
+    };
+    var handleMouseLeave = function () {
+        if (timer.current) {
+            clearTimeout(timer.current);
+        }
+        timer.current = window.setTimeout(function () {
+            handleRemove();
+        }, ttl);
+    };
+    useEffect(function () {
+        if (timer.current) {
+            clearTimeout(timer.current);
+        }
+        timer.current = window.setTimeout(function () {
+            handleRemove();
+        }, ttl);
+        return function () {
+            clearTimeout(timer.current);
+        };
+    }, [timer, ttl, handleRemove]);
+    return (React.createElement(CSSTransition, __assign({ nodeRef: ref, timeout: 250, style: style }, props),
+        React.createElement(StyledToast, { ref: ref, onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave },
+            React.createElement(Alert, { title: title, variant: alertTypeMap[type], onClick: handleRemove }, action ? (React.createElement(React.Fragment, null,
+                React.createElement(Text, { as: "p", mb: "8px" }, description),
+                React.createElement(ToastAction, { action: action }))) : (description)))));
+};
+var templateObject_1$I;
+
+var ZINDEX = 1000;
+var TOP_POSITION = 80; // Initial position from the top
+var StyledToastContainer = styled.div(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"], ["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"])));
+var ToastContainer = function (_a) {
+    var toasts = _a.toasts, onRemove = _a.onRemove, _b = _a.ttl, ttl = _b === void 0 ? 6000 : _b, _c = _a.stackSpacing, stackSpacing = _c === void 0 ? 24 : _c;
+    return (React.createElement(StyledToastContainer, null,
+        React.createElement(TransitionGroup, null, toasts.map(function (toast, index) {
+            var zIndex = (ZINDEX - index).toString();
+            var top = TOP_POSITION + index * stackSpacing;
+            return (React.createElement(Toast, { key: toast.id, toast: toast, onRemove: onRemove, ttl: ttl, style: { top: top + "px", zIndex: zIndex } }));
+        }))));
+};
+var templateObject_1$J;
 
 var Icon$15 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
@@ -2654,7 +2800,7 @@ var WalletCard = function (_a) {
         React.createElement(Icon, { width: "32px" })));
 };
 
-var HelpLink = styled(Link)(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
+var HelpLink = styled(Link)(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
 var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
     return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
@@ -2663,13 +2809,13 @@ var ConnectModal = function (_a) {
             React.createElement(Icon$o, { color: "primary", mr: "6px" }),
             "Learn how to connect")));
 };
-var templateObject_1$H;
+var templateObject_1$K;
 
-var StyleButton = styled(Text).attrs({ role: "button" })(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
+var StyleButton = styled(Text).attrs({ role: "button" })(templateObject_1$L || (templateObject_1$L = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.primary;
 });
-var Tooltip = styled.div(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
+var Tooltip = styled.div(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
     var isTooltipDisplayed = _a.isTooltipDisplayed;
     return (isTooltipDisplayed ? "block" : "none");
 }, function (_a) {
@@ -2695,7 +2841,7 @@ var CopyToClipboard = function (_a) {
         React.createElement(Icon$n, { width: "20px", color: "primary", ml: "4px" }),
         React.createElement(Tooltip, { isTooltipDisplayed: isTooltipDisplayed }, "Copied")));
 };
-var templateObject_1$I, templateObject_2$f;
+var templateObject_1$L, templateObject_2$g;
 
 var AccountModal = function (_a) {
     var account = _a.account, logout = _a.logout, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
@@ -2718,181 +2864,14 @@ var useWalletModal = function (login, logout, account) {
     return { onPresentConnectModal: onPresentConnectModal, onPresentAccountModal: onPresentAccountModal };
 };
 
-var Container$4 = styled.div(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n \n.flame{\n  color: orange\n}\n \n"], ["\n \n.flame{\n  color: orange\n}\n \n"])));
-var UserBlock = function (_a) {
-    var account = _a.account, login = _a.login, logout = _a.logout;
-    var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
-    var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React.createElement(Container$4, null, account ? (React.createElement(Button, { className: "flame", scale: "sm", variant: "tertiary", onClick: function () {
-            onPresentAccountModal();
-        } }, accountEllipsis)) : (React.createElement(Button, { scale: "sm", className: "flame", onClick: function () {
-            onPresentConnectModal();
-        } }, "Connect"))));
-};
-var UserBlock$1 = React.memo(UserBlock, function (prevProps, nextProps) { return prevProps.account === nextProps.account; });
-var templateObject_1$J;
-
-var Wrapper$1 = styled.div(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled.nav(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0px 5px 4px #6666;\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0px 5px 4px #6666;\n"])), function (_a) {
-    var showMenu = _a.showMenu;
-    return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
-}, MENU_HEIGHT, function (_a) {
-    var theme = _a.theme;
-    return theme.nav.headBackground;
-});
-var BodyWrapper = styled.div(templateObject_3$9 || (templateObject_3$9 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"])), function (_a) {
-    var showMenu = _a.showMenu;
-    return (showMenu ? MENU_HEIGHT + "px" : 0);
-}, function (_a) {
-    var theme = _a.theme;
-    return theme.mediaQueries.nav;
-}, function (_a) {
-    var isPushed = _a.isPushed;
-    return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
-}, function (_a) {
-    var isPushed = _a.isPushed;
-    return "calc(100% - " + (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px)";
-});
-var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.mediaQueries.nav;
-});
-var Menu = function (_a) {
-    var _b;
-    var account = _a.account, login = _a.login, logout = _a.logout, isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links; _a.profile; var children = _a.children;
-    var isXl = useMatchBreakpoints().isXl;
-    var isMobile = isXl === false;
-    var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
-    var _d = useState(true), showMenu = _d[0], setShowMenu = _d[1];
-    var refPrevOffset = useRef(window.pageYOffset);
-    useEffect(function () {
-        var handleScroll = function () {
-            var currentOffset = window.pageYOffset;
-            var isBottomOfPage = window.document.body.clientHeight === currentOffset + window.innerHeight;
-            var isTopOfPage = currentOffset === 0;
-            // Always show the menu when user reach the top
-            if (isTopOfPage) {
-                setShowMenu(true);
-            }
-            // Avoid triggering anything at the bottom because of layout shift
-            else if (!isBottomOfPage) {
-                if (currentOffset < refPrevOffset.current) {
-                    // Has scroll up
-                    setShowMenu(true);
-                }
-                else {
-                    // Has scroll down
-                    setShowMenu(false);
-                }
-            }
-            refPrevOffset.current = currentOffset;
-        };
-        var throttledHandleScroll = throttle(handleScroll, 200);
-        window.addEventListener("scroll", throttledHandleScroll);
-        return function () {
-            window.removeEventListener("scroll", throttledHandleScroll);
-        };
-    }, []);
-    // Find the home link if provided
-    var homeLink = links.find(function (link) { return link.label === "Home"; });
-    return (React.createElement(Wrapper$1, null,
-        React.createElement(StyledNav, { showMenu: showMenu },
-            React.createElement(Logo$2, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/images/logo.png" }),
-            React.createElement(Flex, null,
-                React.createElement(UserBlock$1, { account: account, login: login, logout: logout }))),
-        React.createElement(BodyWrapper, null,
-            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links }),
-            React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
-            React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
-};
-var templateObject_1$K, templateObject_2$g, templateObject_3$9, templateObject_4$3, templateObject_5$1;
-
-var ToastAction = function (_a) {
-    var action = _a.action;
-    if (action.url.startsWith("http")) {
-        return (React.createElement(Button, __assign({ as: "a", scale: "sm", href: action.url }, getExternalLinkProps()), action.text));
-    }
-    return (React.createElement(Button, { as: Link$1, scale: "sm", to: action.url }, action.text));
-};
-
-var types = {
-    SUCCESS: "success",
-    DANGER: "danger",
-    WARNING: "warning",
-    INFO: "info",
-};
-
-var _a$2;
-var alertTypeMap = (_a$2 = {},
-    _a$2[types.INFO] = variants$1.INFO,
-    _a$2[types.SUCCESS] = variants$1.SUCCESS,
-    _a$2[types.DANGER] = variants$1.DANGER,
-    _a$2[types.WARNING] = variants$1.WARNING,
-    _a$2);
-var StyledToast = styled.div(templateObject_1$L || (templateObject_1$L = __makeTemplateObject(["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"], ["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"])), function (_a) {
-    var theme = _a.theme;
-    return theme.mediaQueries.sm;
-});
-var Toast = function (_a) {
-    var toast = _a.toast, onRemove = _a.onRemove, style = _a.style, ttl = _a.ttl, props = __rest(_a, ["toast", "onRemove", "style", "ttl"]);
-    var timer = useRef();
-    var ref = useRef(null);
-    var removeHandler = useRef(onRemove);
-    var id = toast.id, title = toast.title, description = toast.description, type = toast.type, action = toast.action;
-    var handleRemove = useCallback(function () { return removeHandler.current(id); }, [id, removeHandler]);
-    var handleMouseEnter = function () {
-        clearTimeout(timer.current);
-    };
-    var handleMouseLeave = function () {
-        if (timer.current) {
-            clearTimeout(timer.current);
-        }
-        timer.current = window.setTimeout(function () {
-            handleRemove();
-        }, ttl);
-    };
-    useEffect(function () {
-        if (timer.current) {
-            clearTimeout(timer.current);
-        }
-        timer.current = window.setTimeout(function () {
-            handleRemove();
-        }, ttl);
-        return function () {
-            clearTimeout(timer.current);
-        };
-    }, [timer, ttl, handleRemove]);
-    return (React.createElement(CSSTransition, __assign({ nodeRef: ref, timeout: 250, style: style }, props),
-        React.createElement(StyledToast, { ref: ref, onMouseEnter: handleMouseEnter, onMouseLeave: handleMouseLeave },
-            React.createElement(Alert, { title: title, variant: alertTypeMap[type], onClick: handleRemove }, action ? (React.createElement(React.Fragment, null,
-                React.createElement(Text, { as: "p", mb: "8px" }, description),
-                React.createElement(ToastAction, { action: action }))) : (description)))));
-};
-var templateObject_1$L;
-
-var ZINDEX = 1000;
-var TOP_POSITION = 80; // Initial position from the top
-var StyledToastContainer = styled.div(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"], ["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"])));
-var ToastContainer = function (_a) {
-    var toasts = _a.toasts, onRemove = _a.onRemove, _b = _a.ttl, ttl = _b === void 0 ? 6000 : _b, _c = _a.stackSpacing, stackSpacing = _c === void 0 ? 24 : _c;
-    return (React.createElement(StyledToastContainer, null,
-        React.createElement(TransitionGroup, null, toasts.map(function (toast, index) {
-            var zIndex = (ZINDEX - index).toString();
-            var top = TOP_POSITION + index * stackSpacing;
-            return (React.createElement(Toast, { key: toast.id, toast: toast, onRemove: onRemove, ttl: ttl, style: { top: top + "px", zIndex: zIndex } }));
-        }))));
-};
-var templateObject_1$M;
-
-var ResetCSS = createGlobalStyle(templateObject_1$N || (templateObject_1$N = __makeTemplateObject(["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  body {\n    font-family: 'Roboto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n\n"], ["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  body {\n    font-family: 'Roboto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n\n"])), function (_a) {
+var ResetCSS = createGlobalStyle(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  body {\n    font-family: 'Roboto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n\n"], ["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  body {\n    font-family: 'Roboto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 });
-var templateObject_1$N;
+var templateObject_1$M;
 
 var baseColors = {
     failure: "#e02f58",
@@ -2906,12 +2885,12 @@ var baseColors = {
 var brandColors = {
     binance: "#F0B90B",
 };
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", secondary: "#16256b", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#487CFF", textDisabled: "#BDC2C4", textSubtle: "#16256b", borderColor: "#E9EAEB", card: "#FFFFFF", nav: "#16256b", menuBackground: "#5c35fc", menuNavBackground: "white", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", secondary: "#16256b", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#487CFF", textDisabled: "#BDC2C4", textSubtle: "#16256b", borderColor: "#E9EAEB", card: "#FFFFFF", nav: "#16256b", menuBackground: "#5c35fc", menuHover: "rgba(186,54,232,0.67)", menuNavBackground: "white", hamburger: "#eeeeee", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
     } });
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#d8d1f6", secondary: "rgba(255,255,255,0.87)", background: "#5c35fc", backgroundDisabled: "#5c35fc", contrast: "#EEEEEE", invertedContrast: "#262513", input: "#483F5A", inputSecondary: "#7b22e2", primaryDark: "#6527a8", tertiary: "#ffa338", text: "#fcfae2", textDisabled: "#b3a5c7", textSubtle: "#DDDDDD", borderColor: "#61634b", card: "#5c35fc", nav: "#5c35fc", menuBackground: "#5c35fc", menuNavBackground: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#d8d1f6", secondary: "#fff", background: "#a24ffe", backgroundDisabled: "#5c35fc", contrast: "#EEEEEE", invertedContrast: "#262513", input: "#483F5A", inputSecondary: "#7b22e2", primaryDark: "#6527a8", tertiary: "#ffa338", text: "#fcfae2", textDisabled: "#b3a5c7", textSubtle: "#fff", borderColor: "#61634b", card: "#5c35fc", nav: "#5c35fc", menuBackground: "#a24ffe", menuHover: "rgba(57,31,66,0.25)", menuNavBackground: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #A34FFE 0%, #5934FC 100%)",
-    } });
+    }, hamburger: "#cccccc" });
 
 var light = {
     background: lightColors.card,

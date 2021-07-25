@@ -2,6 +2,7 @@ import React from "react";
 import { DefaultTheme } from "styled-components";
 export interface Props {
     secondary?: boolean;
+    sub?: boolean;
     isActive?: boolean;
     theme: DefaultTheme;
 }

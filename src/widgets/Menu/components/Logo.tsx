@@ -33,6 +33,7 @@ const StyledLink = styled(Link)`
     font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
+    margin-left: 6px;
     
   }
   .logo span:first-child{
@@ -50,11 +51,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
 
   return (
     <Flex>
-      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="24px">
+      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="0px">
         {isPushed ? (
-          <HamburgerCloseIcon width="24px" color="textSubtle" />
+          <HamburgerCloseIcon width="24px" color="hamburger" />
         ) : (
-          <HamburgerIcon width="24px" color="textSubtle" />
+          <HamburgerIcon width="24px" color="hamburger" />
         )}
       </MenuButton>
       {isAbsoluteUrl ? (

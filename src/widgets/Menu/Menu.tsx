@@ -124,7 +124,7 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/images/logo.png"}
         />
         <Flex>
-          <UserBlock account={account} login={login} logout={logout} />
+          {/*<UserBlock account={account} login={login} logout={logout} />*/}
         </Flex>
       </StyledNav>
       <BodyWrapper>

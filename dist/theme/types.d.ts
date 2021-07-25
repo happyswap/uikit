@@ -50,6 +50,8 @@ export declare type Colors = {
     binance: string;
     menuBackground: string;
     menuNavBackground: string;
+    hamburger: string;
+    menuHover: string;
 };
 export declare type ZIndices = {
     dropdown: number;
