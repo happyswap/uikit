@@ -48,6 +48,8 @@ export declare type Colors = {
     nav: string;
     gradients: Gradients;
     binance: string;
+    menuBackground: string;
+    menuNavBackground: string;
 };
 export declare type ZIndices = {
     dropdown: number;
