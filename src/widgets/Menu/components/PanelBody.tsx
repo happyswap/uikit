@@ -22,6 +22,22 @@ const Container = styled.div`
   height: 100%;
 `;
 
+const SubMenuContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+`;
+
+const MenuA =styled.a`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`
+
+
+
 const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   const location = useLocation();
 
@@ -38,26 +54,29 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         if (entry.items) {
           const itemsMatchIndex = entry.items.findIndex((item) => item.href === location.pathname);
           const initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
-
+          console.log('initialOpenState:', initialOpenState, entry );
           return (
-            <Accordion
-              key={entry.label}
-              isPushed={isPushed}
-              pushNav={pushNav}
-              icon={iconElement}
-              label={entry.label}
-              initialOpenState={initialOpenState}
-              className={calloutClass}
-            >
-              {isPushed &&
+            <div>
+            <MenuEntry  key={entry.label} className={calloutClass}>
+
+              <MenuA href={entry.href} target={entry.target} onClick={handleClick}>
+                {iconElement}
+                <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
+              </MenuA>
+            </MenuEntry>
+              <SubMenuContainer>
+              {
                 entry.items.map((item) => (
-                  <MenuEntry key={item.href} secondary isActive={item.href === location.pathname} onClick={handleClick}>
+                  <MenuEntry key={item.href}   secondary isActive={item.href === location.pathname} onClick={handleClick}>
                     <MenuLink href={item.href} target={item.target}>{item.label}</MenuLink>
                   </MenuEntry>
                 ))}
-            </Accordion>
+              </SubMenuContainer>
+            </div>
+
           );
         }
+        console.log('regular:', entry );
         return (
           <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass}>
             <MenuLink href={entry.href} target={entry.target} onClick={handleClick}>

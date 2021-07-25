@@ -31,6 +31,8 @@ export const darkColors: Colors = {
   borderColor: "#E9EAEB",
   card: "#FFFFFF",
   nav: "#16256b", //
+  menuBackground:"#5c35fc",
+  menuNavBackground:"white",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
   },
@@ -48,13 +50,15 @@ export const lightColors: Colors = {
   input: "#483F5A",
   inputSecondary: "#7b22e2",
   primaryDark: "#6527a8",
-  tertiary: "#846bf1", //
+  tertiary: "#ffa338", //
   text: "#fcfae2", //
   textDisabled: "#b3a5c7", //
   textSubtle: "#DDDDDD", //
   borderColor: "#61634b",
   card: "#5c35fc", //
   nav: "#5c35fc", //
+  menuBackground:"#5c35fc",
+  menuNavBackground:"#FFFFFF",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #A34FFE 0%, #5934FC 100%)", //
   },

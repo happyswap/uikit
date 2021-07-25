@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import "@fontsource/roboto-condensed";
+import "@fontsource/roboto";
 
 const ResetCSS = createGlobalStyle`
   /* prettier-ignore */
@@ -63,8 +65,8 @@ const ResetCSS = createGlobalStyle`
   *::after {
     box-sizing: border-box;
   }
-  * {
-    font-family: 'Kanit', sans-serif;
+  body {
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -80,6 +82,9 @@ const ResetCSS = createGlobalStyle`
     box-shadow: inset 0 0 5px ${({ theme }) => theme.colors.input}; 
     border-radius: 10px;
   }
+
 `;
+
+
 
 export default ResetCSS;

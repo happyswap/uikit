@@ -4,6 +4,7 @@ import { MENU_ENTRY_HEIGHT } from "../config";
 
 export interface Props {
   secondary?: boolean;
+  sub?: boolean;
   isActive?: boolean;
   theme: DefaultTheme;
 }
@@ -29,11 +30,15 @@ const MenuEntry = styled.div<Props>`
   display: flex;
   align-items: center;
   height: ${MENU_ENTRY_HEIGHT}px;
-  padding: ${({ secondary }) => (secondary ? "0 32px" : "0 16px")};
-  font-size: ${({ secondary }) => (secondary ? "14px" : "16px")};
+  padding: ${({ secondary }) => (secondary ? "0 48px" : "0 16px")};
+  font-size: ${({ secondary }) => (secondary ? "16px" : "20px")};
+  font-weight: ${({ secondary }) => (secondary ? "500" : "600")};
+  font-family: ${({ secondary }) => (secondary ? "'Roboto Condensed', Helvetica, Arial, sans-serif" : "'Roboto', Helvetica, Arial, sans-serif")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
+   
+  flex-direction: ${({ sub }) => (sub ? "column" : "row")}
 
   a {
     display: flex;
@@ -64,6 +69,7 @@ MenuEntry.defaultProps = {
   secondary: false,
   isActive: false,
   role: "button",
+  sub: false
 };
 
 const LinkLabelMemo = React.memo(LinkLabel, (prev, next) => prev.isPushed === next.isPushed);

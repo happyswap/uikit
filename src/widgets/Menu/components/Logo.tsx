@@ -29,13 +29,22 @@ const StyledLink = styled(Link)`
       display: block;
     }
   }
+  .logo {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    
+  }
+  .logo span:first-child{
+    font-weight: 600;
+  }
 `;
 
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
     <>
-      <LogoWithText className="desktop-icon" isDark={isDark} />
+      <LogoWithText className="desktop-icon" isDark={isDark} /> <div className="logo"><span>HAPPY</span><span>SWAP</span></div>
     </>
   );
 
@@ -49,11 +58,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
+        <StyledLink as="a" href={href} aria-label="Happyswap home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
+        <StyledLink to={href} aria-label="Happyswap home page">
           {innerLogo}
         </StyledLink>
       )}

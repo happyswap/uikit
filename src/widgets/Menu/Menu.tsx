@@ -28,10 +28,11 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: ${({ theme }) => theme.nav.background};
+  background-color: ${({ theme }) => theme.nav.headBackground};
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
+  box-shadow: 0px 5px 4px #6666;
 `;
 
 const BodyWrapper = styled.div`
@@ -120,7 +121,7 @@ const Menu: React.FC<NavProps> = ({
           isPushed={isPushed}
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
           isDark={isDark}
-          href={homeLink?.href ?? "/"}
+          href={homeLink?.href ?? "/images/logo.png"}
         />
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />

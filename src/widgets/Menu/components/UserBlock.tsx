@@ -1,4 +1,6 @@
 import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Button from "../../../components/Button/Button";
 import { useWalletModal } from "../../WalletModal";
 import { Login } from "../../WalletModal/types";
@@ -9,13 +11,23 @@ interface Props {
   logout: () => void;
 }
 
+const Container = styled.div`
+ 
+.flame{
+  color: orange
+}
+ 
+`;
+
+
 const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
   const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(login, logout, account);
   const accountEllipsis = account ? `${account.substring(0, 4)}...${account.substring(account.length - 4)}` : null;
   return (
-    <div>
+    <Container>
       {account ? (
         <Button
+          className="flame"
           scale="sm"
           variant="tertiary"
           onClick={() => {
@@ -27,6 +39,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
       ) : (
         <Button
           scale="sm"
+          className="flame"
           onClick={() => {
             onPresentConnectModal();
           }}
@@ -34,7 +47,7 @@ const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
           Connect
         </Button>
       )}
-    </div>
+    </Container>
   );
 };
 
