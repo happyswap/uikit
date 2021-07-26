@@ -127,7 +127,7 @@ const Menu: React.FC<NavProps> = ({
           href={homeLink?.href ?? "/images/logo.png"}
         />
         <Flex>
-          <CakePrice cakePriceUsd={cakePriceUsd} />
+          <CakePrice isDark cakePriceUsd={cakePriceUsd} />
           {/*<UserBlock account={account} login={login} logout={logout} />*/}
         </Flex>
       </StyledNav>

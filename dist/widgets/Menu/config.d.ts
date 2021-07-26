@@ -1,3 +1,4 @@
+import { INamedValues } from "./types";
 export declare const links: ({
     label: string;
     icon: string;
@@ -29,6 +30,7 @@ export declare const socials: ({
     href: string;
     items?: undefined;
 })[];
+export declare const tokenInfo: INamedValues[];
 export declare const MENU_HEIGHT = 64;
 export declare const MENU_ENTRY_HEIGHT = 32;
 export declare const SIDEBAR_WIDTH_FULL = 240;
