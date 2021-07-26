@@ -19,12 +19,12 @@ export const parameters = {
 const themes = [
   {
     name: "Light",
-    backgroundColor: light.colors.background,
+    background: light.colors.background,
     ...light,
   },
   {
     name: "Dark",
-    backgroundColor: dark.colors.background,
+    background: dark.colors.background,
     ...dark,
   },
 ];
