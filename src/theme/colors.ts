@@ -36,7 +36,7 @@ export const darkColors: Colors = {
   menuNavBackground:"white",
   hamburger:"#eeeeee",
   gradients: {
-    bubblegum: "linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)",
+    bubblegum: "linear-gradient(139.73deg, #9247e2 0%, #8442e2 100%)",
   },
 };
 export const lightColors: Colors = {
@@ -45,8 +45,8 @@ export const lightColors: Colors = {
   ...brandColors,
   primary: "#d8d1f6",
   secondary: "#fff", //
-  background: "linear-gradient(139.73deg, #8544fd 0%, #5934FC 100%)", //
-  backgroundDisabled: "#5c35fc", //
+  background: "linear-gradient(139.73deg, #8544fd 0%, #9247e2 100%)", //
+  backgroundDisabled: "#8442e2", //
   contrast: "#EEEEEE",
   invertedContrast: "#262513",
   input: "#483F5A",
@@ -56,10 +56,11 @@ export const lightColors: Colors = {
   text: "#fcfae2", //
   textDisabled: "#b3a5c7", //
   textSubtle: "#fff", //
-  borderColor: "#61634b",
+  borderColor: "#7d41cb",
   card: "#5c35fc", //
   nav: "#5c35fc", //
-  menuBackground:"#a24ffe",
+  menuBackground:"#7d41cb",
+
   menuHover:"rgba(57,31,66,0.25)",
   menuNavBackground:"#FFFFFF",
   gradients: {

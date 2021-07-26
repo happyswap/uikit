@@ -34,6 +34,36 @@ const SocialEntry = styled.div`
   padding: 0 16px;
 `;
 
+const TokenInfo = styled.div`
+  padding: 0 16px;
+  margin-bottom: 1px;
+  border-bottom:  ${({ theme }) => `solid 1px ${theme.colors.backgroundDisabled}`};
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.colors.textSubtle};
+  background-color:  ${({ theme }) => theme.colors.menuBackground};
+  .title {    
+    display: flex;
+    font-weight: 600;
+    justify-content: flex-start;
+    margin: 8px 0 10px;
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .cap{
+    text-align: left;
+  }
+  .val {
+    text-align: right;
+  }
+  
+`;
+
+
 const PanelFooter: React.FC<Props> = ({
   isPushed,
   pushNav,
@@ -43,6 +73,7 @@ const PanelFooter: React.FC<Props> = ({
   currentLang,
   langs,
   setLang,
+  tokenInfo
 }) => {
   if (!isPushed) {
     return (
@@ -56,10 +87,21 @@ const PanelFooter: React.FC<Props> = ({
 
   return (
     <Container>
-      <SocialEntry>
-        <CakePrice cakePriceUsd={cakePriceUsd} />
-        {/* <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} /> */}
-      </SocialEntry>
+      {/*<SocialEntry>*/}
+      {/*  /!*<CakePrice cakePriceUsd={cakePriceUsd} />*!/*/}
+      {/*  /!* <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} /> *!/*/}
+      {/*</SocialEntry>*/}
+      <TokenInfo>
+        <div className='title'>Swappies (SWPY) information:</div>
+        {
+          tokenInfo.map((item) => (
+
+        <div className='row'>
+          <div className='cap'>{item.label}</div><div className='val'>{item.value}</div>
+        </div>
+          ))}
+      </TokenInfo>
+
       <SettingsEntry>
         {/* <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} /> */}
         <SocialLinks />

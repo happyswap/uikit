@@ -20,6 +20,7 @@ const Container = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  background-image: url(/images/background-left-bottom-quatter.png);
 `;
 
 const SubMenuContainer = styled.div`
@@ -28,6 +29,7 @@ const SubMenuContainer = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  margin-bottom: 1em
 `;
 
 const MenuA =styled.a`
@@ -76,7 +78,6 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
 
           );
         }
-        console.log('regular:', entry );
         return (
           <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass}>
             <MenuLink href={entry.href} target={entry.target} onClick={handleClick}>

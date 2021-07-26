@@ -1,3 +1,5 @@
+import { INamedValues } from "./types";
+
 export const links = [
   {
     label: "HOME",
@@ -32,8 +34,39 @@ export const links = [
         href: "https://exchange.pancakeswap.finance",
       },
       {
-        label: "Liquidity",
+        label: "Provide Liquidity",
         href: "https://exchange.pancakeswap.finance/#/pool",
+      },
+    ],
+  },
+  {
+    label: "EARN YIELD",
+    icon: "YieldFieldIcon",
+    items: [
+      {
+        label: "Farms",
+        href: "https://pancakeswap.finance/farms",
+      },
+      {
+        label: "Pools",
+        href: "https://pancakeswap.finance/syrup",
+      },
+    ],
+  },{
+    label: "STAKE NFT",
+    icon: "NftIcon",
+    items: [
+      {
+        label: "Submit",
+        href: "https://pancakeswap.finance/#submit",
+      },
+      {
+        label: "Vote",
+        href: "https://pancakeswap.finance/#vote",
+      },
+      {
+        label: "Gallery",
+        href: "https://pancakeswap.finance/#gallery",
       },
     ],
   },
@@ -174,6 +207,26 @@ export const socials = [
     icon: "DiscordIcon",
     href: "https://discord.gg/VudTtXrZ3W",
   },
+];
+
+export const tokenInfo:INamedValues[]  = [
+  {
+    label: 'Emission Per Block',
+    value: '30'
+  },{
+    label: 'Circulating Supply',
+    value: '10,000,000'
+  },{
+    label: 'Burn Total',
+    value: '0'
+  },{
+    label: 'Maximum Supply',
+    value: '800,000,000'
+  },{
+    label: 'Market Cap',
+    value: '$ 10,000,000'
+  },
+
 ];
 
 export const MENU_HEIGHT = 64;

@@ -29,11 +29,11 @@ const MenuEntry = styled.div<Props>`
   cursor: pointer;
   display: flex;
   align-items: center;
-  height: ${MENU_ENTRY_HEIGHT}px;
+  height: ${({ secondary }) => (secondary ? "26px" : `${MENU_ENTRY_HEIGHT}px`)};;
   padding: ${({ secondary }) => (secondary ? "0 48px" : "0 16px")};
-  font-size: ${({ secondary }) => (secondary ? "16px" : "20px")};
-  font-weight: ${({ secondary }) => (secondary ? "500" : "600")};
-  font-family: ${({ secondary }) => (secondary ? "'Roboto Condensed', Helvetica, Arial, sans-serif" : "'Roboto', Helvetica, Arial, sans-serif")};
+  font-size: ${({ secondary }) => (secondary ? "14px" : "20px")};
+  font-weight: ${({ secondary }) => (secondary ? "600" : "600")};
+  font-family: ${({ secondary }) => (secondary ? "'Roboto', Helvetica, Arial, sans-serif" : "'Roboto', Helvetica, Arial, sans-serif")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
   color: ${({ theme }) => theme.colors.textSubtle};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};

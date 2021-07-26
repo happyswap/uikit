@@ -15,15 +15,21 @@ const Tspan = styled.tspan`
   letter-spacing: 0em;
 `;
 
-interface LogoProps extends SvgProps {
+export interface LogoProps extends SvgProps {
   isDark: boolean;
+  width?:number;
+  height?:number;
 }
 
 const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
   // const logoImg = isDark ? "/images/logo-dark.png" : "/images/logo.png";
   // const textColor = isDark ? "#FFFFFF" : "#432918";
+  const width = props.width?props.width:'46';
+  const height = props.height?props.height:'46';
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"><defs><radialGradient id="b" cx="141.476" cy="110.241" r="57.24" fx="141.476" fy="110.241" gradientTransform="matrix(.38836 0 0 .39027 -29.962 -17.87)" gradientUnits="userSpaceOnUse" xlinkHref="#a"/><linearGradient id="a"><stop offset="0" stopColor="#ffbe00"/><stop offset="1" stopColor="#ff7600"/></linearGradient></defs><g paintOrder="stroke fill markers"><ellipse cx="24.981" cy="25.155" fill="#fff" rx="24.624" ry="24.746"/><ellipse cx="24.981" cy="25.155" fill="url(#b)" rx="22.23" ry="22.339"/><path fill="#8444fd" d="M11.539 16.638l3.874 3.874-4.788 4.788-3.875-3.874zm13.463-5.278l4.814 4.814-17.979 17.979-4.814-4.814zm0 0l9.1 9.1-4.775 4.776-9.1-9.1zm13.129 5.51l4.813 4.813-17.968 17.968-4.814-4.814zm-17.454 8.906l9.087 9.087-4.788 4.788-9.087-9.087zm18.676-.064l3.875 3.874-4.776 4.775-3.874-3.874z"/></g></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50"><defs><radialGradient id="b" cx="141.476" cy="110.241" r="57.24" fx="141.476" fy="110.241" gradientTransform="matrix(.38836 0 0 .39027 -29.962 -17.87)" gradientUnits="userSpaceOnUse" xlinkHref="#a"/><linearGradient id="a"><stop offset="0" stopColor="#ffbe00"/><stop offset="1" stopColor="#ff7600"/></linearGradient></defs><g paintOrder="stroke fill markers"><ellipse cx="24.981" cy="25.155" fill="#fff" rx="24.624" ry="24.746"/><ellipse cx="24.981" cy="25.155" fill="url(#b)" rx="22.23" ry="22.339"/>
+      <path fill="#fff" d="M12.035 16.965l3.731 3.731-4.611 4.611-3.732-3.73zM25 11.882l4.637 4.636-17.316 17.316-4.636-4.637zm0 0l8.765 8.764-4.6 4.6-8.764-8.765zm12.645 5.306l4.636 4.636L24.977 39.13l-4.637-4.637zm-16.81 8.578l8.752 8.752-4.611 4.612-8.752-8.752zm17.987-.062l3.732 3.731-4.6 4.6-3.73-3.732z"/>
+    </g></svg>
   );
 };
 

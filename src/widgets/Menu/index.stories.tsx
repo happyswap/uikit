@@ -7,7 +7,7 @@ import Text from "../../components/Text/Text";
 import { MenuEntry } from "./components/MenuEntry";
 import Menu from "./Menu";
 import { LangType } from "./types";
-import { links } from "./config";
+import { links, tokenInfo } from "./config";
 
 export default {
   title: "Widgets/Menu",
@@ -31,6 +31,7 @@ const useProps = () => {
     cakePriceUsd: 24.023158668932877668,
     links,
     profile: null,
+    tokenInfo
   });
 
   useEffect(() => {
@@ -47,6 +48,7 @@ const useProps = () => {
         cakePriceUsd: 24.023158668932877668,
         links,
         profile: null,
+        tokenInfo
       });
     }, 2000);
     return () => {
@@ -86,10 +88,11 @@ export const Connected: React.FC = () => {
 };
 
 export const NotConnected: React.FC = () => {
+  const { cakePriceUsd } = useProps();
   return (
     <BrowserRouter>
       <Menu
-        account={null}
+        account={undefined}
         login={noop}
         logout={noop}
         isDark
@@ -98,6 +101,8 @@ export const NotConnected: React.FC = () => {
         setLang={noop}
         currentLang="EN"
         links={links}
+        cakePriceUsd={cakePriceUsd}
+        tokenInfo={tokenInfo}
       >
         <div>
           <h1>Page body</h1>
@@ -134,6 +139,7 @@ export const WithNoProfile: React.FC = () => {
           profileLink: "/profile",
           noProfileLink: "/no-profile",
         }}
+        tokenInfo={tokenInfo}
       >
         <div>
           <Heading as="h1" mb="8px">
@@ -178,6 +184,7 @@ export const WithProfile: React.FC = () => {
           profileLink: "/profile",
           noProfileLink: "/no-profile",
         }}
+        tokenInfo={tokenInfo}
       >
         <div>
           <Heading as="h1" mb="8px">
