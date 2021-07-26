@@ -19,7 +19,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   flex-direction: column;
   justify-content: space-between;
   flex-shrink: 0;
-  background: linear-gradient(to right, #A34FFE, #5934FC);
+  background: linear-gradient(to right, #A34FFE, #8544fd);
   width: ${({ isPushed }) => (isPushed ? `${SIDEBAR_WIDTH_FULL}px` : 0)};
   height: 100vh;
   transition: padding-top 0.2s, width 0.2s;
@@ -29,7 +29,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   transform: translate3d(0, 0, 0);
 
   ${({ theme }) => theme.mediaQueries.nav} {
-    border-right: 2px solid rgba(133, 133, 133, 0.1);
+
     width: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
 `;
