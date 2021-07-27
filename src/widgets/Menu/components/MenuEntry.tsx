@@ -35,7 +35,7 @@ const MenuEntry = styled.div<Props>`
   font-weight: ${({ secondary }) => (secondary ? "600" : "600")};
   font-family: ${({ secondary }) => (secondary ? "'Roboto', Helvetica, Arial, sans-serif" : "'Roboto', Helvetica, Arial, sans-serif")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
-  color: ${({ theme }) => theme.colors.textSubtle};
+  color: ${({ theme }) => theme.colors.secondary};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
    
   flex-direction: ${({ sub }) => (sub ? "column" : "row")}
@@ -48,7 +48,7 @@ const MenuEntry = styled.div<Props>`
   }
 
   svg {
-    fill: ${({ theme }) => theme.colors.textSubtle};
+    fill: ${({ theme }) => theme.colors.secondary};
   }
 
   &:hover {

@@ -182,7 +182,7 @@ var styleVariants = (_b = {},
     },
     _b[variants.SUBTLE] = {
         backgroundColor: "textSubtle",
-        color: "white",
+        color: "primary",
     },
     _b[variants.DANGER] = {
         backgroundColor: "failure",
@@ -2416,7 +2416,7 @@ var MenuEntry = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTem
     return (secondary ? theme.colors.background : "transparent");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.textSubtle;
+    return theme.colors.secondary;
 }, function (_a) {
     var isActive = _a.isActive, theme = _a.theme;
     return (isActive ? "inset 4px 0px 0px " + theme.colors.primary : "none");
@@ -2425,7 +2425,7 @@ var MenuEntry = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTem
     return (sub ? "column" : "row");
 }, function (_a) {
     var theme = _a.theme;
-    return theme.colors.textSubtle;
+    return theme.colors.secondary;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.menuHover;
@@ -2491,7 +2491,7 @@ var SocialLinks = function () { return (React.createElement(Flex, null, socials.
     var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
     var mr = index < socials.length - 1 ? "24px" : 0;
     if (social.items) {
-        return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
+        return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "secondary" }, item.label)); })));
     }
     return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
         React.createElement(Icon, __assign({}, iconProps))));
@@ -2952,7 +2952,7 @@ var brandColors = {
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", secondary: "#16256b", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#487CFF", textDisabled: "#BDC2C4", textSubtle: "#16256b", borderColor: "#E9EAEB", card: "#FFFFFF", nav: "#16256b", menuBackground: "#5c35fc", menuHover: "rgba(186,54,232,0.67)", menuNavBackground: "white", hamburger: "#eeeeee", gradients: {
         bubblegum: "linear-gradient(139.73deg, #9247e2 0%, #8442e2 100%)",
     } });
-var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#d8d1f6", secondary: "#a845ee", background: "linear-gradient(139.73deg, #8544fd 0%, #9247e2 100%)", backgroundDisabled: "#8442e2", contrast: "#EEEEEE", invertedContrast: "#262513", input: "#483F5A", inputSecondary: "#7b22e2", primaryDark: "#6527a8", tertiary: "#ffa338", text: "#fcfae2", textDisabled: "#b3a5c7", textSubtle: "#fff", borderColor: "#7d41cb", card: "#5c35fc", nav: "#5c35fc", menuBackground: "#7d41cb", menuHover: "rgba(57,31,66,0.25)", menuNavBackground: "#FFFFFF", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#4c0384", secondary: "#fff", background: "linear-gradient(139.73deg, #8544fd 0%, #9247e2 100%)", backgroundDisabled: "#8442e2", contrast: "#EEEEEE", invertedContrast: "#262513", input: "#483F5A", inputSecondary: "#7b22e2", primaryDark: "#6527a8", tertiary: "#ffa338", text: "#fcfae2", textDisabled: "#b3a5c7", textSubtle: "#fff", borderColor: "#7d41cb", card: "#5c35fc", nav: "#5c35fc", menuBackground: "#7d41cb", menuHover: "rgba(57,31,66,0.25)", menuNavBackground: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #A34FFE 0%, #5934FC 100%)",
     }, hamburger: "#cccccc" });
 

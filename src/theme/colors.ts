@@ -43,8 +43,8 @@ export const lightColors: Colors = {
 // export const darkColors: Colors = {
   ...baseColors,
   ...brandColors,
-  primary: "#d8d1f6",
-  secondary: "#a845ee", //
+  primary: "#4c0384",
+  secondary: "#fff", //
   background: "linear-gradient(139.73deg, #8544fd 0%, #9247e2 100%)", //
   backgroundDisabled: "#8442e2", //
   contrast: "#EEEEEE",
