@@ -21,7 +21,7 @@ const Container = styled.div`
   overflow-x: hidden;
   height: 100%;
   background-image: url(/images/background-left-bottom-quatter.png);
-    background-position-y: 120%;
+  background-position: left 0px top 350px;
     background-repeat: no-repeat;
 `;
 

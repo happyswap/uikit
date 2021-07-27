@@ -44,7 +44,7 @@ export const lightColors: Colors = {
   ...baseColors,
   ...brandColors,
   primary: "#d8d1f6",
-  secondary: "#fff", //
+  secondary: "#a845ee", //
   background: "linear-gradient(139.73deg, #8544fd 0%, #9247e2 100%)", //
   backgroundDisabled: "#8442e2", //
   contrast: "#EEEEEE",
