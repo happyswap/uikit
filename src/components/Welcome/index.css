@@ -1,0 +1,157 @@
+#finishContainer{
+    display: none;
+}
+#buyContainer{
+
+}
+
+.big-input {
+    width: 250px;
+    padding-right: 5em;
+    padding-left: 1em;
+    border: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1;
+    border-radius: .3rem;
+}
+
+.clock-counter{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5rem;
+}
+
+.clock-counter .flip-clock-wrapper{
+    width: unset;
+}
+section.head-area .head-content{
+    padding-top: 8.125rem;
+}
+
+
+.buy-container{
+    display: flex;
+}
+.buy-container input.big-input{
+    margin-right: 1em;
+}
+.big-input-container{
+    display: flex;
+}
+.navbar-brand .logo{
+    width: 40px;
+    height: 40px;
+    //box-shadow: #efefef 3px 3px;
+}
+
+.i-container {
+    position: relative;
+}
+.i-container .info {
+    width: 4.5em;
+    position: absolute;
+    background: #9e9e9e;
+    right: 21px;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    top: 11px;
+    justify-content: center;
+    border-radius: 5px
+}
+.i-container .info img {
+    width: 24px;
+    height: 24px;
+}
+.i-container .info span{
+    line-height: 4px;
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+.whitepaper-img{
+    position: relative;
+}
+.whitepaper-img .title, .whitepaper-img .desc{
+    position: absolute;
+    font-family: Comfortaa,Roboto,'Helvetica Neue',Arial,sans-serif;
+
+    color: white;
+}
+
+.whitepaper-img .title{
+    font-weight: 500;
+
+    font-size: 19px;
+    top: 39px;
+    left: 110px;
+}
+.whitepaper-img .desc{
+    font-weight: 400;
+    font-size: 14px;
+    bottom: 50px;
+    left: 24px;
+    width: 300px;
+}
+
+@media screen and (max-width: 575.98px){
+    .buy-container{
+        flex-direction: column;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+    .countdown{
+        display: none;
+    }
+    .clock-counter{
+        margin-bottom: 0.5rem;
+        justify-content: center;
+    }
+    section.head-area .head-content{
+        padding-top: 5.125rem;
+    }
+
+
+    .head-area .buy-container input.big-input.btn-lg{
+        width: 140px;
+        padding-right: 4em;
+        padding-left: 0.3em;
+        font-size: 1.2em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .buy-container  button{
+        margin-top: 1em;
+        width: 140px;
+    }
+    .i-container .info span{
+        line-height: 4px;
+        font-size: 12px;
+        margin-left: 2px;
+    }
+    .i-container .info {
+        width: 4.5em;
+        right: 22px;
+        height: 2em;
+        top: 4px;
+    }
+    .row{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .head-area .head-content {
+         height: 100vh !important;
+    }
+
+    .head-area .head-content .logo-wrapper .crypto-logo{
+        width: 7.87rem;
+        height: 7.87rem;
+    }
+    .head-area .head-content .logo-wrapper{
+        width: 9.35rem;
+        height: 9.35rem;
+    }
+}
