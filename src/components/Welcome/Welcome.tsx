@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import "./bootstrap.css";
 
-import "./flipclock.css";
+import "./flipclock-style.css";
 // eslint-disable-next-line import/extensions
 import "./flipclock.js";
 import "./index.css";
 import "./template-counter.css";
+import { WelcomeProps } from "./types";
 
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface WelcomeProps{}
+
 
 
 

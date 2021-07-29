@@ -67,9 +67,9 @@ var getThemeValue = function (path, fallback) { return function (theme) {
     return get(theme, path, fallback);
 }; };
 
-var rotate = keyframes(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
-var spinStyle = css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate);
-var Svg = styled.svg(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  fill: ", ";\n  flex-shrink: 0;\n\n  ", "\n  ", "\n"], ["\n  fill: ", ";\n  flex-shrink: 0;\n\n  ", "\n  ", "\n"])), function (_a) {
+var rotate = keyframes(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
+var spinStyle = css(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  animation: ", " 2s linear infinite;\n"], ["\n  animation: ", " 2s linear infinite;\n"])), rotate);
+var Svg = styled.svg(templateObject_3$9 || (templateObject_3$9 = __makeTemplateObject(["\n  fill: ", ";\n  flex-shrink: 0;\n\n  ", "\n  ", "\n"], ["\n  fill: ", ";\n  flex-shrink: 0;\n\n  ", "\n  ", "\n"])), function (_a) {
     var theme = _a.theme, color = _a.color;
     return getThemeValue("colors." + color, color)(theme);
 }, function (_a) {
@@ -82,29 +82,29 @@ Svg.defaultProps = {
     xmlns: "http://www.w3.org/2000/svg",
     spin: false,
 };
-var templateObject_1, templateObject_2, templateObject_3;
+var templateObject_1$M, templateObject_2$g, templateObject_3$9;
 
-var Icon = function (props) {
+var Icon$1c = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM15.88 8.29L10 14.17L8.12 12.29C7.73 11.9 7.1 11.9 6.71 12.29C6.32 12.68 6.32 13.31 6.71 13.7L9.3 16.29C9.69 16.68 10.32 16.68 10.71 16.29L17.3 9.7C17.69 9.31 17.69 8.68 17.3 8.29C16.91 7.9 16.27 7.9 15.88 8.29Z" })));
 };
 
-var Icon$1 = function (props) {
+var Icon$1b = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 7C12.55 7 13 7.45 13 8V12C13 12.55 12.55 13 12 13C11.45 13 11 12.55 11 12V8C11 7.45 11.45 7 12 7ZM11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM13 17H11V15H13V17Z" })));
 };
 
-var Icon$2 = function (props) {
+var Icon$1a = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22ZM12 4C16.42 4 20 7.58 20 12C20 13.85 19.37 15.55 18.31 16.9L7.1 5.69C8.45 4.63 10.15 4 12 4ZM5.69 7.1L16.9 18.31C15.55 19.37 13.85 20 12 20C7.58 20 4 16.42 4 12C4 10.15 4.63 8.45 5.69 7.1Z" })));
 };
 
-var Icon$3 = function (props) {
+var Icon$19 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M11 7H13V9H11V7ZM12 17C12.55 17 13 16.55 13 16V12C13 11.45 12.55 11 12 11C11.45 11 11 11.45 11 12V16C11 16.55 11.45 17 12 17ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" })));
 };
 
-var getColor = function (_a) {
+var getColor$1 = function (_a) {
     var color = _a.color, theme = _a.theme;
     return getThemeValue("colors." + color, color)(theme);
 };
@@ -112,7 +112,7 @@ var getFontSize = function (_a) {
     var fontSize = _a.fontSize, small = _a.small;
     return small ? "14px" : fontSize || "16px";
 };
-var Text = styled.div(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n  ", "\n"], ["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n  ", "\n"])), getColor, getFontSize, function (_a) {
+var Text = styled.div(templateObject_1$L || (templateObject_1$L = __makeTemplateObject(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n  ", "\n"], ["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n  ", "\n"])), getColor$1, getFontSize, function (_a) {
     var bold = _a.bold;
     return (bold ? 600 : 400);
 }, function (_a) {
@@ -123,19 +123,19 @@ Text.defaultProps = {
     color: "text",
     small: false,
 };
-var templateObject_1$1;
+var templateObject_1$L;
 
 var getExternalLinkProps = function () { return ({
     target: "_blank",
     rel: "noreferrer noopener",
 }); };
 
-var scales = {
+var scales$4 = {
     MD: "md",
     SM: "sm",
     XS: "xs",
 };
-var variants = {
+var variants$1 = {
     PRIMARY: "primary",
     SECONDARY: "secondary",
     TERTIARY: "tertiary",
@@ -145,28 +145,28 @@ var variants = {
     SUCCESS: "success",
 };
 
-var _a, _b;
-var scaleVariants = (_a = {},
-    _a[scales.MD] = {
+var _a$2, _b;
+var scaleVariants = (_a$2 = {},
+    _a$2[scales$4.MD] = {
         height: "48px",
         padding: "0 24px",
     },
-    _a[scales.SM] = {
+    _a$2[scales$4.SM] = {
         height: "32px",
         padding: "0 16px",
     },
-    _a[scales.XS] = {
+    _a$2[scales$4.XS] = {
         height: "20px",
         fontSize: "12px",
         padding: "0 8px",
     },
-    _a);
+    _a$2);
 var styleVariants = (_b = {},
-    _b[variants.PRIMARY] = {
+    _b[variants$1.PRIMARY] = {
         backgroundColor: "primary",
         color: "white",
     },
-    _b[variants.SECONDARY] = {
+    _b[variants$1.SECONDARY] = {
         backgroundColor: "transparent",
         border: "2px solid",
         borderColor: "primary",
@@ -176,24 +176,24 @@ var styleVariants = (_b = {},
             backgroundColor: "transparent",
         },
     },
-    _b[variants.TERTIARY] = {
+    _b[variants$1.TERTIARY] = {
         backgroundColor: "tertiary",
         boxShadow: "none",
         color: "primary",
     },
-    _b[variants.SUBTLE] = {
+    _b[variants$1.SUBTLE] = {
         backgroundColor: "textSubtle",
         color: "primary",
     },
-    _b[variants.DANGER] = {
+    _b[variants$1.DANGER] = {
         backgroundColor: "failure",
         color: "white",
     },
-    _b[variants.SUCCESS] = {
+    _b[variants$1.SUCCESS] = {
         backgroundColor: "success",
         color: "white",
     },
-    _b[variants.TEXT] = {
+    _b[variants$1.TEXT] = {
         backgroundColor: "transparent",
         color: "primary",
         boxShadow: "none",
@@ -211,7 +211,7 @@ var getOpacity = function (_a) {
     var _b = _a.$isLoading, $isLoading = _b === void 0 ? false : _b;
     return $isLoading ? ".5" : "1";
 };
-var StyledButton = styled.button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ",
+var StyledButton = styled.button(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  border: 0;\n  border-radius: 16px;\n  box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 600;\n  justify-content: center;\n  letter-spacing: 0.03em;\n  line-height: 1;\n  opacity: ", ";\n  outline: 0;\n  transition: background-color 0.2s;\n\n  &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {\n    opacity: 0.65;\n  }\n\n  &:active:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled) {\n    opacity: 0.85;\n  }\n\n  ", "\n  ",
     "\n  ",
     "\n  ", "\n  ", "\n"])), getOpacity, getDisabledStyles, variant$1({
     prop: "scale",
@@ -219,7 +219,7 @@ var StyledButton = styled.button(templateObject_1$2 || (templateObject_1$2 = __m
 }), variant$1({
     variants: styleVariants,
 }), layout, space);
-var templateObject_1$2;
+var templateObject_1$K;
 
 var Button = function (props) {
     var startIcon = props.startIcon, endIcon = props.endIcon, external = props.external, className = props.className, isLoading = props.isLoading, disabled = props.disabled, children = props.children, rest = __rest(props, ["startIcon", "endIcon", "external", "className", "isLoading", "disabled", "children"]);
@@ -247,59 +247,59 @@ var Button = function (props) {
 Button.defaultProps = {
     isLoading: false,
     external: false,
-    variant: variants.PRIMARY,
-    scale: scales.MD,
+    variant: variants$1.PRIMARY,
+    scale: scales$4.MD,
     disabled: false,
 };
 
-var IconButton = styled(Button)(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  padding: 0;\n  width: ", ";\n"], ["\n  padding: 0;\n  width: ", ";\n"])), function (_a) {
+var IconButton = styled(Button)(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n  padding: 0;\n  width: ", ";\n"], ["\n  padding: 0;\n  width: ", ";\n"])), function (_a) {
     var scale = _a.scale;
     return (scale === "sm" ? "32px" : "48px");
 });
-var templateObject_1$3;
+var templateObject_1$J;
 
-var Icon$4 = function (props) {
+var Icon$18 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" })));
 };
 
-var Icon$5 = function (props) {
+var Icon$17 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M19 11H7.82998L12.71 6.12C13.1 5.73 13.1 5.09 12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7L4.70998 11.29C4.31998 11.68 4.31998 12.31 4.70998 12.7L11.3 19.29C11.69 19.68 12.32 19.68 12.71 19.29C13.1 18.9 13.1 18.27 12.71 17.88L7.82998 13H19C19.55 13 20 12.55 20 12C20 11.45 19.55 11 19 11Z" })));
 };
 
-var Icon$6 = function (props) {
+var Icon$16 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 25" }, props),
         React.createElement("path", { d: "M11 5V16.17L6.11997 11.29C5.72997 10.9 5.08997 10.9 4.69997 11.29C4.30997 11.68 4.30997 12.31 4.69997 12.7L11.29 19.29C11.68 19.68 12.31 19.68 12.7 19.29L19.29 12.7C19.68 12.31 19.68 11.68 19.29 11.29C18.9 10.9 18.27 10.9 17.88 11.29L13 16.17V5C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5Z" })));
 };
 
-var Icon$7 = function (props) {
+var Icon$15 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.71005 11.71L11.3001 14.3C11.6901 14.69 12.3201 14.69 12.7101 14.3L15.3001 11.71C15.9301 11.08 15.4801 10 14.5901 10H9.41005C8.52005 10 8.08005 11.08 8.71005 11.71Z" })));
 };
 
-var Icon$8 = function (props) {
+var Icon$14 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.71005 12.29L11.3001 9.69997C11.6901 9.30997 12.3201 9.30997 12.7101 9.69997L15.3001 12.29C15.9301 12.92 15.4801 14 14.5901 14H9.41005C8.52005 14 8.08005 12.92 8.71005 12.29Z" })));
 };
 
-var Icon$9 = function (props) {
+var Icon$13 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 25" }, props),
         React.createElement("path", { d: "M5 13.0022H16.17L11.29 17.8822C10.9 18.2722 10.9 18.9122 11.29 19.3022C11.68 19.6922 12.31 19.6922 12.7 19.3022L19.29 12.7122C19.68 12.3222 19.68 11.6922 19.29 11.3022L12.71 4.70217C12.32 4.31217 11.69 4.31217 11.3 4.70217C10.91 5.09217 10.91 5.72217 11.3 6.11217L16.17 11.0022H5C4.45 11.0022 4 11.4522 4 12.0022C4 12.5522 4.45 13.0022 5 13.0022Z" })));
 };
 
-var Icon$a = function (props) {
+var Icon$12 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 6V7.79C12 8.24 12.54 8.46 12.85 8.14L15.64 5.35C15.84 5.15 15.84 4.84 15.64 4.64L12.85 1.85C12.54 1.54 12 1.76 12 2.21V4C7.58 4 4 7.58 4 12C4 13.04 4.2 14.04 4.57 14.95C4.84 15.62 5.7 15.8 6.21 15.29C6.48 15.02 6.59 14.61 6.44 14.25C6.15 13.56 6 12.79 6 12C6 8.69 8.69 6 12 6ZM17.79 8.71C17.52 8.98 17.41 9.4 17.56 9.75C17.84 10.45 18 11.21 18 12C18 15.31 15.31 18 12 18V16.21C12 15.76 11.46 15.54 11.15 15.86L8.36 18.65C8.16 18.85 8.16 19.16 8.36 19.36L11.15 22.15C11.46 22.46 12 22.24 12 21.8V20C16.42 20 20 16.42 20 12C20 10.96 19.8 9.96 19.43 9.05C19.16 8.38 18.3 8.2 17.79 8.71Z" })));
 };
 
-var Icon$b = function (props) {
+var Icon$11 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 16 16" }, props),
         React.createElement("circle", { cx: "8", cy: "8", r: "8", fill: "#F0B90B" }),
         React.createElement("path", { d: "M5.01656 8.00006L3.79256 9.23256L2.56006 8.00006L3.79256 6.76756L5.01656 8.00006ZM8.00006 5.01656L10.1081 7.12456L11.3406 5.89206L9.23256 3.79256L8.00006 2.56006L6.76756 3.79256L4.66806 5.89206L5.90056 7.12456L8.00006 5.01656ZM12.2076 6.76756L10.9836 8.00006L12.2161 9.23256L13.4401 8.00006L12.2076 6.76756ZM8.00006 10.9836L5.89206 8.87556L4.66806 10.1081L6.77606 12.2161L8.00006 13.4401L9.23256 12.2076L11.3406 10.0996L10.1081 8.87556L8.00006 10.9836ZM8.00006 9.23256L9.23256 8.00006L8.00006 6.76756L6.76756 8.00006L8.00006 9.23256Z", fill: "#FFFDFA" })));
 };
 
-var Icon$c = function (props) {
+var Icon$10 = function (props) {
     var theme = useTheme();
     var primaryColor = theme.isDark ? "#3C3742" : "#e9eaeb";
     var secondaryColor = theme.isDark ? "#666171" : "#bdc2c4";
@@ -319,12 +319,12 @@ var Icon$c = function (props) {
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M71.9838 37.09L69.7348 37.0231C69.7449 36.6834 69.75 36.3423 69.75 36C69.75 35.6577 69.7449 35.3166 69.7348 34.9769L71.9838 34.91C71.9946 35.272 72 35.6354 72 36C72 36.3646 71.9946 36.728 71.9838 37.09ZM71.8544 32.7398L69.6134 32.941C69.5523 32.2603 69.471 31.5857 69.3702 30.9176L71.5949 30.5818C71.7025 31.2945 71.7892 32.014 71.8544 32.7398ZM71.2052 28.4414L69.0048 28.9115C68.8622 28.2441 68.6999 27.5841 68.5185 26.932L70.6861 26.3289C70.8798 27.0248 71.053 27.7292 71.2052 28.4414ZM70.0397 24.2525L67.9128 24.9864C67.6906 24.3424 67.4494 23.7072 67.1899 23.0815L69.2683 22.2196C69.5452 22.8874 69.8026 23.5652 70.0397 24.2525ZM68.3746 20.237L66.3524 21.2235C66.0538 20.6114 65.7373 20.0097 65.4034 19.419L67.3622 18.3119C67.7183 18.942 68.0561 19.584 68.3746 20.237ZM66.2353 16.4517L64.347 17.6751C63.977 17.104 63.5901 16.5448 63.1872 15.998L64.9984 14.6631C65.4281 15.2462 65.8407 15.8426 66.2353 16.4517ZM63.656 12.952L61.9283 14.3934C61.4925 13.8711 61.0413 13.3621 60.5752 12.8671L62.2132 11.3246C62.7102 11.8523 63.1914 12.3951 63.656 12.952ZM60.6754 9.78678L59.1329 11.4248C58.6379 10.9587 58.1289 10.5074 57.6066 10.0717L59.048 8.34397C59.6049 8.80865 60.1477 9.28984 60.6754 9.78678ZM57.3369 7.00159L56.002 8.8128C55.4552 8.40985 54.896 8.02303 54.3249 7.65302L55.5482 5.76468C56.1574 6.15933 56.7538 6.57187 57.3369 7.00159ZM53.6881 4.63782L52.581 6.5966C51.9903 6.26271 51.3886 5.94615 50.7765 5.64759L51.7629 3.62536C52.416 3.94392 53.058 4.28165 53.6881 4.63782ZM49.7804 2.7317L48.9185 4.81008C48.2928 4.55061 47.6576 4.30943 47.0136 4.08723L47.7475 1.96028C48.4348 2.19743 49.1126 2.4548 49.7804 2.7317ZM45.6711 1.31385L45.068 3.48152C44.4159 3.3001 43.7559 3.13777 43.0885 2.99517L43.5586 0.794831C44.2708 0.947003 44.9752 1.12024 45.6711 1.31385ZM41.4182 0.405049L41.0824 2.62985C40.4143 2.529 39.7397 2.44772 39.059 2.38662L39.2602 0.14563C39.986 0.210778 40.7055 0.297466 41.4182 0.405049ZM37.09 0.0161859C36.728 0.0054207 36.3646 0 36 0C35.6354 0 35.272 0.00542073 34.91 0.016186L34.9769 2.26519C35.3166 2.25509 35.6577 2.25 36 2.25C36.3423 2.25 36.6834 2.25509 37.0231 2.26519L37.09 0.0161859ZM32.7398 0.145631L32.941 2.38662C32.2603 2.44772 31.5857 2.529 30.9176 2.62985L30.5818 0.405049C31.2945 0.297467 32.014 0.210779 32.7398 0.145631ZM28.4414 0.794832L28.9115 2.99517C28.2441 3.13777 27.5841 3.3001 26.932 3.48152L26.3289 1.31386C27.0248 1.12024 27.7292 0.947004 28.4414 0.794832ZM24.2525 1.96028L24.9864 4.08723C24.3424 4.30944 23.7072 4.55061 23.0815 4.81008L22.2196 2.7317C22.8874 2.45481 23.5652 2.19743 24.2525 1.96028ZM20.237 3.62536L21.2235 5.64759C20.6114 5.94616 20.0097 6.26272 19.419 6.5966L18.3119 4.63783C18.942 4.28165 19.584 3.94392 20.237 3.62536ZM16.4517 5.76469L17.6751 7.65302C17.104 8.02303 16.5448 8.40985 15.998 8.81281L14.6631 7.00159C15.2462 6.57188 15.8426 6.15933 16.4517 5.76469ZM12.952 8.34398L14.3934 10.0717C13.8711 10.5075 13.3621 10.9587 12.8671 11.4248L11.3246 9.78679C11.8523 9.28984 12.3951 8.80865 12.952 8.34398ZM9.78678 11.3246L11.4248 12.8671C10.9587 13.3621 10.5074 13.8711 10.0717 14.3934L8.34397 12.952C8.80865 12.3951 9.28984 11.8523 9.78678 11.3246ZM7.00159 14.6631L8.8128 15.998C8.40985 16.5448 8.02303 17.104 7.65302 17.6751L5.76468 16.4518C6.15933 15.8426 6.57187 15.2462 7.00159 14.6631ZM4.63782 18.3119L6.5966 19.419C6.26271 20.0097 5.94615 20.6114 5.64759 21.2235L3.62536 20.2371C3.94392 19.584 4.28165 18.942 4.63782 18.3119ZM2.7317 22.2196L4.81008 23.0815C4.55061 23.7072 4.30943 24.3424 4.08723 24.9864L1.96028 24.2525C2.19743 23.5652 2.4548 22.8874 2.7317 22.2196ZM1.31385 26.3289L3.48152 26.932C3.3001 27.5841 3.13777 28.2441 2.99517 28.9115L0.794831 28.4414C0.947003 27.7292 1.12024 27.0248 1.31385 26.3289ZM0.405049 30.5818L2.62985 30.9176C2.529 31.5857 2.44772 32.2603 2.38662 32.941L0.14563 32.7398C0.210778 32.014 0.297466 31.2945 0.405049 30.5818ZM0.0161859 34.91C0.0054207 35.272 0 35.6354 0 36C0 36.3646 0.00542073 36.728 0.016186 37.09L2.26519 37.0231C2.25509 36.6834 2.25 36.3423 2.25 36C2.25 35.6577 2.25509 35.3166 2.26519 34.9769L0.0161859 34.91ZM0.145631 39.2602L2.38662 39.059C2.44772 39.7397 2.529 40.4143 2.62985 41.0824L0.40505 41.4182C0.297467 40.7055 0.210779 39.986 0.145631 39.2602ZM0.794833 43.5586L2.99517 43.0885C3.13777 43.7559 3.3001 44.4159 3.48152 45.068L1.31386 45.6711C1.12024 44.9752 0.947004 44.2708 0.794833 43.5586ZM1.96028 47.7475L4.08723 47.0136C4.30944 47.6576 4.55061 48.2928 4.81008 48.9185L2.7317 49.7804C2.45481 49.1126 2.19743 48.4348 1.96028 47.7475ZM3.62536 51.763L5.64759 50.7765C5.94616 51.3886 6.26272 51.9903 6.5966 52.581L4.63783 53.6881C4.28165 53.058 3.94392 52.416 3.62536 51.763ZM5.76469 55.5482L7.65302 54.3249C8.02303 54.896 8.40985 55.4552 8.81281 56.002L7.00159 57.3369C6.57188 56.7538 6.15933 56.1574 5.76469 55.5482ZM8.34398 59.048L10.0717 57.6066C10.5075 58.1289 10.9587 58.6379 11.4248 59.1329L9.78679 60.6754C9.28984 60.1477 8.80865 59.6049 8.34398 59.048ZM11.3246 62.2132L12.8671 60.5752C13.3621 61.0413 13.8711 61.4925 14.3934 61.9283L12.952 63.656C12.3951 63.1914 11.8523 62.7102 11.3246 62.2132ZM14.6631 64.9984L15.998 63.1872C16.5448 63.5901 17.104 63.977 17.6751 64.347L16.4518 66.2353C15.8426 65.8407 15.2462 65.4281 14.6631 64.9984ZM18.3119 67.3622L19.419 65.4034C20.0097 65.7373 20.6114 66.0538 21.2235 66.3524L20.2371 68.3746C19.584 68.0561 18.942 67.7184 18.3119 67.3622ZM22.2196 69.2683L23.0815 67.1899C23.7072 67.4494 24.3424 67.6906 24.9864 67.9128L24.2525 70.0397C23.5652 69.8026 22.8874 69.5452 22.2196 69.2683ZM26.3289 70.6861L26.932 68.5185C27.5841 68.6999 28.2441 68.8622 28.9115 69.0048L28.4414 71.2052C27.7292 71.053 27.0248 70.8798 26.3289 70.6861ZM30.5818 71.595L30.9176 69.3702C31.5857 69.471 32.2603 69.5523 32.941 69.6134L32.7398 71.8544C32.014 71.7892 31.2945 71.7025 30.5818 71.595ZM34.91 71.9838L34.9769 69.7348C35.3166 69.7449 35.6577 69.75 36 69.75C36.3423 69.75 36.6834 69.7449 37.0231 69.7348L37.09 71.9838C36.728 71.9946 36.3646 72 36 72C35.6354 72 35.272 71.9946 34.91 71.9838ZM39.2602 71.8544L39.059 69.6134C39.7397 69.5523 40.4143 69.471 41.0824 69.3702L41.4182 71.5949C40.7055 71.7025 39.986 71.7892 39.2602 71.8544ZM43.5586 71.2052L43.0885 69.0048C43.7559 68.8622 44.4159 68.6999 45.068 68.5185L45.6711 70.6861C44.9752 70.8798 44.2708 71.053 43.5586 71.2052ZM47.7475 70.0397L47.0136 67.9128C47.6576 67.6906 48.2928 67.4494 48.9185 67.1899L49.7804 69.2683C49.1126 69.5452 48.4348 69.8026 47.7475 70.0397ZM51.7629 68.3746L50.7765 66.3524C51.3886 66.0538 51.9903 65.7373 52.581 65.4034L53.6881 67.3622C53.058 67.7183 52.416 68.0561 51.7629 68.3746ZM55.5482 66.2353L54.3249 64.347C54.896 63.977 55.4552 63.5901 56.002 63.1872L57.3369 64.9984C56.7538 65.4281 56.1574 65.8407 55.5482 66.2353ZM59.048 63.656L57.6066 61.9283C58.1289 61.4925 58.6379 61.0413 59.1329 60.5752L60.6754 62.2132C60.1477 62.7102 59.6049 63.1914 59.048 63.656ZM62.2132 60.6754L60.5752 59.1329C61.0413 58.6379 61.4925 58.1289 61.9283 57.6066L63.656 59.048C63.1914 59.6049 62.7102 60.1477 62.2132 60.6754ZM64.9984 57.3369L63.1872 56.002C63.5901 55.4552 63.977 54.896 64.347 54.3249L66.2353 55.5482C65.8407 56.1574 65.4281 56.7538 64.9984 57.3369ZM67.3622 53.6881L65.4034 52.581C65.7373 51.9903 66.0538 51.3886 66.3524 50.7765L68.3746 51.7629C68.0561 52.416 67.7184 53.058 67.3622 53.6881ZM69.2683 49.7804L67.1899 48.9185C67.4494 48.2928 67.6906 47.6576 67.9128 47.0136L70.0397 47.7475C69.8026 48.4348 69.5452 49.1126 69.2683 49.7804ZM70.6861 45.6711L68.5185 45.068C68.6999 44.4159 68.8622 43.7559 69.0048 43.0885L71.2052 43.5586C71.053 44.2708 70.8798 44.9752 70.6861 45.6711ZM71.595 41.4182L69.3702 41.0824C69.471 40.4143 69.5523 39.7397 69.6134 39.059L71.8544 39.2602C71.7892 39.986 71.7025 40.7055 71.595 41.4182Z", fill: secondaryColor })));
 };
 
-var Icon$d = function (props) {
+var Icon$$ = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M4.5 12H7.5C8.05 12 8.5 11.55 8.5 11V7C8.5 6.45 8.05 6 7.5 6H4.5C3.95 6 3.5 6.45 3.5 7V11C3.5 11.55 3.95 12 4.5 12ZM4.5 19H7.5C8.05 19 8.5 18.55 8.5 18V14C8.5 13.45 8.05 13 7.5 13H4.5C3.95 13 3.5 13.45 3.5 14V18C3.5 18.55 3.95 19 4.5 19ZM10.5 19H13.5C14.05 19 14.5 18.55 14.5 18V14C14.5 13.45 14.05 13 13.5 13H10.5C9.95 13 9.5 13.45 9.5 14V18C9.5 18.55 9.95 19 10.5 19ZM16.5 19H19.5C20.05 19 20.5 18.55 20.5 18V14C20.5 13.45 20.05 13 19.5 13H16.5C15.95 13 15.5 13.45 15.5 14V18C15.5 18.55 15.95 19 16.5 19ZM10.5 12H13.5C14.05 12 14.5 11.55 14.5 11V7C14.5 6.45 14.05 6 13.5 6H10.5C9.95 6 9.5 6.45 9.5 7V11C9.5 11.55 9.95 12 10.5 12ZM15.5 7V11C15.5 11.55 15.95 12 16.5 12H19.5C20.05 12 20.5 11.55 20.5 11V7C20.5 6.45 20.05 6 19.5 6H16.5C15.95 6 15.5 6.45 15.5 7Z" })));
 };
 
-var Icon$e = function (props) {
+var Icon$_ = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 25 24" }, props),
         React.createElement("path", { d: "M19.2 3H5.19995C4.09995 3 3.19995 3.9 3.19995 5V19C3.19995 20.1 4.09995 21 5.19995 21H19.2C20.3 21 21.2 20.1 21.2 19V5C21.2 3.9 20.3 3 19.2 3ZM19.2 19H5.19995V5H19.2V19Z", fill: "#1FC7D4" }),
         React.createElement("path", { d: "M11.45 7.72021H6.44995V9.22022H11.45V7.72021Z", fill: "#1FC7D4" }),
@@ -334,66 +334,66 @@ var Icon$e = function (props) {
         React.createElement("path", { d: "M14.29 10.95L15.7 9.54L17.11 10.95L18.17 9.89L16.76 8.47L18.17 7.06L17.11 6L15.7 7.41L14.29 6L13.23 7.06L14.64 8.47L13.23 9.89L14.29 10.95Z", fill: "#1FC7D4" })));
 };
 
-var Icon$f = function (props) {
+var Icon$Z = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 18 13" }, props),
         React.createElement("path", { d: "M6 10.2001L2.5 6.70007C2.11 6.31007 1.49 6.31007 1.1 6.70007C0.709995 7.09007 0.709995 7.71007 1.1 8.10007L5.29 12.2901C5.68 12.6801 6.31 12.6801 6.7 12.2901L17.3 1.70007C17.69 1.31007 17.69 0.690068 17.3 0.300068C16.91 -0.0899316 16.29 -0.0899316 15.9 0.300068L6 10.2001Z" })));
 };
 
-var Icon$g = function (props) {
+var Icon$Y = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z" })));
 };
 
-var Icon$h = function (props) {
+var Icon$X = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M14.71 15.88L10.83 12L14.71 8.12001C15.1 7.73001 15.1 7.10001 14.71 6.71001C14.32 6.32001 13.69 6.32001 13.3 6.71001L8.70998 11.3C8.31998 11.69 8.31998 12.32 8.70998 12.71L13.3 17.3C13.69 17.69 14.32 17.69 14.71 17.3C15.09 16.91 15.1 16.27 14.71 15.88Z" })));
 };
 
-var Icon$i = function (props) {
+var Icon$W = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M9.29006 15.88L13.1701 12L9.29006 8.12001C8.90006 7.73001 8.90006 7.10001 9.29006 6.71001C9.68006 6.32001 10.3101 6.32001 10.7001 6.71001L15.2901 11.3C15.6801 11.69 15.6801 12.32 15.2901 12.71L10.7001 17.3C10.3101 17.69 9.68006 17.69 9.29006 17.3C8.91006 16.91 8.90006 16.27 9.29006 15.88Z" })));
 };
 
-var Icon$j = function (props) {
+var Icon$V = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.11997 14.7101L12 10.8301L15.88 14.7101C16.27 15.1001 16.9 15.1001 17.29 14.7101C17.68 14.3201 17.68 13.6901 17.29 13.3001L12.7 8.7101C12.31 8.3201 11.68 8.3201 11.29 8.7101L6.69997 13.3001C6.30997 13.6901 6.30997 14.3201 6.69997 14.7101C7.08997 15.0901 7.72997 15.1001 8.11997 14.7101Z" })));
 };
 
-var Icon$k = function (props) {
+var Icon$U = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997 5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997 6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997 18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91 18.69 18.3 18.3C18.69 17.91 18.69 17.28 18.3 16.89L13.41 12L18.3 7.10997C18.68 6.72997 18.68 6.08997 18.3 5.70997Z" })));
 };
 
-var Icon$l = function (props) {
+var Icon$T = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M19.43 12.98C19.47 12.66 19.5 12.34 19.5 12C19.5 11.66 19.47 11.34 19.43 11.02L21.54 9.37C21.73 9.22 21.78 8.95 21.66 8.73L19.66 5.27C19.54 5.05 19.27 4.97 19.05 5.05L16.56 6.05C16.04 5.65 15.48 5.32 14.87 5.07L14.49 2.42C14.46 2.18 14.25 2 14 2H9.99996C9.74996 2 9.53996 2.18 9.50996 2.42L9.12996 5.07C8.51996 5.32 7.95996 5.66 7.43996 6.05L4.94996 5.05C4.71996 4.96 4.45996 5.05 4.33996 5.27L2.33996 8.73C2.20996 8.95 2.26996 9.22 2.45996 9.37L4.56996 11.02C4.52996 11.34 4.49996 11.67 4.49996 12C4.49996 12.33 4.52996 12.66 4.56996 12.98L2.45996 14.63C2.26996 14.78 2.21996 15.05 2.33996 15.27L4.33996 18.73C4.45996 18.95 4.72996 19.03 4.94996 18.95L7.43996 17.95C7.95996 18.35 8.51996 18.68 9.12996 18.93L9.50996 21.58C9.53996 21.82 9.74996 22 9.99996 22H14C14.25 22 14.46 21.82 14.49 21.58L14.87 18.93C15.48 18.68 16.04 18.34 16.56 17.95L19.05 18.95C19.28 19.04 19.54 18.95 19.66 18.73L21.66 15.27C21.78 15.05 21.73 14.78 21.54 14.63L19.43 12.98ZM12 15.5C10.07 15.5 8.49996 13.93 8.49996 12C8.49996 10.07 10.07 8.5 12 8.5C13.93 8.5 15.5 10.07 15.5 12C15.5 13.93 13.93 15.5 12 15.5Z" })));
 };
 
-var Icon$m = function (props) {
+var Icon$S = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 12.75C13.63 12.75 15.07 13.14 16.24 13.65C17.32 14.13 18 15.21 18 16.38V17C18 17.55 17.55 18 17 18H7C6.45 18 6 17.55 6 17V16.39C6 15.21 6.68 14.13 7.76 13.66C8.93 13.14 10.37 12.75 12 12.75ZM4 13C5.1 13 6 12.1 6 11C6 9.9 5.1 9 4 9C2.9 9 2 9.9 2 11C2 12.1 2.9 13 4 13ZM5.13 14.1C4.76 14.04 4.39 14 4 14C3.01 14 2.07 14.21 1.22 14.58C0.48 14.9 0 15.62 0 16.43V17C0 17.55 0.45 18 1 18H4.5V16.39C4.5 15.56 4.73 14.78 5.13 14.1ZM20 13C21.1 13 22 12.1 22 11C22 9.9 21.1 9 20 9C18.9 9 18 9.9 18 11C18 12.1 18.9 13 20 13ZM24 16.43C24 15.62 23.52 14.9 22.78 14.58C21.93 14.21 20.99 14 20 14C19.61 14 19.24 14.04 18.87 14.1C19.27 14.78 19.5 15.56 19.5 16.39V18H23C23.55 18 24 17.55 24 17V16.43ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6Z" })));
 };
 
-var Icon$n = function (props) {
+var Icon$R = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M15 1H4C2.9 1 2 1.9 2 3V16C2 16.55 2.45 17 3 17C3.55 17 4 16.55 4 16V4C4 3.45 4.45 3 5 3H15C15.55 3 16 2.55 16 2C16 1.45 15.55 1 15 1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM18 21H9C8.45 21 8 20.55 8 20V8C8 7.45 8.45 7 9 7H18C18.55 7 19 7.45 19 8V20C19 20.55 18.55 21 18 21Z" })));
 };
 
-var Icon$o = function (props) {
+var Icon$Q = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 20 20" }, props),
         React.createElement("path", { d: "M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM9 14H11V16H9V14ZM10.61 4.04C8.55 3.74 6.73 5.01 6.18 6.83C6 7.41 6.44 8 7.05 8H7.25C7.66 8 7.99 7.71 8.13 7.33C8.45 6.44 9.4 5.83 10.43 6.05C11.38 6.25 12.08 7.18 12 8.15C11.9 9.49 10.38 9.78 9.55 11.03C9.55 11.04 9.54 11.04 9.54 11.05C9.53 11.07 9.52 11.08 9.51 11.1C9.42 11.25 9.33 11.42 9.26 11.6C9.25 11.63 9.23 11.65 9.22 11.68C9.21 11.7 9.21 11.72 9.2 11.75C9.08 12.09 9 12.5 9 13H11C11 12.58 11.11 12.23 11.28 11.93C11.3 11.9 11.31 11.87 11.33 11.84C11.41 11.7 11.51 11.57 11.61 11.45C11.62 11.44 11.63 11.42 11.64 11.41C11.74 11.29 11.85 11.18 11.97 11.07C12.93 10.16 14.23 9.42 13.96 7.51C13.72 5.77 12.35 4.3 10.61 4.04Z" })));
 };
 
-var Icon$p = function (props) {
+var Icon$P = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M4.5 14H6.5C7.05 14 7.5 13.55 7.5 13V11C7.5 10.45 7.05 10 6.5 10H4.5C3.95 10 3.5 10.45 3.5 11V13C3.5 13.55 3.95 14 4.5 14ZM4.5 19H6.5C7.05 19 7.5 18.55 7.5 18V16C7.5 15.45 7.05 15 6.5 15H4.5C3.95 15 3.5 15.45 3.5 16V18C3.5 18.55 3.95 19 4.5 19ZM4.5 9H6.5C7.05 9 7.5 8.55 7.5 8V6C7.5 5.45 7.05 5 6.5 5H4.5C3.95 5 3.5 5.45 3.5 6V8C3.5 8.55 3.95 9 4.5 9ZM9.5 14H19.5C20.05 14 20.5 13.55 20.5 13V11C20.5 10.45 20.05 10 19.5 10H9.5C8.95 10 8.5 10.45 8.5 11V13C8.5 13.55 8.95 14 9.5 14ZM9.5 19H19.5C20.05 19 20.5 18.55 20.5 18V16C20.5 15.45 20.05 15 19.5 15H9.5C8.95 15 8.5 15.45 8.5 16V18C8.5 18.55 8.95 19 9.5 19ZM8.5 6V8C8.5 8.55 8.95 9 9.5 9H19.5C20.05 9 20.5 8.55 20.5 8V6C20.5 5.45 20.05 5 19.5 5H9.5C8.95 5 8.5 5.45 8.5 6Z" })));
 };
 
-var Icon$q = function (props) {
+var Icon$O = function (props) {
     return (React.createElement("img", { width: "220px", height: "50px", src: "/images/mobile-logo.png" }));
 };
 
-var Icon$r = function (props) {
+var Icon$N = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 512 512" }, props),
         React.createElement("circle", { cx: "256", cy: "256", r: "256", fill: "url(#paint0_linear)" }),
         React.createElement("g", null,
@@ -419,7 +419,7 @@ var Icon$r = function (props) {
                 React.createElement("path", { d: "M258.73,235.15H254c-23.59,0-40.89,15.35-48,37.17-3.69,11.35-3.41,23.75-.17,35.25l1.38,4.91a52,52,0,0,1,1.41,21.42,42.39,42.39,0,0,0,1.35,19c6.9,21.14,25.75,36,47.55,36h1.26Z", transform: "translate(-4 -51.89)", fill: "#585857" })))));
 };
 
-var Icon$s = function (props) {
+var Icon$M = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 35 33" }, props),
         React.createElement("path", { d: "m32.9582 1-13.1341 9.7183 2.4424-5.72731z", fill: "#e17726", stroke: "#e17726" }),
         React.createElement("g", { fill: "#e27625", stroke: "#e27625" },
@@ -453,12 +453,12 @@ var Icon$s = function (props) {
         React.createElement("path", { d: "m19.8241 17.9876.4417-7.5932 2.0007-5.4034h-8.9119l2.0006 5.4034.4417 7.5932.1689 2.3842.013 5.8958h3.6635l.013-5.8958z", fill: "#f5841f", stroke: "#f5841f" })));
 };
 
-var Icon$t = function (props) {
+var Icon$L = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 15 2" }, props),
         React.createElement("path", { d: "M13.2 2L1.20004 2C0.650043 2 0.200043 1.55 0.200043 1C0.200043 0.45 0.650043 0 1.20004 0L13.2 0C13.75 0 14.2 0.45 14.2 1C14.2 1.55 13.75 2 13.2 2Z" })));
 };
 
-var Icon$u = function (props) {
+var Icon$K = function (props) {
     var theme = useTheme();
     var primaryColor = theme.isDark ? "#3C3742" : "#e9eaeb";
     var secondaryColor = theme.isDark ? "#666171" : "#bdc2c4";
@@ -473,12 +473,12 @@ var Icon$u = function (props) {
             React.createElement("ellipse", { cx: "19.385", cy: "14.846", rx: "1.026", ry: "1.538", fill: primaryColor }))));
 };
 
-var Icon$v = function (props) {
+var Icon$J = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M18 19H6C5.45 19 5 18.55 5 18V6C5 5.45 5.45 5 6 5H11C11.55 5 12 4.55 12 4C12 3.45 11.55 3 11 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V13C21 12.45 20.55 12 20 12C19.45 12 19 12.45 19 13V18C19 18.55 18.55 19 18 19ZM14 4C14 4.55 14.45 5 15 5H17.59L8.46 14.13C8.07 14.52 8.07 15.15 8.46 15.54C8.85 15.93 9.48 15.93 9.87 15.54L19 6.41V9C19 9.55 19.45 10 20 10C20.55 10 21 9.55 21 9V4C21 3.45 20.55 3 20 3H15C14.45 3 14 3.45 14 4Z" })));
 };
 
-var Icon$w = function (props) {
+var Icon$I = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 64 64" }, props),
         React.createElement("path", { d: "M48,55.29a28.44,28.44,0,0,1-39.78-.7l-.79-.83A28.43,28.43,0,0,1,8.88,14C19.3,4.14,56.83,1.43,63.07,1.05L64,1s0,.32-.1.89C63.13,8.09,58.37,45.42,48,55.29Z", transform: "translate(0 -1)", fill: "#36b397" }),
         React.createElement("path", { d: "M63.84,1.91,2.14,60.31l-.79-.84L63.05,1.08,64,1S63.92,1.32,63.84,1.91Z", transform: "translate(0 -1)", fill: "#125f4f" }),
@@ -492,26 +492,26 @@ var Icon$w = function (props) {
         React.createElement("path", { d: "M13.71,50c-1.35.49-2.4,1-2.34,1.21a5.59,5.59,0,0,0,2.55-.6L46.29,38.71c1.34-.49,2.39-1,2.33-1.2a5.64,5.64,0,0,0-2.56.6Z", transform: "translate(0 -1)", fill: "#125f4f" })));
 };
 
-var Icon$x = function (props) {
+var Icon$H = function (props) {
     return (React.createElement("img", { width: "24px", height: "24px", src: "/images/price-token.png" }));
 };
 
-var Icon$y = function (props) {
+var Icon$G = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 48 48" }, props),
         React.createElement("path", { d: "M38 10H34C34 7.79086 32.2091 6 30 6H18C15.7909 6 14 7.79086 14 10H10C7.8 10 6 11.8 6 14V16C6 21.1 9.84 25.26 14.78 25.88C16.04 28.88 18.74 31.14 22 31.8V38H16C14.8954 38 14 38.8954 14 40C14 41.1046 14.8954 42 16 42H32C33.1046 42 34 41.1046 34 40C34 38.8954 33.1046 38 32 38H26V31.8C29.26 31.14 31.96 28.88 33.22 25.88C38.16 25.26 42 21.1 42 16V14C42 11.8 40.2 10 38 10ZM10 16V14H14V21.64C11.68 20.8 10 18.6 10 16ZM24 28C20.7 28 18 25.3 18 22V10H30V22C30 25.3 27.3 28 24 28ZM38 16C38 18.6 36.32 20.8 34 21.64V14H38V16Z" })));
 };
 
-var Icon$z = function (props) {
+var Icon$F = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 20 20" }, props),
         React.createElement("path", { d: "M5 10C5 10.55 5.45 11 6 11H14C14.55 11 15 10.55 15 10C15 9.45 14.55 9 14 9H6C5.45 9 5 9.45 5 10ZM10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" })));
 };
 
-var Icon$A = function (props) {
+var Icon$E = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M23 12L20.56 9.21L20.9 5.52L17.29 4.7L15.4 1.5L12 2.96L8.6 1.5L6.71 4.69L3.1 5.5L3.44 9.2L1 12L3.44 14.79L3.1 18.49L6.71 19.31L8.6 22.5L12 21.03L15.4 22.49L17.29 19.3L20.9 18.48L20.56 14.79L23 12ZM9.38 16.01L7 13.61C6.61 13.22 6.61 12.59 7 12.2L7.07 12.13C7.46 11.74 8.1 11.74 8.49 12.13L10.1 13.75L15.25 8.59C15.64 8.2 16.28 8.2 16.67 8.59L16.74 8.66C17.13 9.05 17.13 9.68 16.74 10.07L10.82 16.01C10.41 16.4 9.78 16.4 9.38 16.01Z" })));
 };
 
-var Icon$B = function (props) {
+var Icon$D = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 34 38" }, props),
         React.createElement("g", null,
             React.createElement("g", null,
@@ -557,7 +557,7 @@ var Icon$C = function (props) {
                 React.createElement("rect", { width: "80", height: "80", fill: "white", transform: "matrix(-1 0 0 1 80 0)" })))));
 };
 
-var Icon$D = function (props) {
+var Icon$B = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 80 80" }, props),
         React.createElement("path", { d: "M76.2856 28.6526C77.0883 29.4553 77.1989 30.7184 76.548 31.6485C64.6385 48.6643 49.9116 63.5221 33.0019 75.5817L31.6665 76.5341C30.6872 77.2325 29.3467 77.121 28.4962 76.2705L22.4847 70.259C26.0334 66.5844 25.9945 60.7286 22.3678 57.1019C18.7411 53.4752 12.8853 53.4362 9.21067 56.985L3.68116 51.4555C2.62962 50.4039 2.77462 48.6597 3.98536 47.7962L5.32156 46.8433C21.8225 35.0751 36.1934 20.5765 47.815 3.97204C48.6291 2.80897 50.296 2.66297 51.2998 3.66682L56.9276 9.29459C53.3922 12.97 53.4356 18.8158 57.0578 22.438C60.6799 26.0601 66.5257 26.1035 70.2011 22.5681L76.2856 28.6526Z", fill: "#DBCDF9" }),
         React.createElement("path", { d: "M78.9507 30.3151L57.459 57.5291L29.6615 78.5708L24.3156 73.1863L22.3868 70.8482L24.3156 68.0575L24.9915 65.2668L24.6194 62.29L23.5031 59.4993L21.6426 57.2668L19.4101 55.7784L16.9915 55.0342H14.0147L10.8519 56.1505L8.99148 57.8249L4.52637 52.4296L11.7898 51.3463C34.3187 47.9863 55.6053 38.8899 73.6048 24.9307L78.9507 30.3151Z", fill: "#A28BD4" }),
@@ -573,7 +573,7 @@ var Icon$D = function (props) {
         React.createElement("ellipse", { rx: "1.79015", ry: "2.60385", transform: "matrix(0.707107 -0.707106 0.707107 0.707106 43.5768 43.8947)", fill: "#DBCDF9" })));
 };
 
-var Icon$E = function (props) {
+var Icon$A = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 48 48" }, props),
         React.createElement("circle", { cx: "24", cy: "24", r: "24", fill: "url(#paint0_linear)" }),
         React.createElement("path", { d: "M39.0623 18.9777C39.3983 19.3138 39.4447 19.8426 39.1721 20.232C34.1862 27.3557 28.0207 33.576 20.9413 38.6248L20.3823 39.0235C19.9723 39.3159 19.4111 39.2692 19.055 38.9132L16.5383 36.3964C18.024 34.858 18.0077 32.4065 16.4893 30.8881C14.971 29.3698 12.5194 29.3535 10.981 30.8392L8.66608 28.5242C8.22585 28.084 8.28655 27.3538 8.79343 26.9923L9.35284 26.5933C16.261 21.6665 22.2775 15.5966 27.1429 8.64507C27.4837 8.15815 28.1816 8.09702 28.6019 8.51729L30.958 10.8734C29.4778 12.4121 29.496 14.8595 31.0125 16.3759C32.5289 17.8924 34.9762 17.9105 36.515 16.4304L39.0623 18.9777Z", fill: "#DBCDF9" }),
@@ -597,33 +597,33 @@ var Icon$E = function (props) {
                 React.createElement("stop", { offset: "0.762157", stopColor: "#24C7D6" })))));
 };
 
-var Icon$F = function (props) {
+var Icon$z = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M15.5 13.9996H14.71L14.43 13.7296C15.63 12.3296 16.25 10.4196 15.91 8.38965C15.44 5.60965 13.12 3.38965 10.32 3.04965C6.09001 2.52965 2.53002 6.08965 3.05002 10.3196C3.39002 13.1196 5.61002 15.4396 8.39002 15.9096C10.42 16.2496 12.33 15.6296 13.73 14.4296L14 14.7096V15.4996L18.25 19.7496C18.66 20.1596 19.33 20.1596 19.74 19.7496C20.15 19.3396 20.15 18.6696 19.74 18.2596L15.5 13.9996ZM9.50002 13.9996C7.01002 13.9996 5.00002 11.9896 5.00002 9.49965C5.00002 7.00965 7.01002 4.99965 9.50002 4.99965C11.99 4.99965 14 7.00965 14 9.49965C14 11.9896 11.99 13.9996 9.50002 13.9996Z" })));
 };
 
-var Icon$G = function (props) {
+var Icon$y = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 25" }, props),
         React.createElement("path", { d: "M16 17.01V11C16 10.45 15.55 10 15 10C14.45 10 14 10.45 14 11V17.01H12.21C11.76 17.01 11.54 17.55 11.86 17.86L14.65 20.64C14.85 20.83 15.16 20.83 15.36 20.64L18.15 17.86C18.47 17.55 18.24 17.01 17.8 17.01H16ZM8.65003 3.35002L5.86003 6.14002C5.54003 6.45002 5.76003 6.99002 6.21003 6.99002H8.00003V13C8.00003 13.55 8.45003 14 9.00003 14C9.55003 14 10 13.55 10 13V6.99002H11.79C12.24 6.99002 12.46 6.45002 12.14 6.14002L9.35003 3.35002C9.16003 3.16002 8.84003 3.16002 8.65003 3.35002Z" })));
 };
 
-var Icon$H = function (props) {
+var Icon$x = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 25" }, props),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M18.86 4.86003L21.65 7.65003C21.84 7.84003 21.84 8.16003 21.64 8.35003L18.85 11.14C18.54 11.46 18 11.24 18 10.79V9.00003H4C3.45 9.00003 3 8.55003 3 8.00003C3 7.45003 3.45 7.00003 4 7.00003H18V5.21003C18 4.76003 18.54 4.54003 18.86 4.86003ZM5.14001 19.14L2.35001 16.35C2.16001 16.16 2.16001 15.84 2.36001 15.65L5.15001 12.86C5.46001 12.54 6.00001 12.76 6.00001 13.21V15H20C20.55 15 21 15.45 21 16C21 16.55 20.55 17 20 17H6.00001V18.79C6.00001 19.24 5.46001 19.46 5.14001 19.14Z" })));
 };
 
-var Icon$I = function (props) {
+var Icon$w = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M4.47 20.9999H19.53C21.07 20.9999 22.03 19.3299 21.26 17.9999L13.73 4.98993C12.96 3.65993 11.04 3.65993 10.27 4.98993L2.74 17.9999C1.97 19.3299 2.93 20.9999 4.47 20.9999ZM12 13.9999C11.45 13.9999 11 13.5499 11 12.9999V10.9999C11 10.4499 11.45 9.99993 12 9.99993C12.55 9.99993 13 10.4499 13 10.9999V12.9999C13 13.5499 12.55 13.9999 12 13.9999ZM13 17.9999H11V15.9999H13V17.9999Z" })));
 };
 
-var Box = styled.div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"])), background, border, layout, position, space);
-var templateObject_1$4;
+var Box = styled.div(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"], ["\n  ", "\n  ", "\n  ", "\n  ", "\n  ", "\n"])), background, border, layout, position, space);
+var templateObject_1$I;
 
-var Flex = styled(Box)(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  display: flex;\n  ", "\n"], ["\n  display: flex;\n  ", "\n"])), flexbox);
-var templateObject_1$5;
+var Flex = styled(Box)(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  display: flex;\n  ", "\n"], ["\n  display: flex;\n  ", "\n"])), flexbox);
+var templateObject_1$H;
 
-var variants$1 = {
+var variants = {
     INFO: "info",
     DANGER: "danger",
     SUCCESS: "success",
@@ -631,44 +631,44 @@ var variants$1 = {
 };
 
 var getThemeColor = function (_a) {
-    var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? variants$1.INFO : _b;
+    var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? variants.INFO : _b;
     switch (variant) {
-        case variants$1.DANGER:
+        case variants.DANGER:
             return theme.colors.failure;
-        case variants$1.WARNING:
+        case variants.WARNING:
             return theme.colors.warning;
-        case variants$1.SUCCESS:
+        case variants.SUCCESS:
             return theme.colors.success;
-        case variants$1.INFO:
+        case variants.INFO:
         default:
             return theme.colors.secondary;
     }
 };
 var getIcon = function (variant) {
-    if (variant === void 0) { variant = variants$1.INFO; }
+    if (variant === void 0) { variant = variants.INFO; }
     switch (variant) {
-        case variants$1.DANGER:
-            return Icon$2;
-        case variants$1.WARNING:
-            return Icon$1;
-        case variants$1.SUCCESS:
-            return Icon;
-        case variants$1.INFO:
+        case variants.DANGER:
+            return Icon$1a;
+        case variants.WARNING:
+            return Icon$1b;
+        case variants.SUCCESS:
+            return Icon$1c;
+        case variants.INFO:
         default:
-            return Icon$3;
+            return Icon$19;
     }
 };
-var IconLabel = styled.div(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
+var IconLabel = styled.div(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"], ["\n  background-color: ", ";\n  border-radius: 16px 0 0 16px;\n  color: ", ";\n  padding: 12px;\n"])), getThemeColor, function (_a) {
     var theme = _a.theme;
     return theme.alert.background;
 });
 var withHandlerSpacing = 32 + 12 + 8; // button size + inner spacing + handler position
-var Details = styled.div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"], ["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"])), function (_a) {
+var Details = styled.div(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"], ["\n  flex: 1;\n  padding-bottom: 12px;\n  padding-left: 12px;\n  padding-right: ", ";\n  padding-top: 12px;\n"])), function (_a) {
     var hasHandler = _a.hasHandler;
     return (hasHandler ? withHandlerSpacing + "px" : "12px");
 });
-var CloseHandler = styled.div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  border-radius: 0 16px 16px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"], ["\n  border-radius: 0 16px 16px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"])));
-var StyledAlert = styled(Flex)(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"], ["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"])), function (_a) {
+var CloseHandler = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  border-radius: 0 16px 16px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"], ["\n  border-radius: 0 16px 16px 0;\n  right: 8px;\n  position: absolute;\n  top: 8px;\n"])));
+var StyledAlert = styled(Flex)(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"], ["\n  position: relative;\n  background-color: ", ";\n  border-radius: 16px;\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.alert.background;
 });
@@ -683,18 +683,18 @@ var Alert = function (_a) {
             typeof children === "string" ? React.createElement(Text, { as: "p" }, children) : children),
         onClick && (React.createElement(CloseHandler, null,
             React.createElement(IconButton, { scale: "sm", variant: "text", onClick: onClick },
-                React.createElement(Icon$k, { width: "24px", color: "currentColor" }))))));
+                React.createElement(Icon$U, { width: "24px", color: "currentColor" }))))));
 };
-var templateObject_1$6, templateObject_2$1, templateObject_3$1, templateObject_4;
+var templateObject_1$G, templateObject_2$f, templateObject_3$8, templateObject_4$4;
 
-var Separator = styled.div(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  align-items: center;\n  color: currentColor;\n  display: flex;\n  justify-content: center;\n  padding-left: 4px;\n  padding-right: 4px;\n\n  ", " {\n    padding-left: 8px;\n    padding-right: 8px;\n  }\n\n  ", " {\n    padding-left: 16px;\n    padding-right: 16px;\n  }\n"], ["\n  align-items: center;\n  color: currentColor;\n  display: flex;\n  justify-content: center;\n  padding-left: 4px;\n  padding-right: 4px;\n\n  ", " {\n    padding-left: 8px;\n    padding-right: 8px;\n  }\n\n  ", " {\n    padding-left: 16px;\n    padding-right: 16px;\n  }\n"])), function (_a) {
+var Separator = styled.div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  align-items: center;\n  color: currentColor;\n  display: flex;\n  justify-content: center;\n  padding-left: 4px;\n  padding-right: 4px;\n\n  ", " {\n    padding-left: 8px;\n    padding-right: 8px;\n  }\n\n  ", " {\n    padding-left: 16px;\n    padding-right: 16px;\n  }\n"], ["\n  align-items: center;\n  color: currentColor;\n  display: flex;\n  justify-content: center;\n  padding-left: 4px;\n  padding-right: 4px;\n\n  ", " {\n    padding-left: 8px;\n    padding-right: 8px;\n  }\n\n  ", " {\n    padding-left: 16px;\n    padding-right: 16px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 }, function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.md;
 });
-var StyledBreadcrumbs = styled.ul(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"], ["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"])), function (_a) {
+var StyledBreadcrumbs = styled.ul(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"], ["\n  align-items: center;\n  color: ", ";\n  display: flex;\n  flex-wrap: wrap;\n  list-style-type: none;\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textDisabled;
 }, space);
@@ -709,24 +709,24 @@ var insertSeparators = function (items, separator) {
         ]);
     }, []);
 };
-var DefaultSeparator = React.createElement(Icon$i, { color: "currentColor", width: "24px" });
+var DefaultSeparator = React.createElement(Icon$W, { color: "currentColor", width: "24px" });
 var Breadcrumbs = function (_a) {
     var _b = _a.separator, separator = _b === void 0 ? DefaultSeparator : _b, children = _a.children;
     var validItems = Children.toArray(children).filter(function (child) { return isValidElement(child); });
     var items = insertSeparators(validItems, separator);
     return (React.createElement(StyledBreadcrumbs, null, items.map(function (item, index) { return (React.createElement("li", { key: "child-" + index }, item)); })));
 };
-var templateObject_1$7, templateObject_2$2;
+var templateObject_1$F, templateObject_2$e;
 
 var getBackgroundColor = function (_a) {
     var theme = _a.theme, variant = _a.variant;
-    return theme.colors[variant === variants.SUBTLE ? "input" : "tertiary"];
+    return theme.colors[variant === variants$1.SUBTLE ? "input" : "tertiary"];
 };
-var StyledButtonMenu = styled.div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
-var templateObject_1$8;
+var StyledButtonMenu = styled.div(templateObject_1$E || (templateObject_1$E = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"], ["\n  background-color: ", ";\n  border-radius: 16px;\n  display: inline-flex;\n\n  & > button + button,\n  & > a + a {\n    margin-left: 2px; // To avoid focus shadow overlap\n  }\n"])), getBackgroundColor);
+var templateObject_1$E;
 
 var ButtonMenu = function (_a) {
-    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants.PRIMARY : _d, onItemClick = _a.onItemClick, children = _a.children;
+    var _b = _a.activeIndex, activeIndex = _b === void 0 ? 0 : _b, _c = _a.scale, scale = _c === void 0 ? scales$4.MD : _c, _d = _a.variant, variant = _d === void 0 ? variants$1.PRIMARY : _d, onItemClick = _a.onItemClick, children = _a.children;
     return (React.createElement(StyledButtonMenu, { variant: variant }, Children.map(children, function (child, index) {
         return cloneElement(child, {
             isActive: activeIndex === index,
@@ -737,23 +737,23 @@ var ButtonMenu = function (_a) {
     })));
 };
 
-var InactiveButton = styled(Button)(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
+var InactiveButton = styled(Button)(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"], ["\n  background-color: transparent;\n  color: ", ";\n  &:hover:not(:disabled):not(:active) {\n    background-color: transparent;\n  }\n"])), function (_a) {
     var theme = _a.theme, colorKey = _a.colorKey;
     return theme.colors[colorKey];
 });
 var ButtonMenuItem = function (_a) {
-    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants.PRIMARY : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
+    var _b = _a.isActive, isActive = _b === void 0 ? false : _b, _c = _a.variant, variant = _c === void 0 ? variants$1.PRIMARY : _c, as = _a.as, props = __rest(_a, ["isActive", "variant", "as"]);
     if (!isActive) {
-        return (React.createElement(InactiveButton, __assign({ forwardedAs: as, variant: "tertiary", colorKey: variant === variants.PRIMARY ? "primary" : "textSubtle" }, props)));
+        return (React.createElement(InactiveButton, __assign({ forwardedAs: as, variant: "tertiary", colorKey: variant === variants$1.PRIMARY ? "primary" : "textSubtle" }, props)));
     }
     return React.createElement(Button, __assign({ as: as, variant: variant }, props));
 };
-var templateObject_1$9;
+var templateObject_1$D;
 
 /**
  * Priority: Warning --> Success --> Active
  */
-var getBoxShadow = function (_a) {
+var getBoxShadow$1 = function (_a) {
     var isActive = _a.isActive, isSuccess = _a.isSuccess, isWarning = _a.isWarning, theme = _a.theme;
     if (isWarning) {
         return theme.card.boxShadowWarning;
@@ -766,13 +766,13 @@ var getBoxShadow = function (_a) {
     }
     return theme.card.boxShadow;
 };
-var StyledCard = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
+var StyledCard = styled.div(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"], ["\n  background-color: ", ";\n  border: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  color: ", ";\n  overflow: hidden;\n  position: relative;\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.background;
 }, function (_a) {
     var theme = _a.theme;
     return theme.card.boxShadow;
-}, getBoxShadow, function (_a) {
+}, getBoxShadow$1, function (_a) {
     var theme = _a.theme, isDisabled = _a.isDisabled;
     return theme.colors[isDisabled ? "textDisabled" : "text"];
 }, space);
@@ -782,7 +782,7 @@ StyledCard.defaultProps = {
     isWarning: false,
     isDisabled: false,
 };
-var templateObject_1$a;
+var templateObject_1$C;
 
 var Card = function (_a) {
     var ribbon = _a.ribbon, children = _a.children, props = __rest(_a, ["ribbon", "children"]);
@@ -791,31 +791,31 @@ var Card = function (_a) {
         children));
 };
 
-var CardBody = styled.div(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n  ", "\n"], ["\n  ", "\n"])), space);
+var CardBody = styled.div(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  ", "\n"], ["\n  ", "\n"])), space);
 CardBody.defaultProps = {
     p: "24px",
 };
-var templateObject_1$b;
+var templateObject_1$B;
 
-var CardHeader = styled.div(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  background: ", ";\n\n  ", "\n"], ["\n  background: ", ";\n\n  ", "\n"])), function (_a) {
+var CardHeader = styled.div(templateObject_1$A || (templateObject_1$A = __makeTemplateObject(["\n  background: ", ";\n\n  ", "\n"], ["\n  background: ", ";\n\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.card.cardHeaderBackground;
 }, space);
 CardHeader.defaultProps = {
     p: "24px",
 };
-var templateObject_1$c;
+var templateObject_1$A;
 
-var CardFooter = styled.div(templateObject_1$d || (templateObject_1$d = __makeTemplateObject(["\n  border-top: 1px solid ", ";\n  ", "\n"], ["\n  border-top: 1px solid ", ";\n  ", "\n"])), function (_a) {
+var CardFooter = styled.div(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  border-top: 1px solid ", ";\n  ", "\n"], ["\n  border-top: 1px solid ", ";\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.borderColor;
 }, space);
 CardFooter.defaultProps = {
     p: "24px",
 };
-var templateObject_1$d;
+var templateObject_1$z;
 
-var StyledCardRibbon = styled.div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n  background-color: ", ";\n  color: white;\n  margin: 0;\n  padding: 0;\n  padding: 8px 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  text-align: center;\n  transform: translateX(30%) translateY(0%) rotate(45deg);\n  transform-origin: top left;\n  width: 96px;\n\n  &:before,\n  &:after {\n    background-color: ", ";\n    content: \"\";\n    height: 100%;\n    margin: 0 -1px; /* Removes tiny gap */\n    position: absolute;\n    top: 0;\n    width: 100%;\n  }\n\n  &:before {\n    right: 100%;\n  }\n\n  &:after {\n    left: 100%;\n  }\n\n  & > div {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    width: 96px;\n  }\n"], ["\n  background-color: ", ";\n  color: white;\n  margin: 0;\n  padding: 0;\n  padding: 8px 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  text-align: center;\n  transform: translateX(30%) translateY(0%) rotate(45deg);\n  transform-origin: top left;\n  width: 96px;\n\n  &:before,\n  &:after {\n    background-color: ", ";\n    content: \"\";\n    height: 100%;\n    margin: 0 -1px; /* Removes tiny gap */\n    position: absolute;\n    top: 0;\n    width: 100%;\n  }\n\n  &:before {\n    right: 100%;\n  }\n\n  &:after {\n    left: 100%;\n  }\n\n  & > div {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    width: 96px;\n  }\n"])), function (_a) {
+var StyledCardRibbon = styled.div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  background-color: ", ";\n  color: white;\n  margin: 0;\n  padding: 0;\n  padding: 8px 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  text-align: center;\n  transform: translateX(30%) translateY(0%) rotate(45deg);\n  transform-origin: top left;\n  width: 96px;\n\n  &:before,\n  &:after {\n    background-color: ", ";\n    content: \"\";\n    height: 100%;\n    margin: 0 -1px; /* Removes tiny gap */\n    position: absolute;\n    top: 0;\n    width: 100%;\n  }\n\n  &:before {\n    right: 100%;\n  }\n\n  &:after {\n    left: 100%;\n  }\n\n  & > div {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    width: 96px;\n  }\n"], ["\n  background-color: ", ";\n  color: white;\n  margin: 0;\n  padding: 0;\n  padding: 8px 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  text-align: center;\n  transform: translateX(30%) translateY(0%) rotate(45deg);\n  transform-origin: top left;\n  width: 96px;\n\n  &:before,\n  &:after {\n    background-color: ", ";\n    content: \"\";\n    height: 100%;\n    margin: 0 -1px; /* Removes tiny gap */\n    position: absolute;\n    top: 0;\n    width: 100%;\n  }\n\n  &:before {\n    right: 100%;\n  }\n\n  &:after {\n    left: 100%;\n  }\n\n  & > div {\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    width: 96px;\n  }\n"])), function (_a) {
     var _b = _a.variantColor, variantColor = _b === void 0 ? "secondary" : _b, theme = _a.theme;
     return theme.colors[variantColor];
 }, function (_a) {
@@ -827,24 +827,24 @@ var CardRibbon = function (_a) {
     return (React.createElement(StyledCardRibbon, { variantColor: variantColor },
         React.createElement("div", { title: text }, text)));
 };
-var templateObject_1$e;
+var templateObject_1$y;
 
-var scales$1 = {
+var scales$3 = {
     SM: "sm",
     MD: "md",
 };
 
-var getScale = function (_a) {
+var getScale$2 = function (_a) {
     var scale = _a.scale;
     switch (scale) {
-        case scales$1.SM:
+        case scales$3.SM:
             return "24px";
-        case scales$1.MD:
+        case scales$3.MD:
         default:
             return "32px";
     }
 };
-var Checkbox = styled.input.attrs({ type: "checkbox" })(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"], ["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"])), getScale, getScale, function (_a) {
+var Checkbox = styled.input.attrs({ type: "checkbox" })(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"], ["\n  appearance: none;\n  overflow: hidden;\n  cursor: pointer;\n  position: relative;\n  display: inline-block;\n  height: ", ";\n  width: ", ";\n  vertical-align: middle;\n  transition: background-color 0.2s ease-in-out;\n  border: 0;\n  border-radius: 8px;\n  background-color: ", ";\n  box-shadow: ", ";\n\n  &:after {\n    content: \"\";\n    position: absolute;\n    border-bottom: 2px solid;\n    border-left: 2px solid;\n    border-color: transparent;\n    top: 30%;\n    left: 0;\n    right: 0;\n    width: 50%;\n    height: 25%;\n    margin: auto;\n    transform: rotate(-50deg);\n    transition: border-color 0.2s ease-in-out;\n  }\n\n  &:hover:not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n\n  &:focus {\n    outline: none;\n    box-shadow: ", ";\n  }\n\n  &:checked {\n    background-color: ", ";\n    &:after {\n      border-color: white;\n    }\n  }\n\n  &:disabled {\n    cursor: default;\n    opacity: 0.6;\n  }\n"])), getScale$2, getScale$2, function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 }, function (_a) {
@@ -861,9 +861,9 @@ var Checkbox = styled.input.attrs({ type: "checkbox" })(templateObject_1$f || (t
     return theme.colors.success;
 });
 Checkbox.defaultProps = {
-    scale: scales$1.MD,
+    scale: scales$3.MD,
 };
-var templateObject_1$f;
+var templateObject_1$x;
 
 var getLeft = function (_a) {
     var position = _a.position;
@@ -879,7 +879,7 @@ var getBottom = function (_a) {
     }
     return "auto";
 };
-var DropdownContent = styled.div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 500px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"], ["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 500px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"])), getLeft, getBottom, function (_a) {
+var DropdownContent = styled.div(templateObject_1$w || (templateObject_1$w = __makeTemplateObject(["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 500px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"], ["\n  width: max-content;\n  display: none;\n  flex-direction: column;\n  position: absolute;\n  transform: translate(-50%, 0);\n  left: ", ";\n  bottom: ", ";\n  background-color: ", ";\n  box-shadow: ", ";\n  padding: 16px;\n  max-height: 500px;\n  overflow-y: auto;\n  z-index: ", ";\n  border-radius: ", ";\n"])), getLeft, getBottom, function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 }, function (_a) {
@@ -892,20 +892,20 @@ var DropdownContent = styled.div(templateObject_1$g || (templateObject_1$g = __m
     var theme = _a.theme;
     return theme.radii.small;
 });
-var Container = styled.div(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"], ["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"])), DropdownContent, DropdownContent);
+var Container$3 = styled.div(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"], ["\n  position: relative;\n  &:hover ", ", &:focus-within ", " {\n    display: flex;\n  }\n"])), DropdownContent, DropdownContent);
 var Dropdown = function (_a) {
     var target = _a.target, _b = _a.position, position = _b === void 0 ? "bottom" : _b, children = _a.children;
-    return (React.createElement(Container, null,
+    return (React.createElement(Container$3, null,
         target,
         React.createElement(DropdownContent, { position: position }, children)));
 };
 Dropdown.defaultProps = {
     position: "bottom",
 };
-var templateObject_1$g, templateObject_2$3;
+var templateObject_1$w, templateObject_2$d;
 
-var bunnyFall = keyframes(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n    transform: translate(0, -100%) rotateZ(0deg);\n  }\n\n  75% {\n    opacity: 1;\n    transform: translate(100px, 75vh) rotateZ(270deg);\n  }\n\n  100% {\n    opacity: 0;\n    transform: translate(150px, 100vh) rotateZ(360deg);\n  }\n"], ["\n  0% {\n    opacity: 1;\n    transform: translate(0, -100%) rotateZ(0deg);\n  }\n\n  75% {\n    opacity: 1;\n    transform: translate(100px, 75vh) rotateZ(270deg);\n  }\n\n  100% {\n    opacity: 0;\n    transform: translate(150px, 100vh) rotateZ(360deg);\n  }\n"])));
-var Bunny = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n  display: inline-flex;\n  position: fixed;\n  top: 0;\n  left: ", ";\n  transform: translate3d(0, -100%, 0);\n  user-select: none;\n  pointer-events: none;\n  z-index: 99999;\n\n  animation-name: ", ";\n  animation-duration: ", ";\n  animation-timing-function: linear;\n  animation-iteration-count: ", ";\n  animation-play-state: running;\n\n  &:nth-child(5n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(2n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 10) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(7n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(4n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 7) {\n    animation-delay: ", ";\n  }\n"], ["\n  display: inline-flex;\n  position: fixed;\n  top: 0;\n  left: ", ";\n  transform: translate3d(0, -100%, 0);\n  user-select: none;\n  pointer-events: none;\n  z-index: 99999;\n\n  animation-name: ", ";\n  animation-duration: ", ";\n  animation-timing-function: linear;\n  animation-iteration-count: ", ";\n  animation-play-state: running;\n\n  &:nth-child(5n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(2n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 10) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(7n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(4n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 7) {\n    animation-delay: ", ";\n  }\n"])), function (_a) {
+var bunnyFall = keyframes(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n    transform: translate(0, -100%) rotateZ(0deg);\n  }\n\n  75% {\n    opacity: 1;\n    transform: translate(100px, 75vh) rotateZ(270deg);\n  }\n\n  100% {\n    opacity: 0;\n    transform: translate(150px, 100vh) rotateZ(360deg);\n  }\n"], ["\n  0% {\n    opacity: 1;\n    transform: translate(0, -100%) rotateZ(0deg);\n  }\n\n  75% {\n    opacity: 1;\n    transform: translate(100px, 75vh) rotateZ(270deg);\n  }\n\n  100% {\n    opacity: 0;\n    transform: translate(150px, 100vh) rotateZ(360deg);\n  }\n"])));
+var Bunny = styled.div(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  display: inline-flex;\n  position: fixed;\n  top: 0;\n  left: ", ";\n  transform: translate3d(0, -100%, 0);\n  user-select: none;\n  pointer-events: none;\n  z-index: 99999;\n\n  animation-name: ", ";\n  animation-duration: ", ";\n  animation-timing-function: linear;\n  animation-iteration-count: ", ";\n  animation-play-state: running;\n\n  &:nth-child(5n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(2n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 10) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(7n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(4n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 7) {\n    animation-delay: ", ";\n  }\n"], ["\n  display: inline-flex;\n  position: fixed;\n  top: 0;\n  left: ", ";\n  transform: translate3d(0, -100%, 0);\n  user-select: none;\n  pointer-events: none;\n  z-index: 99999;\n\n  animation-name: ", ";\n  animation-duration: ", ";\n  animation-timing-function: linear;\n  animation-iteration-count: ", ";\n  animation-play-state: running;\n\n  &:nth-child(5n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(2n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 10) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(7n + 2) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(4n + 5) {\n    animation-delay: ", ";\n  }\n\n  &:nth-child(3n + 7) {\n    animation-delay: ", ";\n  }\n"])), function (_a) {
     var position = _a.position;
     return position + "vw";
 }, bunnyFall, function (_a) {
@@ -939,10 +939,10 @@ var Bunny = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTemplat
 var FallingBunnies = function (_a) {
     var _b = _a.count, count = _b === void 0 ? 30 : _b, _c = _a.size, size = _c === void 0 ? 32 : _c, _d = _a.iterations, iterations = _d === void 0 ? Infinity : _d, _e = _a.duration, duration = _e === void 0 ? 10 : _e;
     var bunnies = __spreadArrays(Array(count)).map(function (_, index) { return (React.createElement(Bunny, { key: String(index), position: Math.random() * 100, iterations: iterations, duration: duration },
-        React.createElement(Icon$q, { width: size, height: size }))); });
+        React.createElement(Icon$O, { width: size, height: size }))); });
     return React.createElement("div", null, bunnies);
 };
-var templateObject_1$h, templateObject_2$4;
+var templateObject_1$v, templateObject_2$c;
 
 var tags = {
     H1: "h1",
@@ -978,7 +978,7 @@ var style = (_a$1 = {},
         fontSizeLg: "64px",
     },
     _a$1);
-var Heading = styled(Text).attrs({ bold: true })(templateObject_1$i || (templateObject_1$i = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
+var Heading = styled(Text).attrs({ bold: true })(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"], ["\n  font-size: ", ";\n  font-weight: 600;\n  line-height: 1.1;\n\n  ", " {\n    font-size: ", ";\n  }\n"])), function (_a) {
     var size = _a.size;
     return style[size || sizes.MD].fontSize;
 }, function (_a) {
@@ -991,7 +991,7 @@ var Heading = styled(Text).attrs({ bold: true })(templateObject_1$i || (template
 Heading.defaultProps = {
     as: tags.H2,
 };
-var templateObject_1$i;
+var templateObject_1$u;
 
 var observerOptions = {
     root: null,
@@ -999,7 +999,7 @@ var observerOptions = {
     threshold: 0,
 };
 
-var Wrapper = styled.div(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n  position: relative;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: ", "px;\n  max-width: ", "px;\n  max-height: ", "px;\n  width: 100%;\n  padding-top: ", "%;  \n  ", "\n"], ["\n  position: relative;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: ", "px;\n  max-width: ", "px;\n  max-height: ", "px;\n  width: 100%;\n  padding-top: ", "%;  \n  ", "\n"])), function (_a) {
+var Wrapper$1 = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  position: relative;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: ", "px;\n  max-width: ", "px;\n  max-height: ", "px;\n  width: 100%;\n  padding-top: ", "%;  \n  ", "\n"], ["\n  position: relative;\n  background-position: center center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: ", "px;\n  max-width: ", "px;\n  max-height: ", "px;\n  width: 100%;\n  padding-top: ", "%;  \n  ", "\n"])), function (_a) {
     var height = _a.height, responsive = _a.responsive;
     return (responsive ? 0 : height);
 }, function (_a) {
@@ -1012,7 +1012,7 @@ var Wrapper = styled.div(templateObject_1$j || (templateObject_1$j = __makeTempl
     var width = _a.width, height = _a.height, responsive = _a.responsive;
     return (responsive ? (height / width) * 100 : 0);
 }, space);
-var templateObject_1$j;
+var templateObject_1$t;
 
 var BackgroundImage = function (_a) {
     var src = _a.src, otherProps = __rest(_a, ["src"]);
@@ -1033,11 +1033,11 @@ var BackgroundImage = function (_a) {
             observer.disconnect();
         };
     }, [src]);
-    return React.createElement(Wrapper, __assign({ ref: imgRef }, otherProps));
+    return React.createElement(Wrapper$1, __assign({ ref: imgRef }, otherProps));
 };
 
-var StyledImage = styled.img(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  max-width: 100%;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  max-width: 100%;\n"])));
-var Placeholder = styled.div(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n"])));
+var StyledImage = styled.img(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  max-width: 100%;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  max-width: 100%;\n"])));
+var Placeholder = styled.div(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n"])));
 var Image = function (_a) {
     var src = _a.src, alt = _a.alt, otherProps = __rest(_a, ["src", "alt"]);
     var imgRef = useRef(null);
@@ -1058,9 +1058,9 @@ var Image = function (_a) {
             observer.disconnect();
         };
     }, [src]);
-    return (React.createElement(Wrapper, __assign({ ref: imgRef }, otherProps), isLoaded ? React.createElement(StyledImage, { src: src, alt: alt }) : React.createElement(Placeholder, null)));
+    return (React.createElement(Wrapper$1, __assign({ ref: imgRef }, otherProps), isLoaded ? React.createElement(StyledImage, { src: src, alt: alt }) : React.createElement(Placeholder, null)));
 };
-var templateObject_1$k, templateObject_2$5;
+var templateObject_1$s, templateObject_2$b;
 
 var scales$2 = {
     SM: "sm",
@@ -1071,7 +1071,7 @@ var scales$2 = {
 /**
  * Priority: Warning --> Success
  */
-var getBoxShadow$1 = function (_a) {
+var getBoxShadow = function (_a) {
     var _b = _a.isSuccess, isSuccess = _b === void 0 ? false : _b, _c = _a.isWarning, isWarning = _c === void 0 ? false : _c, theme = _a.theme;
     if (isWarning) {
         return theme.shadows.warning;
@@ -1093,10 +1093,10 @@ var getHeight = function (_a) {
             return "40px";
     }
 };
-var Input = styled.input(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
+var Input$1 = styled.input(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 16px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 16px;\n  height: ", ";\n  outline: 0;\n  padding: 0 16px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
-}, getBoxShadow$1, function (_a) {
+}, getBoxShadow, function (_a) {
     var theme = _a.theme;
     return theme.colors.text;
 }, getHeight, function (_a) {
@@ -1112,14 +1112,14 @@ var Input = styled.input(templateObject_1$l || (templateObject_1$l = __makeTempl
     var theme = _a.theme;
     return theme.shadows.focus;
 });
-Input.defaultProps = {
+Input$1.defaultProps = {
     scale: scales$2.MD,
     isSuccess: false,
     isWarning: false,
 };
-var templateObject_1$l;
+var templateObject_1$r;
 
-var GridLayout = styled.div(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-gap: 16px;\n  ", " {\n    grid-template-columns: repeat(8, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 32px;\n  }\n"], ["\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-gap: 16px;\n  ", " {\n    grid-template-columns: repeat(8, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 32px;\n  }\n"])), function (_a) {
+var GridLayout$1 = styled.div(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-gap: 16px;\n  ", " {\n    grid-template-columns: repeat(8, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 32px;\n  }\n"], ["\n  display: grid;\n  grid-template-columns: repeat(6, 1fr);\n  grid-gap: 16px;\n  ", " {\n    grid-template-columns: repeat(8, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 24px;\n  }\n  ", " {\n    grid-template-columns: repeat(12, 1fr);\n    grid-gap: 32px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 }, function (_a) {
@@ -1129,15 +1129,15 @@ var GridLayout = styled.div(templateObject_1$m || (templateObject_1$m = __makeTe
     var theme = _a.theme;
     return theme.mediaQueries.lg;
 });
-var templateObject_1$m;
+var templateObject_1$q;
 
-var GridLayout$1 = styled(GridLayout)(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n  & > div {\n    grid-column: span 6;\n    ", " {\n      grid-column: span 4;\n    }\n  }\n"], ["\n  & > div {\n    grid-column: span 6;\n    ", " {\n      grid-column: span 4;\n    }\n  }\n"])), function (_a) {
+var GridLayout = styled(GridLayout$1)(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n  & > div {\n    grid-column: span 6;\n    ", " {\n      grid-column: span 4;\n    }\n  }\n"], ["\n  & > div {\n    grid-column: span 6;\n    ", " {\n      grid-column: span 4;\n    }\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 });
-var templateObject_1$n;
+var templateObject_1$p;
 
-var scales$3 = {
+var scales$1 = {
     SM: "sm",
     MD: "md",
 };
@@ -1145,9 +1145,9 @@ var scales$3 = {
 var getScale$1 = function (_a) {
     var scale = _a.scale;
     switch (scale) {
-        case scales$3.SM:
+        case scales$1.SM:
             return "24px";
-        case scales$3.MD:
+        case scales$1.MD:
         default:
             return "32px";
     }
@@ -1155,9 +1155,9 @@ var getScale$1 = function (_a) {
 var getCheckedScale = function (_a) {
     var scale = _a.scale;
     switch (scale) {
-        case scales$3.SM:
+        case scales$1.SM:
             return "12px";
-        case scales$3.MD:
+        case scales$1.MD:
         default:
             return "20px";
     }
@@ -1182,28 +1182,28 @@ var Radio = styled.input.attrs({ type: "radio" })(templateObject_1$o || (templat
     return theme.radio.handleBackground;
 }, space);
 Radio.defaultProps = {
-    scale: scales$3.MD,
+    scale: scales$1.MD,
     m: 0,
 };
 var templateObject_1$o;
 
-var getColor$1 = function (color, theme) {
+var getColor = function (color, theme) {
     return getThemeValue("colors." + color, color)(theme);
 };
 
 var getThemeTextColor = function (_a) {
     var outline = _a.outline, _b = _a.variant, variant = _b === void 0 ? "primary" : _b, theme = _a.theme;
-    return outline ? getColor$1(variant, theme) : "#ffffff";
+    return outline ? getColor(variant, theme) : "#ffffff";
 };
-var StyledTag = styled.div(templateObject_1$p || (templateObject_1$p = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: 2px solid ", ";\n  border-radius: 16px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 14px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"], ["\n  align-items: center;\n  background-color: ",
+var StyledTag = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: 2px solid ", ";\n  border-radius: 16px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 14px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"], ["\n  align-items: center;\n  background-color: ",
     ";\n  border: 2px solid ", ";\n  border-radius: 16px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 14px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"])), function (_a) {
     var outline = _a.outline, theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? "primary" : _b;
-    return outline ? "transparent" : getColor$1(variant, theme);
+    return outline ? "transparent" : getColor(variant, theme);
 }, function (_a) {
     var _b = _a.variant, variant = _b === void 0 ? "primary" : _b, theme = _a.theme;
-    return getColor$1(variant, theme);
+    return getColor(variant, theme);
 }, getThemeTextColor, getThemeTextColor);
-var templateObject_1$p;
+var templateObject_1$n;
 
 var Tag = function (_a) {
     var startIcon = _a.startIcon, endIcon = _a.endIcon, children = _a.children, props = __rest(_a, ["startIcon", "endIcon", "children"]);
@@ -1223,39 +1223,39 @@ Tag.defaultProps = {
     outline: false,
 };
 
-var StyledLink = styled(Text)(templateObject_1$q || (templateObject_1$q = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: underline;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: underline;\n  }\n"])));
+var StyledLink$1 = styled(Text)(templateObject_1$m || (templateObject_1$m = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: underline;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  width: fit-content;\n  &:hover {\n    text-decoration: underline;\n  }\n"])));
 var Link = function (_a) {
     var external = _a.external, props = __rest(_a, ["external"]);
     var internalProps = external ? getExternalLinkProps() : {};
-    return React.createElement(StyledLink, __assign({ as: "a", bold: true }, internalProps, props));
+    return React.createElement(StyledLink$1, __assign({ as: "a", bold: true }, internalProps, props));
 };
 Link.defaultProps = {
     color: "primary",
 };
-var templateObject_1$q;
+var templateObject_1$m;
 
 var LinkExternal = function (_a) {
     var children = _a.children, props = __rest(_a, ["children"]);
     return (React.createElement(Link, __assign({ external: true }, props),
         children,
-        React.createElement(Icon$v, { color: "primary", ml: "4px" })));
+        React.createElement(Icon$J, { color: "primary", ml: "4px" })));
 };
 
-var Bar = styled.div(templateObject_1$r || (templateObject_1$r = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  border-top-left-radius: 32px;\n  border-bottom-left-radius: 32px;\n  height: 16px;\n  transition: width 200ms ease;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  border-top-left-radius: 32px;\n  border-bottom-left-radius: 32px;\n  height: 16px;\n  transition: width 200ms ease;\n"])), function (props) { return (props.primary ? props.theme.colors.secondary : props.theme.colors.secondary + "80"); });
+var Bar = styled.div(templateObject_1$l || (templateObject_1$l = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  border-top-left-radius: 32px;\n  border-bottom-left-radius: 32px;\n  height: 16px;\n  transition: width 200ms ease;\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: ", ";\n  border-top-left-radius: 32px;\n  border-bottom-left-radius: 32px;\n  height: 16px;\n  transition: width 200ms ease;\n"])), function (props) { return (props.primary ? props.theme.colors.secondary : props.theme.colors.secondary + "80"); });
 Bar.defaultProps = {
     primary: false,
 };
-var StyledProgress = styled.div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  height: 16px;\n  overflow: hidden;\n"], ["\n  position: relative;\n  background-color: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  height: 16px;\n  overflow: hidden;\n"])), function (_a) {
+var StyledProgress = styled.div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  position: relative;\n  background-color: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  height: 16px;\n  overflow: hidden;\n"], ["\n  position: relative;\n  background-color: ", ";\n  border-radius: 32px;\n  box-shadow: ", ";\n  height: 16px;\n  overflow: hidden;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 }, function (_a) {
     var theme = _a.theme;
     return theme.shadows.inset;
 });
-var templateObject_1$r, templateObject_2$6;
+var templateObject_1$l, templateObject_2$a;
 
-var ProgressBunnyWrapper = styled.div(templateObject_1$s || (templateObject_1$s = __makeTemplateObject(["\n  display: flex;\n  z-index: 2;\n  top: -65%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  transition: left 200ms ease-out;\n"], ["\n  display: flex;\n  z-index: 2;\n  top: -65%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  transition: left 200ms ease-out;\n"])));
-var templateObject_1$s;
+var ProgressBunnyWrapper = styled.div(templateObject_1$k || (templateObject_1$k = __makeTemplateObject(["\n  display: flex;\n  z-index: 2;\n  top: -65%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  transition: left 200ms ease-out;\n"], ["\n  display: flex;\n  z-index: 2;\n  top: -65%;\n  position: absolute;\n  transform: translate(-50%, -50%);\n  transition: left 200ms ease-out;\n"])));
+var templateObject_1$k;
 
 var stepGuard = function (step) {
     if (step < 0) {
@@ -1270,31 +1270,31 @@ var Progress = function (_a) {
     var _b = _a.primaryStep, primaryStep = _b === void 0 ? 0 : _b, _c = _a.secondaryStep, secondaryStep = _c === void 0 ? null : _c, _d = _a.showProgressBunny, showProgressBunny = _d === void 0 ? false : _d;
     return (React.createElement(StyledProgress, null,
         showProgressBunny && (React.createElement(ProgressBunnyWrapper, { style: { left: stepGuard(primaryStep) + "%" } },
-            React.createElement(Icon$B, null))),
+            React.createElement(Icon$D, null))),
         React.createElement(Bar, { primary: true, style: { width: stepGuard(primaryStep) + "%" } }),
         secondaryStep ? React.createElement(Bar, { style: { width: stepGuard(secondaryStep) + "%" } }) : null));
 };
 
-var Icon$J = function (props) {
+var Icon$v = function (props) {
     return (React.createElement("img", { src: "/images/pageloader.png" }));
 };
 
-var Icon$K = function (props) {
+var Icon$u = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 128 128" }, props),
         React.createElement("path", { d: "M103,31.17V31c0-11.63-8.41-22.27-21-22.27-10,0-15.87,7.22-17.86,14h0c-2-6.76-7.81-14-17.86-14-12.64,0-21,10.64-21,22.27v.18c-.07,2.53,0,28.27,38.9,49.26h0C103,59.44,103.06,33.7,103,31.17Z", transform: "translate(-25.17 -8.72)", fill: "#d56799" })));
 };
 
-var float = keyframes(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"], ["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"])));
-var Container$1 = styled.div(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
-var RotatingPancakeIcon = styled(Icon$K)(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 40px;\n  animation: ", " 3s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 40px;\n  animation: ", " 3s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), float);
-var FloatingPanIcon = styled(Icon$J)(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  position: absolute;\n  top: 40px;\n"], ["\n  position: absolute;\n  top: 40px;\n"])));
+var float = keyframes(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"], ["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"])));
+var Container$2 = styled.div(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
+var RotatingPancakeIcon = styled(Icon$u)(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 40px;\n  animation: ", " 3s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 40px;\n  animation: ", " 3s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), float);
+var FloatingPanIcon = styled(Icon$v)(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  position: absolute;\n  top: 40px;\n"], ["\n  position: absolute;\n  top: 40px;\n"])));
 var Spinner = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 128 : _b;
-    return (React.createElement(Container$1, null,
+    return (React.createElement(Container$2, null,
         React.createElement(RotatingPancakeIcon, { width: size * 0.5 + "px" }),
         React.createElement(FloatingPanIcon, { width: size + "px" })));
 };
-var templateObject_1$t, templateObject_2$7, templateObject_3$2, templateObject_4$1;
+var templateObject_1$j, templateObject_2$9, templateObject_3$7, templateObject_4$3;
 
 var animation = {
     WAVES: "waves",
@@ -1305,9 +1305,9 @@ var variant = {
     CIRCLE: "circle",
 };
 
-var waves = keyframes(templateObject_1$u || (templateObject_1$u = __makeTemplateObject(["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"], ["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"])));
+var waves = keyframes(templateObject_1$i || (templateObject_1$i = __makeTemplateObject(["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"], ["\n   from {\n        left: -150px;\n    }\n    to   {\n        left: 100%;\n    }\n"])));
 var pulse = keyframes(templateObject_2$8 || (templateObject_2$8 = __makeTemplateObject(["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"], ["\n  0% {\n    opacity: 1;\n  }\n  50% {\n    opacity: 0.4;\n  }\n  100% {\n    opacity: 1;\n  }\n"])));
-var Root = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  min-height: 20px;\n  display: block;\n  background-color: ", ";\n  border-radius: ", ";\n\n  ", "\n  ", "\n"], ["\n  min-height: 20px;\n  display: block;\n  background-color: ", ";\n  border-radius: ", ";\n\n  ", "\n  ", "\n"])), function (_a) {
+var Root = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  min-height: 20px;\n  display: block;\n  background-color: ", ";\n  border-radius: ", ";\n\n  ", "\n  ", "\n"], ["\n  min-height: 20px;\n  display: block;\n  background-color: ", ";\n  border-radius: ", ";\n\n  ", "\n  ", "\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.backgroundDisabled;
 }, function (_a) {
@@ -1315,7 +1315,7 @@ var Root = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTemplate
     return (variant$1 === variant.CIRCLE ? theme.radii.circle : theme.radii.small);
 }, layout, space);
 var Pulse = styled(Root)(templateObject_4$2 || (templateObject_4$2 = __makeTemplateObject(["\n  animation: ", " 2s infinite ease-out;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 2s infinite ease-out;\n  transform: translate3d(0, 0, 0);\n"])), pulse);
-var Waves = styled(Root)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0);\n  &:before {\n    content: \"\";\n    position: absolute;\n    background-image: linear-gradient(90deg, transparent, rgba(243, 243, 243, 0.5), transparent);\n    top: 0;\n    left: -150px;\n    height: 100%;\n    width: 150px;\n    animation: ", " 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  }\n"], ["\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0);\n  &:before {\n    content: \"\";\n    position: absolute;\n    background-image: linear-gradient(90deg, transparent, rgba(243, 243, 243, 0.5), transparent);\n    top: 0;\n    left: -150px;\n    height: 100%;\n    width: 150px;\n    animation: ", " 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  }\n"])), waves);
+var Waves = styled(Root)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0);\n  &:before {\n    content: \"\";\n    position: absolute;\n    background-image: linear-gradient(90deg, transparent, rgba(243, 243, 243, 0.5), transparent);\n    top: 0;\n    left: -150px;\n    height: 100%;\n    width: 150px;\n    animation: ", " 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  }\n"], ["\n  position: relative;\n  overflow: hidden;\n  transform: translate3d(0, 0, 0);\n  &:before {\n    content: \"\";\n    position: absolute;\n    background-image: linear-gradient(90deg, transparent, rgba(243, 243, 243, 0.5), transparent);\n    top: 0;\n    left: -150px;\n    height: 100%;\n    width: 150px;\n    animation: ", " 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;\n  }\n"])), waves);
 var Skeleton = function (_a) {
     var _b = _a.variant, variant$1 = _b === void 0 ? variant.RECT : _b, _c = _a.animation, animation$1 = _c === void 0 ? animation.PULSE : _c, props = __rest(_a, ["variant", "animation"]);
     if (animation$1 === animation.WAVES) {
@@ -1323,7 +1323,7 @@ var Skeleton = function (_a) {
     }
     return React.createElement(Pulse, __assign({ variant: variant$1 }, props));
 };
-var templateObject_1$u, templateObject_2$8, templateObject_3$3, templateObject_4$2, templateObject_5;
+var templateObject_1$i, templateObject_2$8, templateObject_3$6, templateObject_4$2, templateObject_5$1;
 
 var scaleKeyValues = {
     sm: {
@@ -1345,44 +1345,44 @@ var scaleKeyValues = {
         toggleWidth: "72px",
     },
 };
-var getScale$2 = function (property) { return function (_a) {
-    var _b = _a.scale, scale = _b === void 0 ? scales$1.MD : _b;
+var getScale = function (property) { return function (_a) {
+    var _b = _a.scale, scale = _b === void 0 ? scales$3.MD : _b;
     return scaleKeyValues[scale][property];
 }; };
-var Handle = styled.div(templateObject_1$v || (templateObject_1$v = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"])), function (_a) {
+var Handle = styled.div(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: ", ";\n  left: ", ";\n  position: absolute;\n  top: ", ";\n  transition: left 200ms ease-in;\n  width: ", ";\n  z-index: 1;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.toggle.handleBackground;
-}, getScale$2("handleHeight"), getScale$2("handleLeft"), getScale$2("handleTop"), getScale$2("handleWidth"));
-var Input$1 = styled.input(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale$2("checkedLeft"), Handle, function (_a) {
+}, getScale("handleHeight"), getScale("handleLeft"), getScale("handleTop"), getScale("handleWidth"));
+var Input = styled.input(templateObject_2$7 || (templateObject_2$7 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), Handle, function (_a) {
     var theme = _a.theme;
     return theme.shadows.focus;
 }, Handle, function (_a) {
     var theme = _a.theme;
     return theme.shadows.focus;
 });
-var StyledToggle = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
+var StyledToggle = styled.div(templateObject_3$5 || (templateObject_3$5 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", ";\n  position: relative;\n  transition: background-color 200ms;\n  width: ", ";\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
     return theme.colors[checked ? "success" : "input"];
 }, function (_a) {
     var theme = _a.theme;
     return theme.shadows.inset;
-}, getScale$2("toggleHeight"), getScale$2("toggleWidth"));
-var templateObject_1$v, templateObject_2$9, templateObject_3$4;
+}, getScale("toggleHeight"), getScale("toggleWidth"));
+var templateObject_1$h, templateObject_2$7, templateObject_3$5;
 
-var scales$4 = {
+var scales = {
     SM: "sm",
     MD: "md",
 };
 
 var Toggle = function (_a) {
-    var checked = _a.checked, _b = _a.scale, scale = _b === void 0 ? scales$4.MD : _b, props = __rest(_a, ["checked", "scale"]);
+    var checked = _a.checked, _b = _a.scale, scale = _b === void 0 ? scales.MD : _b, props = __rest(_a, ["checked", "scale"]);
     var isChecked = !!checked;
     return (React.createElement(StyledToggle, { checked: isChecked, scale: scale },
-        React.createElement(Input$1, __assign({ checked: checked, scale: scale }, props, { type: "checkbox" })),
+        React.createElement(Input, __assign({ checked: checked, scale: scale }, props, { type: "checkbox" })),
         React.createElement(Handle, { scale: scale })));
 };
 Toggle.defaultProps = {
-    scale: scales$4.MD,
+    scale: scales.MD,
 };
 
 var byTextAscending = function (getTextProperty) { return function (objectA, objectB) {
@@ -1707,6 +1707,2947 @@ var useTable = function (columns, data, options) {
     };
 };
 
+/*
+	Base.js, version 1.1a
+	Copyright 2006-2010, Dean Edwards
+	License: http://www.opensource.org/licenses/mit-license.php
+*/
+
+var Base = function() {
+	// dummy
+};
+
+Base.extend = function(_instance, _static) { // subclass
+	
+	var extend = Base.prototype.extend;
+	
+	// build the prototype
+	Base._prototyping = true;
+	
+	var proto = new this();
+	
+	extend.call(proto, _instance);
+	
+	proto.base = function() {
+	// call this method from any other method to invoke that method's ancestor
+	};
+
+	delete Base._prototyping;
+	
+	// create the wrapper for the constructor function
+	//var constructor = proto.constructor.valueOf(); //-dean
+	var constructor = proto.constructor;
+	var klass = proto.constructor = function() {
+		if (!Base._prototyping) {
+			if (this._constructing || this.constructor == klass) { // instantiation
+				this._constructing = true;
+				constructor.apply(this, arguments);
+				delete this._constructing;
+			} else if (arguments[0] !== null) { // casting
+				return (arguments[0].extend || extend).call(arguments[0], proto);
+			}
+		}
+	};
+	
+	// build the class interface
+	klass.ancestor = this;
+	klass.extend = this.extend;
+	klass.forEach = this.forEach;
+	klass.implement = this.implement;
+	klass.prototype = proto;
+	klass.toString = this.toString;
+	klass.valueOf = function(type) {
+		//return (type == "object") ? klass : constructor; //-dean
+		return (type == "object") ? klass : constructor.valueOf();
+	};
+	extend.call(klass, _static);
+	// class initialisation
+	if (typeof klass.init == "function") klass.init();
+	return klass;
+};
+
+Base.prototype = {	
+	extend: function(source, value) {
+		if (arguments.length > 1) { // extending with a name/value pair
+			var ancestor = this[source];
+			if (ancestor && (typeof value == "function") && // overriding a method?
+				// the valueOf() comparison is to avoid circular references
+				(!ancestor.valueOf || ancestor.valueOf() != value.valueOf()) &&
+				/\bbase\b/.test(value)) {
+				// get the underlying method
+				var method = value.valueOf();
+				// override
+				value = function() {
+					var previous = this.base || Base.prototype.base;
+					this.base = ancestor;
+					var returnValue = method.apply(this, arguments);
+					this.base = previous;
+					return returnValue;
+				};
+				// point to the underlying method
+				value.valueOf = function(type) {
+					return (type == "object") ? value : method;
+				};
+				value.toString = Base.toString;
+			}
+			this[source] = value;
+		} else if (source) { // extending with an object literal
+			var extend = Base.prototype.extend;
+			// if this object has a customised extend method then use it
+			if (!Base._prototyping && typeof this != "function") {
+				extend = this.extend || extend;
+			}
+			var proto = {toSource: null};
+			// do the "toString" and other methods manually
+			var hidden = ["constructor", "toString", "valueOf"];
+			// if we are prototyping then include the constructor
+			var i = Base._prototyping ? 0 : 1;
+			while (key = hidden[i++]) {
+				if (source[key] != proto[key]) {
+					extend.call(this, key, source[key]);
+
+				}
+			}
+			// copy each of the source object's properties to this object
+			for (var key in source) {
+				if (!proto[key]) extend.call(this, key, source[key]);
+			}
+		}
+		return this;
+	}
+};
+
+// initialise
+Base = Base.extend({
+	constructor: function() {
+		this.extend(arguments[0]);
+	}
+}, {
+	ancestor: Object,
+	version: "1.1",
+	
+	forEach: function(object, block, context) {
+		for (var key in object) {
+			if (this.prototype[key] === undefined) {
+				block.call(context, object[key], key, object);
+			}
+		}
+	},
+		
+	implement: function() {
+		for (var i = 0; i < arguments.length; i++) {
+			if (typeof arguments[i] == "function") {
+				// if it's a function, call it
+				arguments[i](this.prototype);
+			} else {
+				// add the interface using the extend method
+				this.prototype.extend(arguments[i]);
+			}
+		}
+		return this;
+	},
+	
+	toString: function() {
+		return String(this.valueOf());
+	}
+});
+/*jshint smarttabs:true */
+
+var FlipClock;
+	
+/**
+ * FlipClock.js
+ *
+ * @author     Justin Kimbrell
+ * @copyright  2013 - Objective HTML, LLC
+ * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ */
+	
+(function($) {
+	
+	/**
+	 * FlipFlock Helper
+	 *
+	 * @param  object  A jQuery object or CSS select
+	 * @param  int     An integer used to start the clock (no. seconds)
+	 * @param  object  An object of properties to override the default	
+	 */
+	 
+	FlipClock = function(obj, digit, options) {
+		if(digit instanceof Object && digit instanceof Date === false) {
+			options = digit;
+			digit = 0;
+		}
+
+		return new FlipClock.Factory(obj, digit, options);
+	};
+
+	/**
+	 * The global FlipClock.Lang object
+	 */
+
+	FlipClock.Lang = {};
+	
+	/**
+	 * The Base FlipClock class is used to extend all other FlipFlock
+	 * classes. It handles the callbacks and the basic setters/getters
+	 *	
+	 * @param 	object  An object of the default properties
+	 * @param 	object  An object of properties to override the default	
+	 */
+
+	FlipClock.Base = Base.extend({
+		
+		/**
+		 * Build Date
+		 */
+		 
+		buildDate: '2014-12-12',
+		
+		/**
+		 * Version
+		 */
+		 
+		version: '0.7.7',
+		
+		/**
+		 * Sets the default options
+		 *
+		 * @param	object 	The default options
+		 * @param	object 	The override options
+		 */
+		 
+		constructor: function(_default, options) {
+			if(typeof _default !== "object") {
+				_default = {};
+			}
+			if(typeof options !== "object") {
+				options = {};
+			}
+			this.setOptions($.extend(true, {}, _default, options));
+		},
+		
+		/**
+		 * Delegates the callback to the defined method
+		 *
+		 * @param	object 	The default options
+		 * @param	object 	The override options
+		 */
+		 
+		callback: function(method) {
+		 	if(typeof method === "function") {
+				var args = [];
+								
+				for(var x = 1; x <= arguments.length; x++) {
+					if(arguments[x]) {
+						args.push(arguments[x]);
+					}
+				}
+				
+				method.apply(this, args);
+			}
+		},
+		 
+		/**
+		 * Log a string into the console if it exists
+		 *
+		 * @param 	string 	The name of the option
+		 * @return	mixed
+		 */		
+		 
+		log: function(str) {
+			if(window.console && console.log) {
+				console.log(str);
+			}
+		},
+		 
+		/**
+		 * Get an single option value. Returns false if option does not exist
+		 *
+		 * @param 	string 	The name of the option
+		 * @return	mixed
+		 */		
+		 
+		getOption: function(index) {
+			if(this[index]) {
+				return this[index];
+			}
+			return false;
+		},
+		
+		/**
+		 * Get all options
+		 *
+		 * @return	bool
+		 */		
+		 
+		getOptions: function() {
+			return this;
+		},
+		
+		/**
+		 * Set a single option value
+		 *
+		 * @param 	string 	The name of the option
+		 * @param 	mixed 	The value of the option
+		 */		
+		 
+		setOption: function(index, value) {
+			this[index] = value;
+		},
+		
+		/**
+		 * Set a multiple options by passing a JSON object
+		 *
+		 * @param 	object 	The object with the options
+		 * @param 	mixed 	The value of the option
+		 */		
+		
+		setOptions: function(options) {
+			for(var key in options) {
+	  			if(typeof options[key] !== "undefined") {
+		  			this.setOption(key, options[key]);
+		  		}
+		  	}
+		}
+		
+	});
+	
+}(jQuery));
+
+/*jshint smarttabs:true */
+
+/**
+ * FlipClock.js
+ *
+ * @author     Justin Kimbrell
+ * @copyright  2013 - Objective HTML, LLC
+ * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ */
+	
+(function($) {
+	
+	/**
+	 * The FlipClock Face class is the base class in which to extend
+	 * all other FlockClock.Face classes.
+	 *
+	 * @param 	object  The parent FlipClock.Factory object
+	 * @param 	object  An object of properties to override the default	
+	 */
+	 
+	FlipClock.Face = FlipClock.Base.extend({
+		
+		/**
+		 * Sets whether or not the clock should start upon instantiation
+		 */
+		 
+		autoStart: true,
+
+		/**
+		 * An array of jQuery objects used for the dividers (the colons)
+		 */
+		 
+		dividers: [],
+
+		/**
+		 * An array of FlipClock.List objects
+		 */		
+		 
+		factory: false,
+		
+		/**
+		 * An array of FlipClock.List objects
+		 */		
+		 
+		lists: [],
+
+		/**
+		 * Constructor
+		 *
+		 * @param 	object  The parent FlipClock.Factory object
+		 * @param 	object  An object of properties to override the default	
+		 */
+		 
+		constructor: function(factory, options) {
+			this.dividers = [];
+			this.lists = [];
+			this.base(options);
+			this.factory = factory;
+		},
+		
+		/**
+		 * Build the clock face
+		 */
+		 
+		build: function() {
+			if(this.autoStart) {
+				this.start();
+			}
+		},
+		
+		/**
+		 * Creates a jQuery object used for the digit divider
+		 *
+		 * @param	mixed 	The divider label text
+		 * @param	mixed	Set true to exclude the dots in the divider. 
+		 *					If not set, is false.
+		 */
+		 
+		createDivider: function(label, css, excludeDots) {
+			if(typeof css == "boolean" || !css) {
+				excludeDots = css;
+				css = label;
+			}
+
+			var dots = [
+				'<span class="'+this.factory.classes.dot+' top"></span>',
+				'<span class="'+this.factory.classes.dot+' bottom"></span>'
+			].join('');
+
+			if(excludeDots) {
+				dots = '';	
+			}
+
+			label = this.factory.localize(label);
+
+			var html = [
+				'<span class="'+this.factory.classes.divider+' '+(css ? css : '').toLowerCase()+'">',
+					'<span class="'+this.factory.classes.label+'">'+(label ? label : '')+'</span>',
+					dots,
+				'</span>'
+			];	
+			
+			var $html = $(html.join(''));
+
+			this.dividers.push($html);
+
+			return $html;
+		},
+		
+		/**
+		 * Creates a FlipClock.List object and appends it to the DOM
+		 *
+		 * @param	mixed 	The digit to select in the list
+		 * @param	object  An object to override the default properties
+		 */
+		 
+		createList: function(digit, options) {
+			if(typeof digit === "object") {
+				options = digit;
+				digit = 0;
+			}
+
+			var obj = new FlipClock.List(this.factory, digit, options);
+		
+			this.lists.push(obj);
+
+			return obj;
+		},
+		
+		/**
+		 * Triggers when the clock is reset
+		 */
+
+		reset: function() {
+			this.factory.time = new FlipClock.Time(
+				this.factory, 
+				this.factory.original ? Math.round(this.factory.original) : 0,
+				{
+					minimumDigits: this.factory.minimumDigits
+				}
+			);
+
+			this.flip(this.factory.original, false);
+		},
+
+		/**
+		 * Append a newly created list to the clock
+		 */
+
+		appendDigitToClock: function(obj) {
+			obj.$el.append(false);
+		},
+
+		/**
+		 * Add a digit to the clock face
+		 */
+		 
+		addDigit: function(digit) {
+			var obj = this.createList(digit, {
+				classes: {
+					active: this.factory.classes.active,
+					before: this.factory.classes.before,
+					flip: this.factory.classes.flip
+				}
+			});
+
+			this.appendDigitToClock(obj);
+		},
+		
+		/**
+		 * Triggers when the clock is started
+		 */
+		 
+		start: function() {},
+		
+		/**
+		 * Triggers when the time on the clock stops
+		 */
+		 
+		stop: function() {},
+		
+		/**
+		 * Auto increments/decrements the value of the clock face
+		 */
+		 
+		autoIncrement: function() {
+			if(!this.factory.countdown) {
+				this.increment();
+			}
+			else {
+				this.decrement();
+			}
+		},
+
+		/**
+		 * Increments the value of the clock face
+		 */
+		 
+		increment: function() {
+			this.factory.time.addSecond();
+		},
+
+		/**
+		 * Decrements the value of the clock face
+		 */
+
+		decrement: function() {
+			if(this.factory.time.getTimeSeconds() == 0) {
+	        	this.factory.stop();
+			}
+			else {
+				this.factory.time.subSecond();
+			}
+		},
+			
+		/**
+		 * Triggers when the numbers on the clock flip
+		 */
+		 
+		flip: function(time, doNotAddPlayClass) {
+			var t = this;
+
+			$.each(time, function(i, digit) {
+				var list = t.lists[i];
+
+				if(list) {
+					if(!doNotAddPlayClass && digit != list.digit) {
+						list.play();	
+					}
+
+					list.select(digit);
+				}	
+				else {
+					t.addDigit(digit);
+				}
+			});
+		}
+					
+	});
+	
+}(jQuery));
+
+/*jshint smarttabs:true */
+
+/**
+ * FlipClock.js
+ *
+ * @author     Justin Kimbrell
+ * @copyright  2013 - Objective HTML, LLC
+ * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ */
+	
+(function($) {
+	
+	/**
+	 * The FlipClock Factory class is used to build the clock and manage
+	 * all the public methods.
+	 *
+	 * @param 	object  A jQuery object or CSS selector used to fetch
+	 				    the wrapping DOM nodes
+	 * @param 	mixed   This is the digit used to set the clock. If an 
+	 				    object is passed, 0 will be used.	
+	 * @param 	object  An object of properties to override the default	
+	 */
+	 	
+	FlipClock.Factory = FlipClock.Base.extend({
+		
+		/**
+		 * The clock's animation rate.
+		 * 
+		 * Note, currently this property doesn't do anything.
+		 * This property is here to be used in the future to
+		 * programmaticaly set the clock's animation speed
+		 */		
+
+		animationRate: 1000,
+
+		/**
+		 * Auto start the clock on page load (True|False)
+		 */	
+		 
+		autoStart: true,
+		
+		/**
+		 * The callback methods
+		 */		
+		 
+		callbacks: {
+			destroy: false,
+			create: false,
+			init: false,
+			interval: false,
+			start: false,
+			stop: false,
+			reset: false
+		},
+		
+		/**
+		 * The CSS classes
+		 */		
+		 
+		classes: {
+			active: 'flip-clock-active',
+			before: 'flip-clock-before',
+			divider: 'flip-clock-divider',
+			dot: 'flip-clock-dot',
+			label: 'flip-clock-label',
+			flip: 'flip',
+			play: 'play',
+			wrapper: 'flip-clock-wrapper'
+		},
+		
+		/**
+		 * The name of the clock face class in use
+		 */	
+		 
+		clockFace: 'HourlyCounter',
+		 
+		/**
+		 * The name of the clock face class in use
+		 */	
+		 
+		countdown: false,
+		 
+		/**
+		 * The name of the default clock face class to use if the defined
+		 * clockFace variable is not a valid FlipClock.Face object
+		 */	
+		 
+		defaultClockFace: 'HourlyCounter',
+		 
+		/**
+		 * The default language
+		 */	
+		 
+		defaultLanguage: 'english',
+		 
+		/**
+		 * The jQuery object
+		 */		
+		 
+		$el: false,
+
+		/**
+		 * The FlipClock.Face object
+		 */	
+		 
+		face: true,
+		 
+		/**
+		 * The language object after it has been loaded
+		 */	
+		 
+		lang: false,
+		 
+		/**
+		 * The language being used to display labels (string)
+		 */	
+		 
+		language: 'english',
+		 
+		/**
+		 * The minimum digits the clock must have
+		 */		
+
+		minimumDigits: 0,
+
+		/**
+		 * The original starting value of the clock. Used for the reset method.
+		 */		
+		 
+		original: false,
+		
+		/**
+		 * Is the clock running? (True|False)
+		 */		
+		 
+		running: false,
+		
+		/**
+		 * The FlipClock.Time object
+		 */		
+		 
+		time: false,
+		
+		/**
+		 * The FlipClock.Timer object
+		 */		
+		 
+		timer: false,
+		
+		/**
+		 * The jQuery object (depcrecated)
+		 */		
+		 
+		$wrapper: false,
+		
+		/**
+		 * Constructor
+		 *
+		 * @param   object  The wrapping jQuery object
+		 * @param	object  Number of seconds used to start the clock
+		 * @param	object 	An object override options
+		 */
+		 
+		constructor: function(obj, digit, options) {
+
+			if(!options) {
+				options = {};
+			}
+
+			this.lists = [];
+			this.running = false;
+			this.base(options);	
+
+			this.$el = $(obj).addClass(this.classes.wrapper);
+
+			// Depcrated support of the $wrapper property.
+			this.$wrapper = this.$el;
+
+			this.original = (digit instanceof Date) ? digit : (digit ? Math.round(digit) : 0);
+
+			this.time = new FlipClock.Time(this, this.original, {
+				minimumDigits: this.minimumDigits,
+				animationRate: this.animationRate 
+			});
+
+			this.timer = new FlipClock.Timer(this, options);
+
+			this.loadLanguage(this.language);
+			
+			this.loadClockFace(this.clockFace, options);
+
+			if(this.autoStart) {
+				this.start();
+			}
+
+		},
+		
+		/**
+		 * Load the FlipClock.Face object
+		 *
+		 * @param	object  The name of the FlickClock.Face class
+		 * @param	object 	An object override options
+		 */
+		 
+		loadClockFace: function(name, options) {	
+			var face, suffix = 'Face', hasStopped = false;
+			
+			name = name.ucfirst()+suffix;
+
+			if(this.face.stop) {
+				this.stop();
+				hasStopped = true;
+			}
+
+			this.$el.html('');
+
+			this.time.minimumDigits = this.minimumDigits;
+			
+			if(FlipClock[name]) {
+				face = new FlipClock[name](this, options);
+			}
+			else {
+				face = new FlipClock[this.defaultClockFace+suffix](this, options);
+			}
+			
+			face.build();
+
+			this.face = face;
+
+			if(hasStopped) {
+				this.start();
+			}
+			
+			return this.face;
+		},
+				
+		/**
+		 * Load the FlipClock.Lang object
+		 *
+		 * @param	object  The name of the language to load
+		 */
+		 
+		loadLanguage: function(name) {	
+			var lang;
+			
+			if(FlipClock.Lang[name.ucfirst()]) {
+				lang = FlipClock.Lang[name.ucfirst()];
+			}
+			else if(FlipClock.Lang[name]) {
+				lang = FlipClock.Lang[name];
+			}
+			else {
+				lang = FlipClock.Lang[this.defaultLanguage];
+			}
+			
+			return this.lang = lang;
+		},
+					
+		/**
+		 * Localize strings into various languages
+		 *
+		 * @param	string  The index of the localized string
+		 * @param	object  Optionally pass a lang object
+		 */
+
+		localize: function(index, obj) {
+			var lang = this.lang;
+
+			if(!index) {
+				return null;
+			}
+
+			var lindex = index.toLowerCase();
+
+			if(typeof obj == "object") {
+				lang = obj;
+			}
+
+			if(lang && lang[lindex]) {
+				return lang[lindex];
+			}
+
+			return index;
+		},
+		 
+
+		/**
+		 * Starts the clock
+		 */
+		 
+		start: function(callback) {
+			var t = this;
+
+			if(!t.running && (!t.countdown || t.countdown && t.time.time > 0)) {
+				t.face.start(t.time);
+				t.timer.start(function() {
+					t.flip();
+					
+					if(typeof callback === "function") {
+						callback();
+					}	
+				});
+			}
+			else {
+				t.log('Trying to start timer when countdown already at 0');
+			}
+		},
+		
+		/**
+		 * Stops the clock
+		 */
+		 
+		stop: function(callback) {
+			this.face.stop();
+			this.timer.stop(callback);
+			
+			for(var x in this.lists) {
+				if (this.lists.hasOwnProperty(x)) {
+					this.lists[x].stop();
+				}
+			}	
+		},
+		
+		/**
+		 * Reset the clock
+		 */
+		 
+		reset: function(callback) {
+			this.timer.reset(callback);
+			this.face.reset();
+		},
+		
+		/**
+		 * Sets the clock time
+		 */
+		 
+		setTime: function(time) {
+			this.time.time = time;
+			this.flip(true);		
+		},
+		
+		/**
+		 * Get the clock time
+		 *
+		 * @return  object  Returns a FlipClock.Time object
+		 */
+		 
+		getTime: function(time) {
+			return this.time;		
+		},
+		
+		/**
+		 * Changes the increment of time to up or down (add/sub)
+		 */
+		 
+		setCountdown: function(value) {
+			var running = this.running;
+			
+			this.countdown = value ? true : false;
+				
+			if(running) {
+				this.stop();
+				this.start();
+			}
+		},
+		
+		/**
+		 * Flip the digits on the clock
+		 *
+		 * @param  array  An array of digits	 
+		 */
+		flip: function(doNotAddPlayClass) {	
+			this.face.flip(false, doNotAddPlayClass);
+		}
+		
+	});
+		
+}(jQuery));
+
+/*jshint smarttabs:true */
+
+/**
+ * FlipClock.js
+ *
+ * @author     Justin Kimbrell
+ * @copyright  2013 - Objective HTML, LLC
+ * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ */
+	
+(function($) {
+	
+	/**
+	 * The FlipClock List class is used to build the list used to create 
+	 * the card flip effect. This object fascilates selecting the correct
+	 * node by passing a specific digit.
+	 *
+	 * @param 	object  A FlipClock.Factory object
+	 * @param 	mixed   This is the digit used to set the clock. If an 
+	 *				    object is passed, 0 will be used.	
+	 * @param 	object  An object of properties to override the default	
+	 */
+	 	
+	FlipClock.List = FlipClock.Base.extend({
+		
+		/**
+		 * The digit (0-9)
+		 */		
+		 
+		digit: 0,
+		
+		/**
+		 * The CSS classes
+		 */		
+		 
+		classes: {
+			active: 'flip-clock-active',
+			before: 'flip-clock-before',
+			flip: 'flip'	
+		},
+				
+		/**
+		 * The parent FlipClock.Factory object
+		 */		
+		 
+		factory: false,
+		
+		/**
+		 * The jQuery object
+		 */		
+		 
+		$el: false,
+
+		/**
+		 * The jQuery object (deprecated)
+		 */		
+		 
+		$obj: false,
+		
+		/**
+		 * The items in the list
+		 */		
+		 
+		items: [],
+		
+		/**
+		 * The last digit
+		 */		
+		 
+		lastDigit: 0,
+			
+		/**
+		 * Constructor
+		 *
+		 * @param  object  A FlipClock.Factory object
+		 * @param  int     An integer use to select the correct digit
+		 * @param  object  An object to override the default properties	 
+		 */
+		 
+		constructor: function(factory, digit, options) {
+			this.factory = factory;
+			this.digit = digit;
+			this.lastDigit = digit;
+			this.$el = this.createList();
+			
+			// Depcrated support of the $obj property.
+			this.$obj = this.$el;
+
+			if(digit > 0) {
+				this.select(digit);
+			}
+
+			this.factory.$el.append(this.$el);
+		},
+		
+		/**
+		 * Select the digit in the list
+		 *
+		 * @param  int  A digit 0-9	 
+		 */
+		 
+		select: function(digit) {
+			if(typeof digit === "undefined") {
+				digit = this.digit;
+			}
+			else {
+				this.digit = digit;
+			}
+
+			if(this.digit != this.lastDigit) {
+				var $delete = this.$el.find('.'+this.classes.before).removeClass(this.classes.before);
+
+				this.$el.find('.'+this.classes.active).removeClass(this.classes.active)
+													  .addClass(this.classes.before);
+
+				this.appendListItem(this.classes.active, this.digit);
+
+				$delete.remove();
+
+				this.lastDigit = this.digit;
+			}	
+		},
+		
+		/**
+		 * Adds the play class to the DOM object
+		 */
+		 		
+		play: function() {
+			this.$el.addClass(this.factory.classes.play);
+		},
+		
+		/**
+		 * Removes the play class to the DOM object 
+		 */
+		 
+		stop: function() {
+			var t = this;
+
+			setTimeout(function() {
+				t.$el.removeClass(t.factory.classes.play);
+			}, this.factory.timer.interval);
+		},
+		
+		/**
+		 * Creates the list item HTML and returns as a string 
+		 */
+		 
+		createListItem: function(css, value) {
+			return [
+				'<li class="'+(css ? css : '')+'">',
+					'<a href="#">',
+						'<div class="up">',
+							'<div class="shadow"></div>',
+							'<div class="inn">'+(value ? value : '')+'</div>',
+						'</div>',
+						'<div class="down">',
+							'<div class="shadow"></div>',
+							'<div class="inn">'+(value ? value : '')+'</div>',
+						'</div>',
+					'</a>',
+				'</li>'
+			].join('');
+		},
+
+		/**
+		 * Append the list item to the parent DOM node 
+		 */
+
+		appendListItem: function(css, value) {
+			var html = this.createListItem(css, value);
+
+			this.$el.append(html);
+		},
+
+		/**
+		 * Create the list of digits and appends it to the DOM object 
+		 */
+		 
+		createList: function() {
+
+			var lastDigit = this.getPrevDigit() ? this.getPrevDigit() : this.digit;
+
+			var html = $([
+				'<ul class="'+this.classes.flip+' '+(this.factory.running ? this.factory.classes.play : '')+'">',
+					this.createListItem(this.classes.before, lastDigit),
+					this.createListItem(this.classes.active, this.digit),
+				'</ul>'
+			].join(''));
+					
+			return html;
+		},
+
+		getNextDigit: function() {
+			return this.digit == 9 ? 0 : this.digit + 1;
+		},
+
+		getPrevDigit: function() {
+			return this.digit == 0 ? 9 : this.digit - 1;
+		}
+
+	});
+	
+	
+}(jQuery));
+
+/*jshint smarttabs:true */
+
+/**
+ * FlipClock.js
+ *
+ * @author     Justin Kimbrell
+ * @copyright  2013 - Objective HTML, LLC
+ * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ */
+	
+(function($) {
+	
+	/**
+	 * Capitalize the first letter in a string
+	 *
+	 * @return string
+	 */
+	 
+	String.prototype.ucfirst = function() {
+		return this.substr(0, 1).toUpperCase() + this.substr(1);
+	};
+	
+	/**
+	 * jQuery helper method
+	 *
+	 * @param  int     An integer used to start the clock (no. seconds)
+	 * @param  object  An object of properties to override the default	
+	 */
+	 
+	$.fn.FlipClock = function(digit, options) {	
+		return new FlipClock($(this), digit, options);
+	};
+	
+	/**
+	 * jQuery helper method
+	 *
+	 * @param  int     An integer used to start the clock (no. seconds)
+	 * @param  object  An object of properties to override the default	
+	 */
+	 
+	$.fn.flipClock = function(digit, options) {
+		return $.fn.FlipClock(digit, options);
+	};
+	
+}(jQuery));
+
+/*jshint smarttabs:true */
+
+/**
+ * FlipClock.js
+ *
+ * @author     Justin Kimbrell
+ * @copyright  2013 - Objective HTML, LLC
+ * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ */
+	
+(function($) {
+			
+	/**
+	 * The FlipClock Time class is used to manage all the time 
+	 * calculations.
+	 *
+	 * @param 	object  A FlipClock.Factory object
+	 * @param 	mixed   This is the digit used to set the clock. If an 
+	 *				    object is passed, 0 will be used.	
+	 * @param 	object  An object of properties to override the default	
+	 */
+	 	
+	FlipClock.Time = FlipClock.Base.extend({
+		
+		/**
+		 * The time (in seconds) or a date object
+		 */		
+		 
+		time: 0,
+		
+		/**
+		 * The parent FlipClock.Factory object
+		 */		
+		 
+		factory: false,
+		
+		/**
+		 * The minimum number of digits the clock face must have
+		 */		
+		 
+		minimumDigits: 0,
+
+		/**
+		 * Constructor
+		 *
+		 * @param  object  A FlipClock.Factory object
+		 * @param  int     An integer use to select the correct digit
+		 * @param  object  An object to override the default properties	 
+		 */
+		 
+		constructor: function(factory, time, options) {
+			if(typeof options != "object") {
+				options = {};
+			}
+
+			if(!options.minimumDigits) {
+				options.minimumDigits = factory.minimumDigits;
+			}
+
+			this.base(options);
+			this.factory = factory;
+
+			if(time) {
+				this.time = time;
+			}
+		},
+
+		/**
+		 * Convert a string or integer to an array of digits
+		 *
+		 * @param   mixed  String or Integer of digits	 
+		 * @return  array  An array of digits 
+		 */
+		 
+		convertDigitsToArray: function(str) {
+			var data = [];
+			
+			str = str.toString();
+			
+			for(var x = 0;x < str.length; x++) {
+				if(str[x].match(/^\d*$/g)) {
+					data.push(str[x]);	
+				}
+			}
+			
+			return data;
+		},
+		
+		/**
+		 * Get a specific digit from the time integer
+		 *
+		 * @param   int    The specific digit to select from the time	 
+		 * @return  mixed  Returns FALSE if no digit is found, otherwise
+		 *				   the method returns the defined digit	 
+		 */
+		 
+		digit: function(i) {
+			var timeStr = this.toString();
+			var length  = timeStr.length;
+			
+			if(timeStr[length - i])	 {
+				return timeStr[length - i];
+			}
+			
+			return false;
+		},
+
+		/**
+		 * Formats any array of digits into a valid array of digits
+		 *
+		 * @param   mixed  An array of digits	 
+		 * @return  array  An array of digits 
+		 */
+		 
+		digitize: function(obj) {
+			var data = [];
+
+			$.each(obj, function(i, value) {
+				value = value.toString();
+				
+				if(value.length == 1) {
+					value = '0'+value;
+				}
+				
+				for(var x = 0; x < value.length; x++) {
+					data.push(value.charAt(x));
+				}				
+			});
+
+			if(data.length > this.minimumDigits) {
+				this.minimumDigits = data.length;
+			}
+			
+			if(this.minimumDigits > data.length) {
+				for(var x = data.length; x < this.minimumDigits; x++) {
+					data.unshift('0');
+				}
+			}
+
+			return data;
+		},
+		
+		/**
+		 * Gets a new Date object for the current time
+		 *
+		 * @return  array  Returns a Date object
+		 */
+
+		getDateObject: function() {
+			if(this.time instanceof Date) {
+				return this.time;
+			}
+
+			return new Date((new Date()).getTime() + this.getTimeSeconds() * 1000);
+		},
+		
+		/**
+		 * Gets a digitized daily counter
+		 *
+		 * @return  object  Returns a digitized object
+		 */
+
+		getDayCounter: function(includeSeconds) {
+			var digits = [
+				this.getDays(),
+				this.getHours(true),
+				this.getMinutes(true)
+			];
+
+			if(includeSeconds) {
+				digits.push(this.getSeconds(true));
+			}
+
+			return this.digitize(digits);
+		},
+
+		/**
+		 * Gets number of days
+		 *
+		 * @param   bool  Should perform a modulus? If not sent, then no.
+		 * @return  int   Retuns a floored integer
+		 */
+		 
+		getDays: function(mod) {
+			var days = this.getTimeSeconds() / 60 / 60 / 24;
+			
+			if(mod) {
+				days = days % 7;
+			}
+			
+			return Math.floor(days);
+		},
+		
+		/**
+		 * Gets an hourly breakdown
+		 *
+		 * @return  object  Returns a digitized object
+		 */
+		 
+		getHourCounter: function() {
+			var obj = this.digitize([
+				this.getHours(),
+				this.getMinutes(true),
+				this.getSeconds(true)
+			]);
+			
+			return obj;
+		},
+		
+		/**
+		 * Gets an hourly breakdown
+		 *
+		 * @return  object  Returns a digitized object
+		 */
+		 
+		getHourly: function() {
+			return this.getHourCounter();
+		},
+		
+		/**
+		 * Gets number of hours
+		 *
+		 * @param   bool  Should perform a modulus? If not sent, then no.
+		 * @return  int   Retuns a floored integer
+		 */
+		 
+		getHours: function(mod) {
+			var hours = this.getTimeSeconds() / 60 / 60;
+			
+			if(mod) {
+				hours = hours % 24;	
+			}
+			
+			return Math.floor(hours);
+		},
+		
+		/**
+		 * Gets the twenty-four hour time
+		 *
+		 * @return  object  returns a digitized object
+		 */
+		 
+		getMilitaryTime: function(date, showSeconds) {
+			if(typeof showSeconds === "undefined") {
+				showSeconds = true;
+			}
+
+			if(!date) {
+				date = this.getDateObject();
+			}
+
+			var data  = [
+				date.getHours(),
+				date.getMinutes()			
+			];
+
+			if(showSeconds === true) {
+				data.push(date.getSeconds());
+			}
+
+			return this.digitize(data);
+		},
+				
+		/**
+		 * Gets number of minutes
+		 *
+		 * @param   bool  Should perform a modulus? If not sent, then no.
+		 * @return  int   Retuns a floored integer
+		 */
+		 
+		getMinutes: function(mod) {
+			var minutes = this.getTimeSeconds() / 60;
+			
+			if(mod) {
+				minutes = minutes % 60;
+			}
+			
+			return Math.floor(minutes);
+		},
+		
+		/**
+		 * Gets a minute breakdown
+		 */
+		 
+		getMinuteCounter: function() {
+			var obj = this.digitize([
+				this.getMinutes(),
+				this.getSeconds(true)
+			]);
+
+			return obj;
+		},
+		
+		/**
+		 * Gets time count in seconds regardless of if targetting date or not.
+		 *
+		 * @return  int   Returns a floored integer
+		 */
+		 
+		getTimeSeconds: function(date) {
+			if(!date) {
+				date = new Date();
+			}
+
+			if (this.time instanceof Date) {
+				if (this.factory.countdown) {
+					return Math.max(this.time.getTime()/1000 - date.getTime()/1000,0);
+				} else {
+					return date.getTime()/1000 - this.time.getTime()/1000 ;
+				}
+			} else {
+				return this.time;
+			}
+		},
+		
+		/**
+		 * Gets the current twelve hour time
+		 *
+		 * @return  object  Returns a digitized object
+		 */
+		 
+		getTime: function(date, showSeconds) {
+			if(typeof showSeconds === "undefined") {
+				showSeconds = true;
+			}
+
+			if(!date) {
+				date = this.getDateObject();
+			}
+
+			console.log(date);
+
+			
+			var hours = date.getHours();
+			var data   = [
+				hours > 12 ? hours - 12 : (hours === 0 ? 12 : hours),
+				date.getMinutes()			
+			];
+
+			if(showSeconds === true) {
+				data.push(date.getSeconds());
+			}
+
+			return this.digitize(data);
+		},
+		
+		/**
+		 * Gets number of seconds
+		 *
+		 * @param   bool  Should perform a modulus? If not sent, then no.
+		 * @return  int   Retuns a ceiled integer
+		 */
+		 
+		getSeconds: function(mod) {
+			var seconds = this.getTimeSeconds();
+			
+			if(mod) {
+				if(seconds == 60) {
+					seconds = 0;
+				}
+				else {
+					seconds = seconds % 60;
+				}
+			}
+			
+			return Math.ceil(seconds);
+		},
+
+		/**
+		 * Gets number of weeks
+		 *
+		 * @param   bool  Should perform a modulus? If not sent, then no.
+		 * @return  int   Retuns a floored integer
+		 */
+		 
+		getWeeks: function(mod) {
+			var weeks = this.getTimeSeconds() / 60 / 60 / 24 / 7;
+			
+			if(mod) {
+				weeks = weeks % 52;
+			}
+			
+			return Math.floor(weeks);
+		},
+		
+		/**
+		 * Removes a specific number of leading zeros from the array.
+		 * This method prevents you from removing too many digits, even
+		 * if you try.
+		 *
+		 * @param   int    Total number of digits to remove 
+		 * @return  array  An array of digits 
+		 */
+		 
+		removeLeadingZeros: function(totalDigits, digits) {
+			var total    = 0;
+			var newArray = [];
+			
+			$.each(digits, function(i, digit) {
+				if(i < totalDigits) {
+					total += parseInt(digits[i], 10);
+				}
+				else {
+					newArray.push(digits[i]);
+				}
+			});
+			
+			if(total === 0) {
+				return newArray;
+			}
+			
+			return digits;
+		},
+
+		/**
+		 * Adds X second to the current time
+		 */
+
+		addSeconds: function(x) {
+			if(this.time instanceof Date) {
+				this.time.setSeconds(this.time.getSeconds() + x);
+			}
+			else {
+				this.time += x;
+			}
+		},
+
+		/**
+		 * Adds 1 second to the current time
+		 */
+
+		addSecond: function() {
+			this.addSeconds(1);
+		},
+
+		/**
+		 * Substracts X seconds from the current time
+		 */
+
+		subSeconds: function(x) {
+			if(this.time instanceof Date) {
+				this.time.setSeconds(this.time.getSeconds() - x);
+			}
+			else {
+				this.time -= x;
+			}
+		},
+
+		/**
+		 * Substracts 1 second from the current time
+		 */
+
+		subSecond: function() {
+			this.subSeconds(1);
+		},
+		
+		/**
+		 * Converts the object to a human readable string
+		 */
+		 
+		toString: function() {
+			return this.getTimeSeconds().toString();
+		}
+		
+		/*
+		getYears: function() {
+			return Math.floor(this.time / 60 / 60 / 24 / 7 / 52);
+		},
+		
+		getDecades: function() {
+			return Math.floor(this.getWeeks() / 10);
+		}*/
+	});
+	
+}(jQuery));
+
+/*jshint smarttabs:true */
+
+/**
+ * FlipClock.js
+ *
+ * @author     Justin Kimbrell
+ * @copyright  2013 - Objective HTML, LLC
+ * @licesnse   http://www.opensource.org/licenses/mit-license.php
+ */
+	
+(function($) {
+	
+	/**
+	 * The FlipClock.Timer object managers the JS timers
+	 *
+	 * @param	object  The parent FlipClock.Factory object
+	 * @param	object  Override the default options
+	 */
+	
+	FlipClock.Timer = FlipClock.Base.extend({
+		
+		/**
+		 * Callbacks
+		 */		
+		 
+		callbacks: {
+			destroy: false,
+			create: false,
+			init: false,
+			interval: false,
+			start: false,
+			stop: false,
+			reset: false
+		},
+		
+		/**
+		 * FlipClock timer count (how many intervals have passed)
+		 */		
+		 
+		count: 0,
+		
+		/**
+		 * The parent FlipClock.Factory object
+		 */		
+		 
+		factory: false,
+		
+		/**
+		 * Timer interval (1 second by default)
+		 */		
+		 
+		interval: 1000,
+
+		/**
+		 * The rate of the animation in milliseconds (not currently in use)
+		 */		
+		 
+		animationRate: 1000,
+				
+		/**
+		 * Constructor
+		 *
+		 * @return	void
+		 */		
+		 
+		constructor: function(factory, options) {
+			this.base(options);
+			this.factory = factory;
+			this.callback(this.callbacks.init);	
+			this.callback(this.callbacks.create);
+		},
+		
+		/**
+		 * This method gets the elapsed the time as an interger
+		 *
+		 * @return	void
+		 */		
+		 
+		getElapsed: function() {
+			return this.count * this.interval;
+		},
+		
+		/**
+		 * This method gets the elapsed the time as a Date object
+		 *
+		 * @return	void
+		 */		
+		 
+		getElapsedTime: function() {
+			return new Date(this.time + this.getElapsed());
+		},
+		
+		/**
+		 * This method is resets the timer
+		 *
+		 * @param 	callback  This method resets the timer back to 0
+		 * @return	void
+		 */		
+		 
+		reset: function(callback) {
+			clearInterval(this.timer);
+			this.count = 0;
+			this._setInterval(callback);			
+			this.callback(this.callbacks.reset);
+		},
+		
+		/**
+		 * This method is starts the timer
+		 *
+		 * @param 	callback  A function that is called once the timer is destroyed
+		 * @return	void
+		 */		
+		 
+		start: function(callback) {		
+			this.factory.running = true;
+			this._createTimer(callback);
+			this.callback(this.callbacks.start);
+		},
+		
+		/**
+		 * This method is stops the timer
+		 *
+		 * @param 	callback  A function that is called once the timer is destroyed
+		 * @return	void
+		 */		
+		 
+		stop: function(callback) {
+			this.factory.running = false;
+			this._clearInterval(callback);
+			this.callback(this.callbacks.stop);
+			this.callback(callback);
+		},
+		
+		/**
+		 * Clear the timer interval
+		 *
+		 * @return	void
+		 */		
+		 
+		_clearInterval: function() {
+			clearInterval(this.timer);
+		},
+		
+		/**
+		 * Create the timer object
+		 *
+		 * @param 	callback  A function that is called once the timer is created
+		 * @return	void
+		 */		
+		 
+		_createTimer: function(callback) {
+			this._setInterval(callback);		
+		},
+		
+		/**
+		 * Destroy the timer object
+		 *
+		 * @param 	callback  A function that is called once the timer is destroyed
+		 * @return	void
+		 */		
+		 	
+		_destroyTimer: function(callback) {
+			this._clearInterval();			
+			this.timer = false;
+			this.callback(callback);
+			this.callback(this.callbacks.destroy);
+		},
+		
+		/**
+		 * This method is called each time the timer interval is ran
+		 *
+		 * @param 	callback  A function that is called once the timer is destroyed
+		 * @return	void
+		 */		
+		 
+		_interval: function(callback) {
+			this.callback(this.callbacks.interval);
+			this.callback(callback);
+			this.count++;
+		},
+		
+		/**
+		 * This sets the timer interval
+		 *
+		 * @param 	callback  A function that is called once the timer is destroyed
+		 * @return	void
+		 */		
+		 
+		_setInterval: function(callback) {
+			var t = this;
+	
+			t._interval(callback);
+
+			t.timer = setInterval(function() {		
+				t._interval(callback);
+			}, this.interval);
+		}
+			
+	});
+	
+}(jQuery));
+
+(function($) {
+	
+	/**
+	 * Twenty-Four Hour Clock Face
+	 *
+	 * This class will generate a twenty-four our clock for FlipClock.js
+	 *
+	 * @param  object  The parent FlipClock.Factory object
+	 * @param  object  An object of properties to override the default	
+	 */
+	 
+	FlipClock.TwentyFourHourClockFace = FlipClock.Face.extend({
+
+		/**
+		 * Constructor
+		 *
+		 * @param  object  The parent FlipClock.Factory object
+		 * @param  object  An object of properties to override the default	
+		 */
+		 
+		constructor: function(factory, options) {
+			this.base(factory, options);
+		},
+
+		/**
+		 * Build the clock face
+		 *
+		 * @param  object  Pass the time that should be used to display on the clock.	
+		 */
+		 
+		build: function(time) {
+			var t        = this;
+			var children = this.factory.$el.find('ul');
+
+			if(!this.factory.time.time) {
+				this.factory.original = new Date();
+
+				this.factory.time = new FlipClock.Time(this.factory, this.factory.original);
+			}
+
+			var time = time ? time : this.factory.time.getMilitaryTime(false, this.showSeconds);
+
+			if(time.length > children.length) {
+				$.each(time, function(i, digit) {
+					t.createList(digit);
+				});
+			}
+			
+			this.createDivider();
+			this.createDivider();
+
+			$(this.dividers[0]).insertBefore(this.lists[this.lists.length - 2].$el);
+			$(this.dividers[1]).insertBefore(this.lists[this.lists.length - 4].$el);
+			
+			this.base();
+		},
+		
+		/**
+		 * Flip the clock face
+		 */
+		 
+		flip: function(time, doNotAddPlayClass) {
+			this.autoIncrement();
+			
+			time = time ? time : this.factory.time.getMilitaryTime(false, this.showSeconds);
+			
+			this.base(time, doNotAddPlayClass);	
+		}
+				
+	});
+	
+}(jQuery));
+(function($) {
+		
+	/**
+	 * Counter Clock Face
+	 *
+	 * This class will generate a generice flip counter. The timer has been
+	 * disabled. clock.increment() and clock.decrement() have been added.
+	 *
+	 * @param  object  The parent FlipClock.Factory object
+	 * @param  object  An object of properties to override the default	
+	 */
+	 
+	FlipClock.CounterFace = FlipClock.Face.extend({
+		
+		/**
+		 * Tells the counter clock face if it should auto-increment
+		 */
+
+		shouldAutoIncrement: false,
+
+		/**
+		 * Constructor
+		 *
+		 * @param  object  The parent FlipClock.Factory object
+		 * @param  object  An object of properties to override the default	
+		 */
+		 
+		constructor: function(factory, options) {
+
+			if(typeof options != "object") {
+				options = {};
+			}
+
+			factory.autoStart = options.autoStart ? true : false;
+
+			if(options.autoStart) {
+				this.shouldAutoIncrement = true;
+			}
+
+			factory.increment = function() {
+				factory.countdown = false;
+				factory.setTime(factory.getTime().getTimeSeconds() + 1);
+			};
+
+			factory.decrement = function() {
+				factory.countdown = true;
+				var time = factory.getTime().getTimeSeconds();
+				if(time > 0) {
+					factory.setTime(time - 1);
+				}
+			};
+
+			factory.setValue = function(digits) {
+				factory.setTime(digits);
+			};
+
+			factory.setCounter = function(digits) {
+				factory.setTime(digits);
+			};
+
+			this.base(factory, options);
+		},
+
+		/**
+		 * Build the clock face	
+		 */
+		 
+		build: function() {
+			var t        = this;
+			var children = this.factory.$el.find('ul');
+			var time 	 = this.factory.getTime().digitize([this.factory.getTime().time]);
+
+			if(time.length > children.length) {
+				$.each(time, function(i, digit) {
+					var list = t.createList(digit);
+
+					list.select(digit);
+				});
+			
+			}
+
+			$.each(this.lists, function(i, list) {
+				list.play();
+			});
+
+			this.base();
+		},
+		
+		/**
+		 * Flip the clock face
+		 */
+		 
+		flip: function(time, doNotAddPlayClass) {			
+			if(this.shouldAutoIncrement) {
+				this.autoIncrement();
+			}
+
+			if(!time) {		
+				time = this.factory.getTime().digitize([this.factory.getTime().time]);
+			}
+
+			this.base(time, doNotAddPlayClass);
+		},
+
+		/**
+		 * Reset the clock face
+		 */
+
+		reset: function() {
+			this.factory.time = new FlipClock.Time(
+				this.factory, 
+				this.factory.original ? Math.round(this.factory.original) : 0
+			);
+
+			this.flip();
+		}
+	});
+	
+}(jQuery));
+(function($) {
+
+	/**
+	 * Daily Counter Clock Face
+	 *
+	 * This class will generate a daily counter for FlipClock.js. A
+	 * daily counter will track days, hours, minutes, and seconds. If
+	 * the number of available digits is exceeded in the count, a new
+	 * digit will be created.
+	 *
+	 * @param  object  The parent FlipClock.Factory object
+	 * @param  object  An object of properties to override the default
+	 */
+
+	FlipClock.DailyCounterFace = FlipClock.Face.extend({
+
+		showSeconds: true,
+
+		/**
+		 * Constructor
+		 *
+		 * @param  object  The parent FlipClock.Factory object
+		 * @param  object  An object of properties to override the default
+		 */
+
+		constructor: function(factory, options) {
+			this.base(factory, options);
+		},
+
+		/**
+		 * Build the clock face
+		 */
+
+		build: function(time) {
+			var t = this;
+			var children = this.factory.$el.find('ul');
+			var offset = 0;
+
+			time = time ? time : this.factory.time.getDayCounter(this.showSeconds);
+
+			if(time.length > children.length) {
+				$.each(time, function(i, digit) {
+					t.createList(digit);
+				});
+			}
+
+			if(this.showSeconds) {
+				$(this.createDivider('Seconds')).insertBefore(this.lists[this.lists.length - 2].$el);
+			}
+			else
+			{
+				offset = 2;
+			}
+
+			$(this.createDivider('Minutes')).insertBefore(this.lists[this.lists.length - 4 + offset].$el);
+			$(this.createDivider('Hours')).insertBefore(this.lists[this.lists.length - 6 + offset].$el);
+			$(this.createDivider('Days', true)).insertBefore(this.lists[0].$el);
+
+			this.base();
+		},
+
+		/**
+		 * Flip the clock face
+		 */
+
+		flip: function(time, doNotAddPlayClass) {
+			if(!time) {
+				time = this.factory.time.getDayCounter(this.showSeconds);
+			}
+
+			this.autoIncrement();
+
+			this.base(time, doNotAddPlayClass);
+		}
+
+	});
+
+}(jQuery));
+(function($) {
+			
+	/**
+	 * Hourly Counter Clock Face
+	 *
+	 * This class will generate an hourly counter for FlipClock.js. An
+	 * hour counter will track hours, minutes, and seconds. If number of
+	 * available digits is exceeded in the count, a new digit will be 
+	 * created.
+	 *
+	 * @param  object  The parent FlipClock.Factory object
+	 * @param  object  An object of properties to override the default	
+	 */
+	 
+	FlipClock.HourlyCounterFace = FlipClock.Face.extend({
+			
+		// clearExcessDigits: true,
+
+		/**
+		 * Constructor
+		 *
+		 * @param  object  The parent FlipClock.Factory object
+		 * @param  object  An object of properties to override the default	
+		 */
+		 
+		constructor: function(factory, options) {
+			this.base(factory, options);
+		},
+		
+		/**
+		 * Build the clock face
+		 */
+		
+		build: function(excludeHours, time) {
+			var t = this;
+			var children = this.factory.$el.find('ul');
+			
+			time = time ? time : this.factory.time.getHourCounter();
+			
+			if(time.length > children.length) {
+				$.each(time, function(i, digit) {
+					t.createList(digit);
+				});
+			}
+			
+			$(this.createDivider('Seconds')).insertBefore(this.lists[this.lists.length - 2].$el);
+			$(this.createDivider('Minutes')).insertBefore(this.lists[this.lists.length - 4].$el);
+			
+			if(!excludeHours) {
+				$(this.createDivider('Hours', true)).insertBefore(this.lists[0].$el);
+			}
+			
+			this.base();
+		},
+		
+		/**
+		 * Flip the clock face
+		 */
+		 
+		flip: function(time, doNotAddPlayClass) {
+			if(!time) {
+				time = this.factory.time.getHourCounter();
+			}	
+
+			this.autoIncrement();
+		
+			this.base(time, doNotAddPlayClass);
+		},
+
+		/**
+		 * Append a newly created list to the clock
+		 */
+
+		appendDigitToClock: function(obj) {
+			this.base(obj);
+
+			this.dividers[0].insertAfter(this.dividers[0].next());
+		}
+		
+	});
+	
+}(jQuery));
+(function($) {
+		
+	/**
+	 * Minute Counter Clock Face
+	 *
+	 * This class will generate a minute counter for FlipClock.js. A
+	 * minute counter will track minutes and seconds. If an hour is 
+	 * reached, the counter will reset back to 0. (4 digits max)
+	 *
+	 * @param  object  The parent FlipClock.Factory object
+	 * @param  object  An object of properties to override the default	
+	 */
+	 
+	FlipClock.MinuteCounterFace = FlipClock.HourlyCounterFace.extend({
+
+		clearExcessDigits: false,
+
+		/**
+		 * Constructor
+		 *
+		 * @param  object  The parent FlipClock.Factory object
+		 * @param  object  An object of properties to override the default	
+		 */
+		 
+		constructor: function(factory, options) {
+			this.base(factory, options);
+		},
+		
+		/**
+		 * Build the clock face	
+		 */
+		 
+		build: function() {
+			this.base(true, this.factory.time.getMinuteCounter());
+		},
+		
+		/**
+		 * Flip the clock face
+		 */
+		 
+		flip: function(time, doNotAddPlayClass) {
+			if(!time) {
+				time = this.factory.time.getMinuteCounter();
+			}
+
+			this.base(time, doNotAddPlayClass);
+		}
+
+	});
+	
+}(jQuery));
+(function($) {
+		
+	/**
+	 * Twelve Hour Clock Face
+	 *
+	 * This class will generate a twelve hour clock for FlipClock.js
+	 *
+	 * @param  object  The parent FlipClock.Factory object
+	 * @param  object  An object of properties to override the default	
+	 */
+	 
+	FlipClock.TwelveHourClockFace = FlipClock.TwentyFourHourClockFace.extend({
+		
+		/**
+		 * The meridium jQuery DOM object
+		 */
+		 
+		meridium: false,
+		
+		/**
+		 * The meridium text as string for easy access
+		 */
+		 
+		meridiumText: 'AM',
+					
+		/**
+		 * Build the clock face
+		 *
+		 * @param  object  Pass the time that should be used to display on the clock.	
+		 */
+		 
+		build: function() {
+
+			var time = this.factory.time.getTime(false, this.showSeconds);
+
+			this.base(time);			
+			this.meridiumText = this.getMeridium();			
+			this.meridium = $([
+				'<ul class="flip-clock-meridium">',
+					'<li>',
+						'<a href="#">'+this.meridiumText+'</a>',
+					'</li>',
+				'</ul>'
+			].join(''));
+						
+			this.meridium.insertAfter(this.lists[this.lists.length-1].$el);
+		},
+		
+		/**
+		 * Flip the clock face
+		 */
+		 
+		flip: function(time, doNotAddPlayClass) {			
+			if(this.meridiumText != this.getMeridium()) {
+				this.meridiumText = this.getMeridium();
+				this.meridium.find('a').html(this.meridiumText);	
+			}
+			this.base(this.factory.time.getTime(false, this.showSeconds), doNotAddPlayClass);	
+		},
+		
+		/**
+		 * Get the current meridium
+		 *
+		 * @return  string  Returns the meridium (AM|PM)
+		 */
+		 
+		getMeridium: function() {
+			return new Date().getHours() >= 12 ? 'PM' : 'AM';
+		},
+		
+		/**
+		 * Is it currently in the post-medirium?
+		 *
+		 * @return  bool  Returns true or false
+		 */
+		 
+		isPM: function() {
+			return this.getMeridium() == 'PM' ? true : false;
+		},
+
+		/**
+		 * Is it currently before the post-medirium?
+		 *
+		 * @return  bool  Returns true or false
+		 */
+		 
+		isAM: function() {
+			return this.getMeridium() == 'AM' ? true : false;
+		}
+				
+	});
+	
+}(jQuery));
+(function($) {
+
+    /**
+     * FlipClock Arabic Language Pack
+     *
+     * This class will be used to translate tokens into the Arabic language.
+     *
+     */
+
+    FlipClock.Lang.Arabic = {
+
+      'years'   : 'سنوات',
+      'months'  : 'شهور',
+      'days'    : 'أيام',
+      'hours'   : 'ساعات',
+      'minutes' : 'دقائق',
+      'seconds' : 'ثواني'
+
+    };
+
+    /* Create various aliases for convenience */
+
+    FlipClock.Lang['ar']      = FlipClock.Lang.Arabic;
+    FlipClock.Lang['ar-ar']   = FlipClock.Lang.Arabic;
+    FlipClock.Lang['arabic']  = FlipClock.Lang.Arabic;
+
+}(jQuery));
+(function($) {
+		
+	/**
+	 * FlipClock Danish Language Pack
+	 *
+	 * This class will used to translate tokens into the Danish language.
+	 *	
+	 */
+	 
+	FlipClock.Lang.Danish = {
+		
+		'years'   : 'År',
+		'months'  : 'Måneder',
+		'days'    : 'Dage',
+		'hours'   : 'Timer',
+		'minutes' : 'Minutter',
+		'seconds' : 'Sekunder'	
+
+	};
+	
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['da']     = FlipClock.Lang.Danish;
+	FlipClock.Lang['da-dk']  = FlipClock.Lang.Danish;
+	FlipClock.Lang['danish'] = FlipClock.Lang.Danish;
+
+}(jQuery));
+(function($) {
+		
+	/**
+	 * FlipClock German Language Pack
+	 *
+	 * This class will used to translate tokens into the German language.
+	 *	
+	 */
+	 
+	FlipClock.Lang.German = {
+		
+		'years'   : 'Jahre',
+		'months'  : 'Monate',
+		'days'    : 'Tage',
+		'hours'   : 'Stunden',
+		'minutes' : 'Minuten',
+		'seconds' : 'Sekunden'	
+ 
+	};
+	
+	/* Create various aliases for convenience */
+ 
+	FlipClock.Lang['de']     = FlipClock.Lang.German;
+	FlipClock.Lang['de-de']  = FlipClock.Lang.German;
+	FlipClock.Lang['german'] = FlipClock.Lang.German;
+ 
+}(jQuery));
+(function($) {
+		
+	/**
+	 * FlipClock English Language Pack
+	 *
+	 * This class will used to translate tokens into the English language.
+	 *	
+	 */
+	 
+	FlipClock.Lang.English = {
+		
+		'years'   : 'Years',
+		'months'  : 'Months',
+		'days'    : 'Days',
+		'hours'   : 'Hours',
+		'minutes' : 'Minutes',
+		'seconds' : 'Seconds'	
+
+	};
+	
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['en']      = FlipClock.Lang.English;
+	FlipClock.Lang['en-us']   = FlipClock.Lang.English;
+	FlipClock.Lang['english'] = FlipClock.Lang.English;
+
+}(jQuery));
+(function($) {
+
+	/**
+	 * FlipClock Spanish Language Pack
+	 *
+	 * This class will used to translate tokens into the Spanish language.
+	 *
+	 */
+
+	FlipClock.Lang.Spanish = {
+
+		'years'   : 'Años',
+		'months'  : 'Meses',
+		'days'    : 'Días',
+		'hours'   : 'Horas',
+		'minutes' : 'Minutos',
+		'seconds' : 'Segundos'
+
+	};
+
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['es']      = FlipClock.Lang.Spanish;
+	FlipClock.Lang['es-es']   = FlipClock.Lang.Spanish;
+	FlipClock.Lang['spanish'] = FlipClock.Lang.Spanish;
+
+}(jQuery));
+(function($) {
+		
+	/**
+	 * FlipClock Finnish Language Pack
+	 *
+	 * This class will used to translate tokens into the Finnish language.
+	 *	
+	 */
+	 
+	FlipClock.Lang.Finnish = {
+		
+		'years'   : 'Vuotta',
+		'months'  : 'Kuukautta',
+		'days'    : 'Päivää',
+		'hours'   : 'Tuntia',
+		'minutes' : 'Minuuttia',
+		'seconds' : 'Sekuntia'	
+
+	};
+	
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['fi']      = FlipClock.Lang.Finnish;
+	FlipClock.Lang['fi-fi']   = FlipClock.Lang.Finnish;
+	FlipClock.Lang['finnish'] = FlipClock.Lang.Finnish;
+
+}(jQuery));
+
+(function($) {
+
+  /**
+   * FlipClock Canadian French Language Pack
+   *
+   * This class will used to translate tokens into the Canadian French language.
+   *
+   */
+
+  FlipClock.Lang.French = {
+
+    'years'   : 'Ans',
+    'months'  : 'Mois',
+    'days'    : 'Jours',
+    'hours'   : 'Heures',
+    'minutes' : 'Minutes',
+    'seconds' : 'Secondes'
+
+  };
+
+  /* Create various aliases for convenience */
+
+  FlipClock.Lang['fr']      = FlipClock.Lang.French;
+  FlipClock.Lang['fr-ca']   = FlipClock.Lang.French;
+  FlipClock.Lang['french']  = FlipClock.Lang.French;
+
+}(jQuery));
+
+(function($) {
+		
+	/**
+	 * FlipClock Italian Language Pack
+	 *
+	 * This class will used to translate tokens into the Italian language.
+	 *	
+	 */
+	 
+	FlipClock.Lang.Italian = {
+		
+		'years'   : 'Anni',
+		'months'  : 'Mesi',
+		'days'    : 'Giorni',
+		'hours'   : 'Ore',
+		'minutes' : 'Minuti',
+		'seconds' : 'Secondi'	
+
+	};
+	
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['it']      = FlipClock.Lang.Italian;
+	FlipClock.Lang['it-it']   = FlipClock.Lang.Italian;
+	FlipClock.Lang['italian'] = FlipClock.Lang.Italian;
+	
+}(jQuery));
+
+(function($) {
+
+  /**
+   * FlipClock Latvian Language Pack
+   *
+   * This class will used to translate tokens into the Latvian language.
+   *
+   */
+
+  FlipClock.Lang.Latvian = {
+
+    'years'   : 'Gadi',
+    'months'  : 'Mēneši',
+    'days'    : 'Dienas',
+    'hours'   : 'Stundas',
+    'minutes' : 'Minūtes',
+    'seconds' : 'Sekundes'
+
+  };
+
+  /* Create various aliases for convenience */
+
+  FlipClock.Lang['lv']      = FlipClock.Lang.Latvian;
+  FlipClock.Lang['lv-lv']   = FlipClock.Lang.Latvian;
+  FlipClock.Lang['latvian'] = FlipClock.Lang.Latvian;
+
+}(jQuery));
+(function($) {
+
+    /**
+     * FlipClock Dutch Language Pack
+     *
+     * This class will used to translate tokens into the Dutch language.
+     */
+
+    FlipClock.Lang.Dutch = {
+
+        'years'   : 'Jaren',
+        'months'  : 'Maanden',
+        'days'    : 'Dagen',
+        'hours'   : 'Uren',
+        'minutes' : 'Minuten',
+        'seconds' : 'Seconden'
+
+    };
+
+    /* Create various aliases for convenience */
+
+    FlipClock.Lang['nl']      = FlipClock.Lang.Dutch;
+    FlipClock.Lang['nl-be']   = FlipClock.Lang.Dutch;
+    FlipClock.Lang['dutch']   = FlipClock.Lang.Dutch;
+
+}(jQuery));
+
+(function($) {
+
+	/**
+	 * FlipClock Norwegian-Bokmål Language Pack
+	 *
+	 * This class will used to translate tokens into the Norwegian language.
+	 *	
+	 */
+
+	FlipClock.Lang.Norwegian = {
+
+		'years'   : 'År',
+		'months'  : 'Måneder',
+		'days'    : 'Dager',
+		'hours'   : 'Timer',
+		'minutes' : 'Minutter',
+		'seconds' : 'Sekunder'	
+
+	};
+
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['no']      = FlipClock.Lang.Norwegian;
+	FlipClock.Lang['nb']      = FlipClock.Lang.Norwegian;
+	FlipClock.Lang['no-nb']   = FlipClock.Lang.Norwegian;
+	FlipClock.Lang['norwegian'] = FlipClock.Lang.Norwegian;
+
+}(jQuery));
+
+(function($) {
+
+	/**
+	 * FlipClock Portuguese Language Pack
+	 *
+	 * This class will used to translate tokens into the Portuguese language.
+	 *
+	 */
+
+	FlipClock.Lang.Portuguese = {
+
+		'years'   : 'Anos',
+		'months'  : 'Meses',
+		'days'    : 'Dias',
+		'hours'   : 'Horas',
+		'minutes' : 'Minutos',
+		'seconds' : 'Segundos'
+
+	};
+
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['pt']         = FlipClock.Lang.Portuguese;
+	FlipClock.Lang['pt-br']      = FlipClock.Lang.Portuguese;
+	FlipClock.Lang['portuguese'] = FlipClock.Lang.Portuguese;
+
+}(jQuery));
+(function($) {
+
+  /**
+   * FlipClock Russian Language Pack
+   *
+   * This class will used to translate tokens into the Russian language.
+   *
+   */
+
+  FlipClock.Lang.Russian = {
+
+    'years'   : 'лет',
+    'months'  : 'месяцев',
+    'days'    : 'дней',
+    'hours'   : 'часов',
+    'minutes' : 'минут',
+    'seconds' : 'секунд'
+
+  };
+
+  /* Create various aliases for convenience */
+
+  FlipClock.Lang['ru']      = FlipClock.Lang.Russian;
+  FlipClock.Lang['ru-ru']   = FlipClock.Lang.Russian;
+  FlipClock.Lang['russian']  = FlipClock.Lang.Russian;
+
+}(jQuery));
+(function($) {
+		
+	/**
+	 * FlipClock Swedish Language Pack
+	 *
+	 * This class will used to translate tokens into the Swedish language.
+	 *	
+	 */
+	 
+	FlipClock.Lang.Swedish = {
+		
+		'years'   : 'År',
+		'months'  : 'Månader',
+		'days'    : 'Dagar',
+		'hours'   : 'Timmar',
+		'minutes' : 'Minuter',
+		'seconds' : 'Sekunder'	
+
+	};
+	
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['sv']      = FlipClock.Lang.Swedish;
+	FlipClock.Lang['sv-se']   = FlipClock.Lang.Swedish;
+	FlipClock.Lang['swedish'] = FlipClock.Lang.Swedish;
+
+}(jQuery));
+
+(function($) {
+		
+	/**
+	 * FlipClock Chinese Language Pack
+	 *
+	 * This class will used to translate tokens into the Chinese language.
+	 *	
+	 */
+	 
+	FlipClock.Lang.Chinese = {
+		
+		'years'   : '年',
+		'months'  : '月',
+		'days'    : '日',
+		'hours'   : '时',
+		'minutes' : '分',
+		'seconds' : '秒'
+
+	};
+	
+	/* Create various aliases for convenience */
+
+	FlipClock.Lang['zh']      = FlipClock.Lang.Chinese;
+	FlipClock.Lang['zh-cn']   = FlipClock.Lang.Chinese;
+	FlipClock.Lang['chinese'] = FlipClock.Lang.Chinese;
+
+}(jQuery));
+
+var Welcome = function (_a) {
+    var props = __rest(_a, []);
+    var date = 60000;
+    useEffect(function () {
+        /* FlipClock Counter */
+        var clock;
+        clock = window.$('.clock').FlipClock({
+            clockFace: 'DailyCounter',
+            autoStart: false,
+            callbacks: {
+                stop: function () {
+                    window.$('.message').html('The clock has stopped!');
+                }
+            }
+        });
+        clock.setTime(date);
+        clock.setCountdown(true);
+        clock.start();
+    });
+    return (React.createElement("div", __assign({ className: "content-wrapper" }, props),
+        React.createElement("div", { className: "content-body" },
+            React.createElement("main", null,
+                React.createElement("section", { className: "head-area", id: "head-area", "data-midnight": "white" },
+                    React.createElement("div", { className: "bg-banner" }),
+                    React.createElement("div", { className: "head-content container-fluid d-flex" },
+                        React.createElement("div", { className: "container" },
+                            React.createElement("div", { className: "banner-wrapper" },
+                                React.createElement("div", { className: "row align-items-center justify-content-center" },
+                                    React.createElement("div", { className: "banner-content" },
+                                        React.createElement("h1", { className: "animated", id: "joinText", "data-animation": "fadeInUpShorter", "data-animation-delay": "1.5s" }, "Welcome to HAPPYSWAP")))),
+                            React.createElement("div", { className: "clock-counter animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "2.1s" },
+                                React.createElement("div", { className: "clock ml-0 mt-4" }),
+                                React.createElement("div", { className: "message" })),
+                            React.createElement("div", { className: "banner-wrapper" },
+                                React.createElement("div", { className: "row align-items-center justify-content-center" },
+                                    React.createElement("h1", { className: "animated h1-roboto", id: "OpenSoon", "data-animation": "fadeInUpShorter", "data-animation-delay": "1.7s" }, "We are opening soon!"))),
+                            React.createElement("div", { className: "banner-wrapper" },
+                                React.createElement("div", { className: "row align-items-center" },
+                                    React.createElement("div", { className: "col-lg-8 col-md-12" },
+                                        React.createElement("div", { className: "banner-content advantages-list" },
+                                            React.createElement("div", { className: "h3-advantages-list" }, "Our Key Advantages"),
+                                            React.createElement("ul", null,
+                                                React.createElement("li", null,
+                                                    React.createElement("span", { className: "points" }, "No deposit fees for most vaults")),
+                                                React.createElement("li", null,
+                                                    React.createElement("span", { className: "points" }, "Up to 100% fee reward for most token price")),
+                                                React.createElement("li", null,
+                                                    React.createElement("span", { className: "points" }, "Competitive yields")),
+                                                React.createElement("li", null,
+                                                    React.createElement("span", { className: "points" },
+                                                        "CO",
+                                                        React.createElement("sup", null, "2"),
+                                                        " positive service ",
+                                                        React.createElement("a", { href: "#CO-friendly", className: "read-more" }, "Read more"))),
+                                                React.createElement("li", null,
+                                                    React.createElement("span", { className: "points" },
+                                                        "Improve yield by stacking NFTs ",
+                                                        React.createElement("span", { className: "soon" }, "Coming soon")))))),
+                                    React.createElement("div", { className: "col-lg-4 col-md-12 move-first animated", "data-animation": "zoomIn", "data-animation-delay": "2s" },
+                                        React.createElement("div", { className: "logo-wrapper ml-5 pl-5 align-items-center" },
+                                            React.createElement("div", { className: "crypto-logo" },
+                                                React.createElement("div", { id: "ripple" }),
+                                                React.createElement("div", { id: "ripple2" }),
+                                                React.createElement("div", { id: "ripple3" }),
+                                                React.createElement("img", { src: "/images/logo-big.png", className: "crypto-logo-img rounded mx-auto d-block pulse2", alt: "SWPY" })))))))),
+                    React.createElement("div", { className: "bg-ripple-animation d-none d-md-block" },
+                        React.createElement("div", { className: "left-bottom-ripples" },
+                            React.createElement("div", { className: "ripples" })),
+                        React.createElement("div", { className: "top-right-ripples" },
+                            React.createElement("div", { className: "ripples" })))),
+                React.createElement("section", { className: "about section-padding", id: "about" },
+                    React.createElement("div", { className: "container-fluid" },
+                        React.createElement("div", { className: "container" },
+                            React.createElement("div", { className: "heading text-center" },
+                                React.createElement("h6", { className: "sub-title animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.2s" }, "What is Crypto ICO"),
+                                React.createElement("h2", { className: "title animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.3s" },
+                                    "About ",
+                                    React.createElement("strong", null, "Crypto ICO")),
+                                React.createElement("div", { className: "separator animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.3s" },
+                                    React.createElement("span", { className: "large" }),
+                                    React.createElement("span", { className: "medium" }),
+                                    React.createElement("span", { className: "small" })),
+                                React.createElement("p", { className: "content-desc animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.4s" },
+                                    "Crypto ICO aims to disrupt the cryptotrading industry by lowering the barrier",
+                                    React.createElement("br", { className: "d-none d-xl-block" }),
+                                    " to creating algorithmic trading models.")),
+                            React.createElement("div", { className: "content-area" },
+                                React.createElement("div", { className: "row" },
+                                    React.createElement("div", { className: "col-md-12 col-lg-6 animated", "data-animation": "fadeInLeftShorter", "data-animation-delay": "0.5s" },
+                                        React.createElement("h4", { className: "title" },
+                                            "We built a platform for ",
+                                            React.createElement("br", { className: "d-none d-xl-block" }),
+                                            " The crypto trading Industry"),
+                                        React.createElement("h6", { className: "pt-4 pb-2" }, "Cryptocurrency exchanges or digital currency exchanges (DCE) are businesses that allow customers to trade cryptocurrencies or digital currencies for other assets."),
+                                        React.createElement("p", null, "Cryptocurrency exchanges or digital currency exchanges (DCE) are businesses that allow customers to trade cryptocurrencies or digital currencies for other assets"),
+                                        React.createElement("p", null, "Creators of digital currencies are often independent of the DCEs that trade the currency.[6] In one type of system, digital currency providers (DCP), are businesses that keep and administer accounts.")),
+                                    React.createElement("div", { className: "col-md-12 col-lg-6 animated", "data-animation": "fadeInRightShorter", "data-animation-delay": "0.5s" },
+                                        React.createElement("div", { className: "position-relative what-is-crypto-img float-xl-right" },
+                                            React.createElement("img", { className: "img-fluid", src: "theme-assets/images/what-is-crypto.png", alt: "What is Crypto?" }),
+                                            React.createElement("div", { className: "play-video text-center" },
+                                                React.createElement("a", { href: "#", className: "play rounded-circle btn-gradient-orange btn-glow video-btn", "data-toggle": "modal", "data-src": "https://www.youtube.com/embed/UXAJu3zS4bU", "data-target": "#ico-modal" },
+                                                    React.createElement("i", { className: "ti-control-play" })),
+                                                React.createElement("span", { className: "mt-2 d-none d-md-block" }, "How it works"))))))))),
+                React.createElement("section", { id: "problem-solution", className: "problem-solution section-padding bg-color" },
+                    React.createElement("div", { className: "container-fluid" },
+                        React.createElement("div", { className: "container" },
+                            React.createElement("div", { className: "heading text-center" },
+                                React.createElement("h6", { className: "sub-title animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.2s" }, "Solutions"),
+                                React.createElement("h2", { className: "title animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.3s" },
+                                    "Problems & ",
+                                    React.createElement("strong", null, "Solutions")),
+                                React.createElement("div", { className: "separator animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.3s" },
+                                    React.createElement("span", { className: "large" }),
+                                    React.createElement("span", { className: "medium" }),
+                                    React.createElement("span", { className: "small" })),
+                                React.createElement("p", { className: "content-desc animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.4s" },
+                                    "More than $40 million in assets were placed under restraint pending forfeiture, and more than 30 ",
+                                    React.createElement("br", { className: "d-none d-xl-block" }),
+                                    " Liberty Reserve exchanger domain names were seized.")),
+                            React.createElement("div", { className: "problems" },
+                                React.createElement("div", { className: "row" },
+                                    React.createElement("div", { className: "col-md-12 col-lg-6" },
+                                        React.createElement("div", { className: "heading mb-4" },
+                                            React.createElement("h4", { className: "title animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.2s" }, "Problems"),
+                                            React.createElement("div", { className: "separator animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.3s" },
+                                                React.createElement("span", { className: "large" }),
+                                                React.createElement("span", { className: "medium" }),
+                                                React.createElement("span", { className: "small" }))),
+                                        React.createElement("p", { className: "animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.5s" }, "Different pieces of the new Internet are born as building blocks, but there\u2019s no way for them to work together."),
+                                        React.createElement("p", { className: "animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.7s" }, "Even interoperating new technologies with old centralised resources can prove useful in making the paradigm shift from Web 2 to Web 3 happen. Now we own our data, we can prove that we own what we have and have created it on different platforms, but how do we put it together into a whole new cohesive framework.")),
+                                    React.createElement("div", { className: "col-md-12 col-lg-6 text-center" },
+                                        React.createElement("img", { src: "theme-assets/images/problems-graphic.png", className: "problems-img animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.6s", alt: "problems-graphic" })))),
+                            React.createElement("div", { className: "solutions mt-5" },
+                                React.createElement("div", { className: "row" },
+                                    React.createElement("div", { className: "col-md-12 col-lg-6 text-center move-lg-first" },
+                                        React.createElement("img", { src: "theme-assets/images/solutions-graphic.png", className: "solutions-img animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.6s", alt: "problems-graphic" })),
+                                    React.createElement("div", { className: "col-md-12 col-lg-6 move-first" },
+                                        React.createElement("div", { className: "heading mb-4" },
+                                            React.createElement("h4", { className: "title animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.2s" }, "Solutions"),
+                                            React.createElement("div", { className: "separator animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.3s" },
+                                                React.createElement("span", { className: "large" }),
+                                                React.createElement("span", { className: "medium" }),
+                                                React.createElement("span", { className: "small" }))),
+                                        React.createElement("p", { className: "animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.5s" }, "Decentralized cryptocurrency is produced by the entire cryptocurrency system collectively, at a rate which is defined when the system is created and which is publicly known."),
+                                        React.createElement("p", { className: "animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.7s" }, "In centralized banking and economic systems such as the Federal Reserve System, corporate boards or governments control the supply of currency by printing units of fiat money or demanding additions to digital banking ledgers."))))))),
+                React.createElement("section", { id: "whitepaper", className: "whitepaper section-padding" },
+                    React.createElement("div", { className: "container-fluid" },
+                        React.createElement("div", { className: "container" },
+                            React.createElement("div", { className: "heading text-center" },
+                                React.createElement("h6", { className: "sub-title animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.2s" }, "Whitepaper"),
+                                React.createElement("h2", { className: "title animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.3s" },
+                                    React.createElement("strong", null, "Documents,"),
+                                    " Terms & Conditions"),
+                                React.createElement("div", { className: "separator animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.3s" },
+                                    React.createElement("span", { className: "large" }),
+                                    React.createElement("span", { className: "medium" }),
+                                    React.createElement("span", { className: "small" })),
+                                React.createElement("p", { className: "content-desc animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.4s" },
+                                    "Terms of service are rules by which one must agree to abide in order to use a service.",
+                                    React.createElement("br", { className: "d-none d-xl-block" }),
+                                    "Terms of service can also be merely a disclaimer, especially regarding the use of websites.")),
+                            React.createElement("div", { className: "row" },
+                                React.createElement("div", { className: "col-md-12 col-lg-5" },
+                                    React.createElement("div", { className: "whitepaper-img" },
+                                        React.createElement("a", { href: "/doc.html" },
+                                            React.createElement("img", { className: "img-fluid animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.6s", src: "/images/whitepaper.png", alt: "whitepaper" }),
+                                            React.createElement("div", { className: "title" }, " Some title text"),
+                                            React.createElement("div", { className: "desc" }, " Description for ico and some more text an more ..")))),
+                                React.createElement("div", { className: "col-md-12 col-lg-7" },
+                                    React.createElement("div", { className: "content-area" },
+                                        React.createElement("h4", { className: "animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.5s" }, "Whitepaper"),
+                                        React.createElement("p", { className: "animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.6s" }, "A white paper is an authoritative report or guide that informs readers concisely about a complex issue and presents the issuing body's philosophy on the matter. It is meant to help readers understand an issue, solve a problem, or make a decision."),
+                                        React.createElement("p", { className: "animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.7s" }, "The initial British term concerning a type of government-issued document has proliferated, taking a somewhat new meaning in business. In business, a white paper is closer to a form of marketing presentation, a tool meant to persuade customers and partners and promote a product or viewpoint, White papers may be considered grey literature."),
+                                        React.createElement("p", { className: "animated", "data-animation": "fadeInUpShorter", "data-animation-delay": "0.8s" }, "Since the early 1990s, the term \"white paper\", or \"whitepaper\", has been applied to documents used as marketing or sales tools in business.")))))))))));
+};
+
 var breakpointMap = {
     xs: 370,
     sm: 576,
@@ -1715,7 +4656,7 @@ var breakpointMap = {
     xl: 1080,
 };
 var breakpoints = Object.values(breakpointMap).map(function (breakpoint) { return breakpoint + "px"; });
-var mediaQueries = {
+var mediaQueries$1 = {
     xs: "@media screen and (min-width: " + breakpointMap.xs + "px)",
     sm: "@media screen and (min-width: " + breakpointMap.sm + "px)",
     md: "@media screen and (min-width: " + breakpointMap.md + "px)",
@@ -1745,7 +4686,7 @@ var zIndices = {
 var base = {
     siteWidth: 1200,
     breakpoints: breakpoints,
-    mediaQueries: mediaQueries,
+    mediaQueries: mediaQueries$1,
     spacing: spacing,
     shadows: shadows,
     radii: radii,
@@ -1758,7 +4699,7 @@ var base = {
  * (min-width: 370px) and (max-width: 576px)
  * @see https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList
  */
-var mediaQueries$1 = (function () {
+var mediaQueries = (function () {
     var prevMinWidth = 0;
     return Object.keys(breakpointMap).reduce(function (accum, size, index) {
         var _a, _b;
@@ -1776,17 +4717,17 @@ var mediaQueries$1 = (function () {
 var getKey = function (size) { return "is" + size.charAt(0).toUpperCase() + size.slice(1); };
 var useMatchBreakpoints = function () {
     var _a = useState(function () {
-        return Object.keys(mediaQueries$1).reduce(function (accum, size) {
+        return Object.keys(mediaQueries).reduce(function (accum, size) {
             var _a;
             var key = getKey(size);
-            var mql = window.matchMedia(mediaQueries$1[size]);
+            var mql = window.matchMedia(mediaQueries[size]);
             return __assign(__assign({}, accum), (_a = {}, _a[key] = mql.matches, _a));
         }, {});
     }), state = _a[0], setState = _a[1];
     useEffect(function () {
         // Create listeners for each media query returning a function to unsubscribe
-        var handlers = Object.keys(mediaQueries$1).map(function (size) {
-            var mql = window.matchMedia(mediaQueries$1[size]);
+        var handlers = Object.keys(mediaQueries).map(function (size) {
+            var mql = window.matchMedia(mediaQueries[size]);
             var handler = function (matchMediaQuery) {
                 var key = getKey(size);
                 setState(function (prevState) {
@@ -1947,7 +4888,7 @@ var useKonamiCheatCode = function (matchedCodeHandler) {
     }, [matchedCodeHandler]);
 };
 
-var StyledModal = styled.div(templateObject_1$w || (templateObject_1$w = __makeTemplateObject(["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"], ["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"])), function (_a) {
+var StyledModal = styled.div(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"], ["\n  background: ", ";\n  box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);\n  border: 1px solid ", ";\n  border-radius: 32px;\n  width: 100%;\n  z-index: ", ";\n  overflow-y: auto;\n  ", " {\n    width: auto;\n    min-width: 360px;\n    max-width: 100%;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.modal.background;
 }, function (_a) {
@@ -1960,23 +4901,23 @@ var StyledModal = styled.div(templateObject_1$w || (templateObject_1$w = __makeT
     var theme = _a.theme;
     return theme.mediaQueries.xs;
 });
-var ModalHeader = styled.div(templateObject_2$a || (templateObject_2$a = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 24px;\n"], ["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 24px;\n"])));
-var ModalTitle = styled(Flex)(templateObject_3$5 || (templateObject_3$5 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
+var ModalHeader = styled.div(templateObject_2$6 || (templateObject_2$6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 24px;\n"], ["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 24px;\n"])));
+var ModalTitle = styled(Flex)(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
 var Modal = function (_a) {
     var title = _a.title, onDismiss = _a.onDismiss, onBack = _a.onBack, children = _a.children, _b = _a.hideCloseButton, hideCloseButton = _b === void 0 ? false : _b, _c = _a.bodyPadding, bodyPadding = _c === void 0 ? "24px" : _c;
     return (React.createElement(StyledModal, null,
         React.createElement(ModalHeader, null,
             React.createElement(ModalTitle, null,
                 onBack && (React.createElement(IconButton, { variant: "text", onClick: onBack, "area-label": "go back", mr: "8px" },
-                    React.createElement(Icon$5, { color: "primary" }))),
+                    React.createElement(Icon$17, { color: "primary" }))),
                 React.createElement(Heading, null, title)),
             !hideCloseButton && (React.createElement(IconButton, { variant: "text", onClick: onDismiss, "aria-label": "Close the dialog" },
-                React.createElement(Icon$k, { color: "primary" })))),
+                React.createElement(Icon$U, { color: "primary" })))),
         React.createElement(Flex, { flexDirection: "column", p: bodyPadding }, children)));
 };
-var templateObject_1$w, templateObject_2$a, templateObject_3$5;
+var templateObject_1$g, templateObject_2$6, templateObject_3$4;
 
-var Overlay = styled.div.attrs({ role: "presentation" })(templateObject_1$x || (templateObject_1$x = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
+var Overlay = styled.div.attrs({ role: "presentation" })(templateObject_1$f || (templateObject_1$f = __makeTemplateObject(["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"], ["\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  width: 100%;\n  height: 100%;\n  background-color: #452a7a;\n  transition: opacity 0.4s;\n  opacity: ", ";\n  z-index: ", ";\n  pointer-events: ", ";\n"])), function (_a) {
     var show = _a.show;
     return (show ? 0.6 : 0);
 }, function (_a) {
@@ -1990,9 +4931,9 @@ Overlay.defaultProps = {
     show: false,
     zIndex: 10,
 };
-var templateObject_1$x;
+var templateObject_1$f;
 
-var ModalWrapper = styled.div(templateObject_1$y || (templateObject_1$y = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: ", ";\n"], ["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: ", ";\n"])), function (_a) {
+var ModalWrapper = styled.div(templateObject_1$e || (templateObject_1$e = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: ", ";\n"], ["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: ", ";\n"])), function (_a) {
     var theme = _a.theme;
     return theme.zIndices.modal - 1;
 });
@@ -2032,7 +4973,7 @@ var ModalProvider = function (_a) {
                 }))),
         children));
 };
-var templateObject_1$y;
+var templateObject_1$e;
 
 var useModal = function (modal, closeOnOverlayClick) {
     if (closeOnOverlayClick === void 0) { closeOnOverlayClick = true; }
@@ -2046,7 +4987,7 @@ var useModal = function (modal, closeOnOverlayClick) {
     return [onPresentCallback, onDismiss];
 };
 
-var Icon$L = function (props) {
+var Icon$t = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M13.7803 2.71967C14.0732 3.01256 14.0732 3.48744 13.7803 3.78033L12.8107 4.75L14.0307 5.96999H20C21.1 5.96999 22 6.86999 22 7.96999V12.73C21.28 12.25 20.43 11.97 19.5 11.97C17.19 11.97 15.3 13.73 15.05 15.97H11.91C11.96 15.64 12 15.31 12 14.97C12 13.43 11.41 12.03 10.46 10.97H11C12.1 10.97 13 10.07 13 8.96999V7.06068L11.75 5.81066L10.7803 6.78033C10.4874 7.07322 10.0126 7.07322 9.71967 6.78033C9.42678 6.48744 9.42678 6.01256 9.71967 5.71967L12.7197 2.71967C13.0126 2.42678 13.4874 2.42678 13.7803 2.71967Z" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M11 15C11 17.7614 8.76142 20 6 20C3.23858 20 1 17.7614 1 15C1 12.2386 3.23858 10 6 10C8.76142 10 11 12.2386 11 15ZM9 15C9 16.6569 7.65685 18 6 18C4.34315 18 3 16.6569 3 15C3 13.3431 4.34315 12 6 12C7.65685 12 9 13.3431 9 15Z" }),
@@ -2054,50 +4995,50 @@ var Icon$L = function (props) {
         React.createElement("path", { d: "M9 8.96997H4C3.45 8.96997 3 8.52997 3 7.96997C3 7.41997 3.45 6.96997 4 6.96997H7C8.1 6.96997 9 7.86997 9 8.96997Z" })));
 };
 
-var Icon$M = function (props) {
+var Icon$s = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 12.75C13.63 12.75 15.07 13.14 16.24 13.65C17.32 14.13 18 15.21 18 16.38V17C18 17.55 17.55 18 17 18H7C6.45 18 6 17.55 6 17V16.39C6 15.21 6.68 14.13 7.76 13.66C8.93 13.14 10.37 12.75 12 12.75ZM4 13C5.1 13 6 12.1 6 11C6 9.9 5.1 9 4 9C2.9 9 2 9.9 2 11C2 12.1 2.9 13 4 13ZM5.13 14.1C4.76 14.04 4.39 14 4 14C3.01 14 2.07 14.21 1.22 14.58C0.48 14.9 0 15.62 0 16.43V17C0 17.55 0.45 18 1 18H4.5V16.39C4.5 15.56 4.73 14.78 5.13 14.1ZM20 13C21.1 13 22 12.1 22 11C22 9.9 21.1 9 20 9C18.9 9 18 9.9 18 11C18 12.1 18.9 13 20 13ZM24 16.43C24 15.62 23.52 14.9 22.78 14.58C21.93 14.21 20.99 14 20 14C19.61 14 19.24 14.04 18.87 14.1C19.27 14.78 19.5 15.56 19.5 16.39V18H23C23.55 18 24 17.55 24 17V16.43ZM12 6C13.66 6 15 7.34 15 9C15 10.66 13.66 12 12 12C10.34 12 9 10.66 9 9C9 7.34 10.34 6 12 6Z" })));
 };
 
-var Icon$N = function (props) {
+var Icon$r = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z" })));
 };
 
-var Icon$O = function (props) {
+var Icon$q = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M4 18H15C15.55 18 16 17.55 16 17C16 16.45 15.55 16 15 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H12C12.55 13 13 12.55 13 12C13 11.45 12.55 11 12 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H15C15.55 8 16 7.55 16 7C16 6.45 15.55 6 15 6H4C3.45 6 3 6.45 3 7ZM20.3 14.88L17.42 12L20.3 9.12C20.69 8.73 20.69 8.1 20.3 7.71C19.91 7.32 19.28 7.32 18.89 7.71L15.3 11.3C14.91 11.69 14.91 12.32 15.3 12.71L18.89 16.3C19.28 16.69 19.91 16.69 20.3 16.3C20.68 15.91 20.69 15.27 20.3 14.88Z" })));
 };
 
-var Icon$P = function (props) {
+var Icon$p = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M20.042 8.303L11.308.345a.641.641 0 00-.418-.16h-.044a.566.566 0 00-.418.16L1.65 8.303a.68.68 0 00-.22.53v11.131c0 1.587 1.233 2.875 2.75 2.875h4.488c.374 0 .66-.3.66-.69v-7.82h3.057v7.82c0 .39.287.69.66.69h4.488c1.518 0 2.75-1.288 2.75-2.875V8.832a.699.699 0 00-.24-.529zm-1.078 11.638c0 .828-.638 1.495-1.43 1.495h-3.828v-7.82c0-.39-.286-.69-.66-.69H8.668c-.374 0-.66.3-.66.69v7.82H4.18c-.792 0-1.43-.667-1.43-1.495V9.13l8.097-7.383 8.096 7.384V19.94z" })));
 };
 
-var Icon$Q = function (props) {
+var Icon$o = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { fill: "#fff", d: "M21.274 12.836H22v-.46h-.88V6.465l-2.838-3.634-2.86 3.634v5.91h-1.166V6.42c-.087-.713-.66-1.241-1.342-1.241-.704 0-1.276.551-1.342 1.241v5.957H8.954v-1.794c.396-.092.682-.829.682-1.771 0-.99-.462-1.771-.747-1.771-.308 0-.748.805-.748 1.77 0 .875.264 1.587.616 1.749v1.817H6.534v-1.794c.396-.092.682-.829.682-1.771 0-.99-.462-1.771-.747-1.771-.308 0-.748.805-.748 1.77 0 .875.264 1.587.616 1.749v1.817H4.093v-1.794c.396-.092.682-.829.682-1.771 0-.99-.462-1.771-.748-1.771-.307 0-.747.805-.747 1.77 0 .875.264 1.587.616 1.749v1.817H1.673v-1.794c.396-.092.682-.829.682-1.771 0-.99-.462-1.771-.748-1.771-.307 0-.747.805-.747 1.77 0 .875.264 1.587.616 1.749v1.817H0v.46h1.233a5.021 5.021 0 00-1.233.46v.736c1.54-1.127 3.41-1.196 5.324-1.196-1.87.184-3.717.897-5.324 1.817v.736c1.717-1.265 3.85-2.323 6.007-2.53h.682-.396 1.32c-2.949.253-5.786 2.254-7.613 4.07v1.496c1.364-2.024 4.708-5.244 8.14-5.59h1.1c-3.563.391-6.93 4.301-7.853 6.234h1.826c.814-1.886 3.607-5.865 6.687-6.233h1.233c-2.816.39-5.566 4.3-6.293 6.233h1.826c.617-1.863 2.838-5.888 5.17-6.233h1.21c-2.046.39-4.158 4.3-4.686 6.233h1.826c.397-1.84 2.113-5.98 3.653-6.233h.968c-2.024.39-2.267 4.3-2.838 6.233h1.98c.44-1.84.044-5.98 1.716-6.233h1.1c-2.134.39-.176 4.3-.836 6.233h1.98c.506-1.84-2.068-5.98-.176-6.233h.792c-1.892.39 2.376 4.3 1.716 6.233h1.738V17.32c-1.21-1.955-3.85-4.301-2.465-4.485h.814c-.704.184.352 1.058 1.672 2.139v-.99c-.857-.62-1.276-1.08-.726-1.15zm-1.65-4.807l-.44-.667.44-.666zm-.132.184h-.902l.44-.666zm0-1.679l-.44.667-.44-.667zm-1.012.16l.44.667-.44.667zm-.814.667l.44-.666v1.31zm.33.852h-.902l.44-.666zm0-1.679l-.44.667-.44-.667zm-1.012.16l.44.667-.44.667zm0 5.682v-2.83h2.574v2.83z" })));
 };
 
-var Icon$R = function (props) {
+var Icon$n = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M21.9 8.89L20.85 4.52C20.63 3.62 19.85 3 18.94 3H16.73H14.72H13H11H9.28001H7.26001H5.05001C4.15001 3 3.36001 3.63 3.15001 4.52L2.10001 8.89C1.86001 9.91 2.08001 10.95 2.72001 11.77C2.80001 11.88 2.91001 11.96 3.00001 12.06V19C3.00001 20.1 3.90001 21 5.00001 21H19C20.1 21 21 20.1 21 19V12.06C21.09 11.97 21.2 11.88 21.28 11.78C21.92 10.96 22.15 9.91 21.9 8.89ZM7.02001 5L6.44001 9.86C6.36001 10.51 5.84001 11 5.23001 11C4.74001 11 4.43001 10.71 4.30001 10.53C4.04001 10.2 3.95001 9.77 4.05001 9.36L5.05001 5H7.02001ZM18.91 4.99L19.96 9.36C20.06 9.78 19.97 10.2 19.71 10.53C19.57 10.71 19.27 11 18.77 11C18.16 11 17.63 10.51 17.56 9.86L16.98 5L18.91 4.99ZM15.51 9.52C15.56 9.91 15.44 10.3 15.18 10.59C14.95 10.85 14.63 11 14.22 11C13.55 11 13 10.41 13 9.69V5H14.96L15.51 9.52ZM11 9.69C11 10.41 10.45 11 9.71001 11C9.37001 11 9.06001 10.85 8.82001 10.59C8.57001 10.3 8.45001 9.91 8.49001 9.52L9.04001 5H11V9.69ZM18 19H6.00001C5.45001 19 5.00001 18.55 5.00001 18V12.97C5.08001 12.98 5.15001 13 5.23001 13C6.10001 13 6.89001 12.64 7.47001 12.05C8.07001 12.65 8.87001 13 9.78001 13C10.65 13 11.43 12.64 12.01 12.07C12.6 12.64 13.4 13 14.3 13C15.14 13 15.94 12.65 16.54 12.05C17.12 12.64 17.91 13 18.78 13C18.86 13 18.93 12.98 19.01 12.97V18C19 18.55 18.55 19 18 19Z" })));
 };
 
-var Icon$S = function (props) {
+var Icon$m = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M5 7C5 6.44772 4.55228 6 4 6C3.44772 6 3 6.44772 3 7V18C3 19.1046 3.89543 20 5 20H20C20.5523 20 21 19.5523 21 19C21 18.4477 20.5523 18 20 18H5V7Z" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M19 17H7C6.44772 17 6 16.5523 6 16V12C6 11.4477 6.44772 11 7 11H10V10C10 9.44772 10.4477 9 11 9H14V7C14 6.44772 14.4477 6 15 6H19C19.5523 6 20 6.44772 20 7V16C20 16.5523 19.5523 17 19 17ZM16 8H18V15H16V8ZM12 15H14V11H12V15ZM10 13H8V15H10V13Z" })));
 };
 
-var Icon$T = function (props) {
+var Icon$l = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z" })));
 };
 
-styled.text(templateObject_1$z || (templateObject_1$z = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n"])));
-styled.tspan(templateObject_2$b || (templateObject_2$b = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n  letter-spacing: 0em;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n  letter-spacing: 0em;\n"])));
-var Logo = function (_a) {
+styled.text(templateObject_1$d || (templateObject_1$d = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n"])));
+styled.tspan(templateObject_2$5 || (templateObject_2$5 = __makeTemplateObject(["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n  letter-spacing: 0em;\n"], ["\n  font-size: 26.26px;\n  font-family: GoodTimingRg-Bold, Good Timing !important;\n  font-weight: 700;\n  letter-spacing: 0em;\n"])));
+var Logo$3 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     // const logoImg = isDark ? "/images/logo-dark.png" : "/images/logo.png";
     // const textColor = isDark ? "#FFFFFF" : "#432918";
@@ -2114,9 +5055,9 @@ var Logo = function (_a) {
             React.createElement("ellipse", { cx: "24.981", cy: "25.155", fill: "url(#b)", rx: "22.23", ry: "22.339" }),
             React.createElement("path", { fill: "#fff", d: "M12.035 16.965l3.731 3.731-4.611 4.611-3.732-3.73zM25 11.882l4.637 4.636-17.316 17.316-4.636-4.637zm0 0l8.765 8.764-4.6 4.6-8.764-8.765zm12.645 5.306l4.636 4.636L24.977 39.13l-4.637-4.637zm-16.81 8.578l8.752 8.752-4.611 4.612-8.752-8.752zm17.987-.062l3.732 3.731-4.6 4.6-3.73-3.732z" }))));
 };
-var templateObject_1$z, templateObject_2$b;
+var templateObject_1$d, templateObject_2$5;
 
-var Logo$1 = function (_a) {
+var Logo$2 = function (_a) {
     _a.isDark; var props = __rest(_a, ["isDark"]);
     var width = props.width ? props.width : '24';
     var height = props.height ? props.height : '24';
@@ -2127,28 +5068,28 @@ var Logo$1 = function (_a) {
             React.createElement("path", { fill: "#fff", d: "M12.035 16.965l3.731 3.731-4.611 4.611-3.732-3.73zM25 11.882l4.637 4.636-17.316 17.316-4.636-4.637zm0 0l8.765 8.764-4.6 4.6-8.764-8.765zm12.645 5.306l4.636 4.636L24.977 39.13l-4.637-4.637zm-16.81 8.578l8.752 8.752-4.611 4.612-8.752-8.752zm17.987-.062l3.732 3.731-4.6 4.6-3.73-3.732z" }))));
 };
 
-var Icon$U = function (props) {
+var Icon$k = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M4.1534 13.6089L4.15362 13.61C4.77322 16.8113 7.42207 19.3677 10.647 19.8853L10.6502 19.8858C13.0412 20.2736 15.2625 19.6103 16.9422 18.2833C11.3549 16.2878 7.9748 10.3524 9.26266 4.48816C5.69846 5.77194 3.35817 9.51245 4.1534 13.6089ZM10.0083 2.21054C4.76622 3.2533 1.09895 8.36947 2.19006 13.9901C2.97006 18.0201 6.28006 21.2101 10.3301 21.8601C13.8512 22.4311 17.0955 21.1608 19.2662 18.8587C19.2765 18.8478 19.2866 18.837 19.2968 18.8261C19.4385 18.6745 19.5757 18.5184 19.7079 18.3581C19.7105 18.355 19.713 18.3519 19.7156 18.3487C19.8853 18.1426 20.0469 17.9295 20.2001 17.7101C20.4101 17.4001 20.2401 16.9601 19.8701 16.9201C19.5114 16.8796 19.1602 16.8209 18.817 16.7452C18.7964 16.7406 18.7758 16.736 18.7552 16.7313C18.6676 16.7114 18.5804 16.6903 18.4938 16.6681C18.4919 16.6676 18.4901 16.6672 18.4882 16.6667C13.0234 15.2647 9.72516 9.48006 11.4542 4.03417C11.4549 4.03214 11.4555 4.03012 11.4562 4.0281C11.4875 3.92954 11.5205 3.83109 11.5552 3.73278C11.5565 3.72911 11.5578 3.72543 11.5591 3.72175C11.6768 3.38921 11.8136 3.05829 11.9701 2.73005C12.1301 2.39005 11.8501 2.01005 11.4701 2.03005C11.1954 2.04379 10.924 2.06848 10.6561 2.10368C10.6517 2.10427 10.6472 2.10486 10.6428 2.10545C10.4413 2.13221 10.2418 2.16492 10.0446 2.2034C10.0325 2.20576 10.0204 2.20814 10.0083 2.21054Z" })));
 };
 
-var Icon$V = function (props) {
+var Icon$j = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M6 10C4.9 10 4 10.9 4 12C4 13.1 4.9 14 6 14C7.1 14 8 13.1 8 12C8 10.9 7.1 10 6 10ZM18 10C16.9 10 16 10.9 16 12C16 13.1 16.9 14 18 14C19.1 14 20 13.1 20 12C20 10.9 19.1 10 18 10ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z" })));
 };
 
-var Icon$W = function (props) {
+var Icon$i = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M11.202.664L7.689 4.338l2.306.287-2.762.188-2.686 2.808 1.341.169-1.606.108-3.881 4.058.154.161a18.776 18.776 0 0111.198-3.723c3.196.007 6.336.827 9.117 2.377l-3.918-4.096-5.49-.181 5.049-.28-2.459-2.57-4.045-.196 3.59-.28zm1.696 8.857a14.692 14.692 0 00-10.551 4.47l1.916 2.004c2.591-3.304 6.59-5.24 10.83-5.244 2.27.006 4.505.567 6.5 1.634l.007-.005-.001-.001a14.734 14.734 0 00-8.701-2.858zm3.038 2.06c-2.087 0-4.129.6-5.875 1.726a10.623 10.623 0 00-3.96 4.609l4.229 4.42a8.247 8.247 0 01-.114-1.309c0-2.244.905-4.396 2.516-5.982a8.659 8.659 0 016.075-2.478c.764 0 1.525.102 2.263.3a10.879 10.879 0 00-5.134-1.286zm3.4 1.507c-1.788 0-3.503.7-4.767 1.944a6.588 6.588 0 00-1.975 4.693c.001.61.086 1.216.255 1.801l7.92-8.279a6.866 6.866 0 00-1.434-.16z" })));
 };
 
-var Icon$X = function (props) {
+var Icon$h = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M7.5 13C7.5 11.8954 8.39543 11 9.5 11H12.5C13.6046 11 14.5 11.8954 14.5 13V15C14.5 16.1046 13.6046 17 12.5 17H9.5C8.39543 17 7.5 16.1046 7.5 15V13Z" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M9.5 2C8.39543 2 7.5 2.89543 7.5 4V6.49482C7.5 6.93167 7.2113 7.30895 6.81834 7.49981C5.15004 8.31009 4 10.0207 4 12V17C4 19.2091 5.79086 21 8 21H14C16.2091 21 18 19.2091 18 17V12C18 11.4175 17.9004 10.8583 17.7173 10.3385L17.7892 10.297C19.4786 9.32167 20.0574 7.16153 19.082 5.47221C18.1552 3.86682 16.1534 3.25957 14.5 4.05146V4C14.5 2.89543 13.6046 2 12.5 2H9.5ZM9.5 6.25V4H12.5V6.25H9.5ZM9.22663 7.75C8.89473 8.46917 8.30318 9.00205 7.69211 9.29884C6.68638 9.78731 6 10.8154 6 12V17C6 18.1046 6.89543 19 8 19H14C15.1046 19 16 18.1046 16 17V12C16 10.8154 15.3136 9.78731 14.3079 9.29884C13.6968 9.00205 13.1053 8.46917 12.7734 7.75H9.22663ZM14.5 6.3226V6.49482C14.5 6.93167 14.7887 7.30895 15.1817 7.49981C15.7529 7.77726 16.2634 8.16029 16.6878 8.62352L16.7892 8.56495C17.522 8.1419 17.773 7.20495 17.35 6.47221C16.9346 5.75269 16.0213 5.49542 15.2914 5.89229L14.5 6.3226Z" })));
 };
 
-var Icon$Y = function (props) {
+var Icon$g = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M5.66 4.2L6.05 4.59C6.44 4.97 6.44 5.61 6.05 5.99L6.04 6C5.65 6.39 5.03 6.39 4.64 6L4.25 5.61C3.86 5.23 3.86 4.6 4.25 4.21L4.26 4.2C4.64 3.82 5.27 3.81 5.66 4.2Z" }),
         React.createElement("path", { d: "M1.99 10.95H3.01C3.56 10.95 4 11.39 4 11.95V11.96C4 12.51 3.56 12.95 3 12.94H1.99C1.44 12.94 1 12.5 1 11.95V11.94C1 11.39 1.44 10.95 1.99 10.95Z" }),
@@ -2161,34 +5102,34 @@ var Icon$Y = function (props) {
         React.createElement("path", { d: "M5.66 19.69C5.27 20.08 4.64 20.08 4.25 19.69C3.86 19.3 3.86 18.68 4.24 18.28L4.63 17.89C5.02 17.5 5.65 17.5 6.04 17.89L6.05 17.9C6.43 18.28 6.44 18.91 6.05 19.3L5.66 19.69Z" })));
 };
 
-var Icon$Z = function (props) {
+var Icon$f = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 3C7.02985 3 3 7.02985 3 11.9904C3 16.9606 7.02985 21 12 21C16.9701 21 21 16.9606 21 11.9904C21 7.02985 16.9701 3 12 3ZM16.4328 8.65139C16.3753 9.48614 14.8305 15.7228 14.8305 15.7228C14.8305 15.7228 14.7345 16.0874 14.3987 16.097C14.2836 16.097 14.1301 16.0874 13.9574 15.9243C13.6023 15.6269 12.7964 15.0512 12.0384 14.5235C12.0096 14.5522 11.9808 14.581 11.9424 14.6098C11.7697 14.7633 11.5107 14.984 11.2324 15.2527C11.1269 15.3486 11.0117 15.4542 10.8966 15.5693L10.887 15.5789C10.8198 15.6461 10.7623 15.694 10.7143 15.7324C10.3401 16.0394 10.3017 15.7804 10.3017 15.6461L10.5032 13.4488V13.4296L10.5128 13.4104C10.5224 13.3817 10.5416 13.3721 10.5416 13.3721C10.5416 13.3721 14.4659 9.87953 14.5714 9.50533C14.581 9.48614 14.5522 9.46695 14.5043 9.48614C14.2452 9.57249 9.72601 12.4318 9.22708 12.7484C9.19829 12.7676 9.11194 12.758 9.11194 12.758L6.91471 12.0384C6.91471 12.0384 6.65565 11.9328 6.742 11.693C6.76119 11.645 6.78998 11.597 6.89552 11.5299C7.38486 11.1844 15.8955 8.12367 15.8955 8.12367C15.8955 8.12367 16.1354 8.04691 16.2793 8.09488C16.3465 8.12367 16.3849 8.15245 16.4232 8.2484C16.4328 8.28678 16.4424 8.36354 16.4424 8.44989C16.4424 8.49787 16.4328 8.55544 16.4328 8.65139Z" })));
 };
 
-var Icon$_ = function (props) {
+var Icon$e = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M14.3137 3L15.2631 3.94934C14.5597 5.19866 14.7398 6.81097 15.8032 7.87441C16.8667 8.93786 18.479 9.11792 19.7283 8.4146L20.6777 9.36396L17.6569 12.3848L17.1287 11.8566C16.7382 11.4661 16.105 11.4661 15.7145 11.8566C15.3239 12.2471 15.3239 12.8803 15.7145 13.2708L16.2426 13.799L9.36396 20.6777L8.49923 19.8129C9.71921 18.5286 9.69924 16.4983 8.43932 15.2384C7.1794 13.9784 5.14908 13.9585 3.86473 15.1784L3 14.3137L9.87868 7.43503L10.2145 7.77081C10.605 8.16134 11.2382 8.16134 11.6287 7.77081C12.0192 7.38029 12.0192 6.74713 11.6287 6.3566L11.2929 6.02081L14.3137 3ZM12.8995 1.58579C13.6805 0.804738 14.9469 0.804738 15.7279 1.58579L17.299 3.15684C17.6895 3.54736 17.6895 4.18053 17.299 4.57105L17.2175 4.65257C16.7183 5.15173 16.7183 5.96103 17.2175 6.4602C17.7166 6.95936 18.5259 6.95936 19.0251 6.4602L19.1066 6.37868C19.4971 5.98816 20.1303 5.98816 20.5208 6.37868L22.0919 7.94975C22.8729 8.7308 22.8729 9.99713 22.0919 10.7782L10.7782 22.0919C9.99713 22.8729 8.7308 22.8729 7.94975 22.0919L6.37869 20.5208C5.98817 20.1303 5.98817 19.4971 6.37869 19.1066L7.02511 18.4602C7.52427 17.961 7.52427 17.1517 7.02511 16.6526C6.52594 16.1534 5.71664 16.1534 5.21748 16.6526L4.57106 17.299C4.18054 17.6895 3.54737 17.6895 3.15685 17.299L1.58579 15.7279C0.804738 14.9469 0.804738 13.6805 1.58579 12.8995L12.8995 1.58579ZM13.8787 8.6066C13.4882 8.21608 12.855 8.21608 12.4645 8.6066C12.0739 8.99712 12.0739 9.63029 12.4645 10.0208L13.4645 11.0208C13.855 11.4113 14.4882 11.4113 14.8787 11.0208C15.2692 10.6303 15.2692 9.99713 14.8787 9.6066L13.8787 8.6066Z" })));
 };
 
-var Icon$$ = function (props) {
+var Icon$d = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { fill: "#fff", d: "M1.214 13.91c-.511.003-.946-.39-1.016-.92-.37-2.884.335-5.806 1.971-8.16C3.839 2.43 6.338.802 9.136.292c2.797-.51 5.675.14 8.024 1.808l.46-.665a.323.323 0 01.31-.14c.121.016.223.1.267.218l1.214 3.295v.001a.359.359 0 01-.046.32.324.324 0 01-.277.14l-3.373-.172a.329.329 0 01-.281-.196.357.357 0 01.03-.351l.455-.64a8.494 8.494 0 00-6.44-1.427c-2.242.414-4.244 1.72-5.585 3.644a9.19 9.19 0 00-.66 1.134h2.75c.072 0 .138.039.174.104a.216.216 0 01.002.209 1.698 1.698 0 00-.14 1.242c.142.41.453.73.847.874a2.49 2.49 0 002.153-.17l2.068-1.21a.14.14 0 01.18.035l4.323 5.52.534.674h.001a.948.948 0 01-.196 1.38.865.865 0 01-1.084-.14l-.072-.074h-.001c-.013-.01-.032 0-.03.018a.94.94 0 01-.38.939.873.873 0 01-1.115-.134l-.066-.067c-.013-.01-.031.001-.03.018a.939.939 0 01-.38.94.874.874 0 01-1.112-.13l-.066-.066c-.014-.01-.032.001-.031.018a.936.936 0 01-.39.934.85.85 0 01-.974-.014l.083-.154a1.717 1.717 0 00-.22-2.001 1.517 1.517 0 00-.842-.444 1.534 1.534 0 00-.89-.727 1.56 1.56 0 00-1.07-1.101 1.585 1.585 0 00-.608-.89 1.565 1.565 0 00-2.087.353l-.559.715H1.214zm4.962-.418a.743.743 0 00-.975.205l-.581.744a.791.791 0 00.117 1.093l.088.074a.71.71 0 00.823.06c.026-.017.06.007.052.038a.79.79 0 00.268.755l.073.06a.713.713 0 00.795.08c.026-.015.058.007.055.04a.793.793 0 00.279.69l.05.041a.72.72 0 00.803.078.042.042 0 01.065.033.781.781 0 00.272.49l.031.024a.728.728 0 00.61.153.756.756 0 00.507-.383l.108-.2a.838.838 0 00-.13-1.007.721.721 0 00-.813-.133.023.023 0 01-.031-.023.787.787 0 00-.305-.672.712.712 0 00-.705-.092c-.11.02-.086-.081-.086-.081a.797.797 0 00-.191-.87.716.716 0 00-.85-.1c-.083.011-.072-.067-.072-.067a.787.787 0 00-.257-1.03zm15.259-5.26l-.071-.23a1.032 1.032 0 00-.974-.732h-2.42c-.318 0-.632-.061-.929-.18L12.49 5.267a2.738 2.738 0 00-2.732.412l-2.86 2.27a.583.583 0 00.143.938 1.724 1.724 0 001.59-.082l2.434-1.424a.428.428 0 01.548.107l5.304 6.74a.132.132 0 00.09.05.128.128 0 00.099-.03l.22-.19a.604.604 0 01.392-.146h1.722c-.767 2.937-2.878 5.285-5.635 6.265-2.757.98-5.8.464-8.12-1.377l.487-.63a.36.36 0 00.05-.35.335.335 0 00-.27-.212l-3.36-.358a.322.322 0 00-.296.13.358.358 0 00-.051.33l1.036 3.36a.336.336 0 00.26.22.325.325 0 00.31-.13l.492-.637c2.452 1.975 5.59 2.769 8.635 2.18 3.043-.587 5.704-2.5 7.318-5.262a11.842 11.842 0 001.14-9.21z" })));
 };
 
-var Icon$10 = function (props) {
+var Icon$c = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M8.65854 19C15.4488 19 19.1659 13.2338 19.1659 8.23717C19.1659 8.07728 19.1659 7.91739 19.1561 7.7475C19.878 7.21785 20.5024 6.5483 21 5.78881C20.3366 6.08861 19.6244 6.28847 18.8732 6.38841C19.6341 5.91872 20.2195 5.17921 20.5024 4.28981C19.7902 4.72951 19 5.03931 18.1512 5.20919C17.478 4.45969 16.522 4 15.4585 4C13.4195 4 11.761 5.69887 11.761 7.78747C11.761 8.08728 11.8 8.36709 11.8585 8.6469C8.79512 8.497 6.07317 6.97801 4.24878 4.68954C3.92683 5.25916 3.75122 5.90873 3.75122 6.59827C3.75122 7.90739 4.40488 9.06662 5.39024 9.74617C4.78537 9.72618 4.21951 9.5563 3.72195 9.27648C3.72195 9.28648 3.72195 9.30646 3.72195 9.32645C3.72195 11.1552 5 12.6942 6.67805 13.034C6.36585 13.1239 6.0439 13.1639 5.70244 13.1639C5.46829 13.1639 5.23415 13.1439 5.00976 13.0939C5.47805 14.6029 6.8439 15.6922 8.46341 15.7222C7.19512 16.7415 5.60488 17.3411 3.87805 17.3411C3.58537 17.3411 3.28293 17.3311 3 17.2911C4.62927 18.3704 6.57073 19 8.65854 19Z" })));
 };
 
-var Icon$11 = function (props) {
+var Icon$b = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "-60 -30 600 600", width: "24px", color: "text" }, props),
         React.createElement("g", { id: "surface1" },
             React.createElement("path", { d: "M 217.996094 158.457031 C 164.203125 158.457031 120.441406 202.21875 120.441406 256.007812 C 120.441406 309.800781 164.203125 353.5625 217.996094 353.5625 C 271.785156 353.5625 315.546875 309.800781 315.546875 256.007812 C 315.546875 202.21875 271.785156 158.457031 217.996094 158.457031 Z M 275.914062 237.636719 L 206.027344 307.523438 C 203.09375 310.457031 199.246094 311.925781 195.402344 311.925781 C 191.558594 311.925781 187.714844 310.460938 184.78125 307.523438 L 158.074219 280.816406 C 152.207031 274.953125 152.207031 265.441406 158.074219 259.574219 C 163.9375 253.707031 173.449219 253.707031 179.316406 259.574219 L 195.402344 275.660156 L 254.671875 216.394531 C 260.535156 210.527344 270.046875 210.527344 275.914062 216.394531 C 281.78125 222.257812 281.78125 231.769531 275.914062 237.636719 Z M 275.914062 237.636719 " }),
             React.createElement("path", { d: "M 435.488281 138.917969 L 435.472656 138.519531 C 435.25 133.601562 435.101562 128.398438 435.011719 122.609375 C 434.59375 94.378906 412.152344 71.027344 383.917969 69.449219 C 325.050781 66.164062 279.511719 46.96875 240.601562 9.042969 L 240.269531 8.726562 C 227.578125 -2.910156 208.433594 -2.910156 195.738281 8.726562 L 195.40625 9.042969 C 156.496094 46.96875 110.957031 66.164062 52.089844 69.453125 C 23.859375 71.027344 1.414062 94.378906 0.996094 122.613281 C 0.910156 128.363281 0.757812 133.566406 0.535156 138.519531 L 0.511719 139.445312 C -0.632812 199.472656 -2.054688 274.179688 22.9375 341.988281 C 36.679688 379.277344 57.492188 411.691406 84.792969 438.335938 C 115.886719 468.679688 156.613281 492.769531 205.839844 509.933594 C 207.441406 510.492188 209.105469 510.945312 210.800781 511.285156 C 213.191406 511.761719 215.597656 512 218.003906 512 C 220.410156 512 222.820312 511.761719 225.207031 511.285156 C 226.902344 510.945312 228.578125 510.488281 230.1875 509.925781 C 279.355469 492.730469 320.039062 468.628906 351.105469 438.289062 C 378.394531 411.636719 399.207031 379.214844 412.960938 341.917969 C 438.046875 273.90625 436.628906 199.058594 435.488281 138.917969 Z M 217.996094 383.605469 C 147.636719 383.605469 90.398438 326.367188 90.398438 256.007812 C 90.398438 185.648438 147.636719 128.410156 217.996094 128.410156 C 288.351562 128.410156 345.59375 185.648438 345.59375 256.007812 C 345.59375 326.367188 288.351562 383.605469 217.996094 383.605469 Z M 217.996094 383.605469 " }))));
 };
 
-var Icon$12 = function (props) {
+var Icon$a = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24", width: "24px", color: "text" }, props),
         React.createElement("path", { d: "M12,23.87H12a.51.51,0,0,1-.42-.57c.75-4.65,3.07-8.39,7.53-12.12a.49.49,0,0,1,.7.06.51.51,0,0,1-.06.71c-4.26,3.56-6.48,7.12-7.18,11.51A.5.5,0,0,1,12,23.87Z" }),
         React.createElement("path", { d: "M12,23.87a.51.51,0,0,1-.47-.31,19.08,19.08,0,0,0-1.53-3,7,7,0,0,1-6-2.3c-1.9-2-2.66-4.67-1.89-6.73a.46.46,0,0,1,.31-.3c2.09-.7,4.77.16,6.67,2.12s2.65,4.68,1.88,6.74a.37.37,0,0,1,0,.11,20.14,20.14,0,0,1,1.51,3,.5.5,0,0,1-.27.65A.46.46,0,0,1,12,23.87ZM3,12.13a5.85,5.85,0,0,0,1.75,5.46,6.24,6.24,0,0,0,4.62,2.06,17.2,17.2,0,0,0-3.73-3.9.5.5,0,0,1,.59-.81,18.54,18.54,0,0,1,4,4.2,6.12,6.12,0,0,0-1.84-5.07A5.88,5.88,0,0,0,3,12.13Z" }),
@@ -2199,7 +5140,7 @@ var Icon$12 = function (props) {
         React.createElement("path", { d: "M2.3,6.18a.5.5,0,0,1-.25-.93l1.42-.83a.52.52,0,0,1,.69.19A.5.5,0,0,1,4,5.29l-1.42.82A.47.47,0,0,1,2.3,6.18ZM2.93,2.4H1.29a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5H2.93a.5.5,0,0,1,.5.5A.5.5,0,0,1,2.93,2.4Z" })));
 };
 
-var Icon$13 = function (props) {
+var Icon$9 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 512 512", width: "24px", color: "text" }, props),
         React.createElement("g", null,
             React.createElement("path", { d: "M473.1,182.9L473.1,182.9l-115.4-42c-4-1.5-8.3-1.4-12.1,0V55c0-27.6-22.4-50-50-50H55C27.4,5,5,27.4,5,55v240.6\n\t\tc0,27.6,22.4,50,50,50h49.7c-0.1,0.2-0.2,0.5-0.3,0.7l-3.8,10.3c-4.6,12.5-4,26.1,1.7,38.2c5.6,12.1,15.7,21.3,28.2,25.9L356.6,503\n\t\tc5.5,2,11.2,3,17,3c21,0,39.8-13.2,47-32.9L503,247C512.4,221.1,499,192.4,473.1,182.9z M345.6,174.6l115.3,42\n\t\tc3.6,1.3,6.4,3.9,8,7.3c1.6,3.4,1.8,7.3,0.5,10.8l-82.3,226.1c-1.3,3.6-3.9,6.4-7.3,8c-3.4,1.6-7.3,1.8-10.8,0.5l-226.1-82.3\n\t\tc-7.4-2.7-11.2-10.8-8.5-18.2l3.7-10.3c1.6-4.2,1.5-8.8-0.3-13h157.9c27.6,0,50-22.4,50-50V174.6z M40.8,55\n\t\tc0-7.8,6.4-14.2,14.2-14.2h240.6c7.8,0,14.2,6.4,14.2,14.2v240.6c0,7.8-6.4,14.2-14.2,14.2H55c-7.8,0-14.2-6.4-14.2-14.2V55z" }),
@@ -2214,46 +5155,46 @@ var Icon$13 = function (props) {
                 React.createElement("path", { d: "M255.5,58c-20.4,0-37.1,16.6-37.1,37.1c0,20.4,16.6,37.1,37.1,37.1c20.4,0,37.1-16.6,37.1-37.1\n\t\t\tC292.6,74.6,276,58,255.5,58z M266.5,95.1c0,6.1-5,11-11,11c-6.1,0-11-5-11-11s5-11,11-11C261.6,84,266.5,89,266.5,95.1z" })))));
 };
 
-var Icon$14 = function (props) {
+var Icon$8 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" })));
 };
 
-var Icon$15 = function (props) {
+var Icon$7 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 24 24" }, props),
         React.createElement("path", { d: "M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" })));
 };
 
 var IconModule = /*#__PURE__*/Object.freeze({
     __proto__: null,
-    FarmIcon: Icon$L,
-    GroupsIcon: Icon$M,
-    HamburgerIcon: Icon$N,
-    HamburgerCloseIcon: Icon$O,
-    HomeIcon: Icon$P,
-    YieldFieldIcon: Icon$Q,
-    IfoIcon: Icon$R,
-    InfoIcon: Icon$S,
-    LanguageIcon: Icon$T,
-    LogoIcon: Logo,
-    Logo2Icon: Logo$1,
-    MoonIcon: Icon$U,
-    MoreIcon: Icon$V,
-    NftIcon: Icon$W,
-    PoolIcon: Icon$X,
-    SunIcon: Icon$Y,
-    TelegramIcon: Icon$Z,
-    TicketIcon: Icon$_,
-    TradeIcon: Icon$$,
-    TwitterIcon: Icon$10,
-    ShieldIcon: Icon$11,
-    BushIcon: Icon$12,
-    CasinoIcon: Icon$13,
-    InstagramIcon: Icon$14,
-    DiscordIcon: Icon$15
+    FarmIcon: Icon$t,
+    GroupsIcon: Icon$s,
+    HamburgerIcon: Icon$r,
+    HamburgerCloseIcon: Icon$q,
+    HomeIcon: Icon$p,
+    YieldFieldIcon: Icon$o,
+    IfoIcon: Icon$n,
+    InfoIcon: Icon$m,
+    LanguageIcon: Icon$l,
+    LogoIcon: Logo$3,
+    Logo2Icon: Logo$2,
+    MoonIcon: Icon$k,
+    MoreIcon: Icon$j,
+    NftIcon: Icon$i,
+    PoolIcon: Icon$h,
+    SunIcon: Icon$g,
+    TelegramIcon: Icon$f,
+    TicketIcon: Icon$e,
+    TradeIcon: Icon$d,
+    TwitterIcon: Icon$c,
+    ShieldIcon: Icon$b,
+    BushIcon: Icon$a,
+    CasinoIcon: Icon$9,
+    InstagramIcon: Icon$8,
+    DiscordIcon: Icon$7
 });
 
-var MenuButton = styled(Button)(templateObject_1$A || (templateObject_1$A = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
+var MenuButton = styled(Button)(templateObject_1$c || (templateObject_1$c = __makeTemplateObject(["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"], ["\n  color: ", ";\n  padding: 0 8px;\n  border-radius: 8px;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.text;
 });
@@ -2261,30 +5202,30 @@ MenuButton.defaultProps = {
     variant: "text",
     size: "sm",
 };
-var templateObject_1$A;
+var templateObject_1$c;
 
-var StyledLink$1 = styled(Link$1)(templateObject_1$B || (templateObject_1$B = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .logo {\n    font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 400;\n    margin-left: 6px;\n    \n  }\n  .logo span:first-child{\n    font-weight: 600;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .logo {\n    font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 400;\n    margin-left: 6px;\n    \n  }\n  .logo span:first-child{\n    font-weight: 600;\n  }\n"])), function (_a) {
+var StyledLink = styled(Link$1)(templateObject_1$b || (templateObject_1$b = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .logo {\n    font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 400;\n    margin-left: 6px;\n    \n  }\n  .logo span:first-child{\n    font-weight: 600;\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  .mobile-icon {\n    width: 32px;\n    ", " {\n      display: none;\n    }\n  }\n  .desktop-icon {\n    width: 156px;\n    display: none;\n    ", " {\n      display: block;\n    }\n  }\n  .logo {\n    font-family: \"Roboto\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 400;\n    margin-left: 6px;\n    \n  }\n  .logo span:first-child{\n    font-weight: 600;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 }, function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
-var Logo$2 = function (_a) {
+var Logo = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React.createElement(React.Fragment, null,
-        React.createElement(Logo, { className: "desktop-icon", isDark: isDark }),
+        React.createElement(Logo$3, { className: "desktop-icon", isDark: isDark }),
         " ",
         React.createElement("div", { className: "logo" },
             React.createElement("span", null, "HAPPY"),
             React.createElement("span", null, "SWAP"))));
     return (React.createElement(Flex, null,
-        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "0px" }, isPushed ? (React.createElement(Icon$O, { width: "24px", color: "hamburger" })) : (React.createElement(Icon$N, { width: "24px", color: "hamburger" }))),
-        isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Happyswap home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Happyswap home page" }, innerLogo))));
+        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "0px" }, isPushed ? (React.createElement(Icon$q, { width: "24px", color: "hamburger" })) : (React.createElement(Icon$r, { width: "24px", color: "hamburger" }))),
+        isAbsoluteUrl ? (React.createElement(StyledLink, { as: "a", href: href, "aria-label": "Happyswap home page" }, innerLogo)) : (React.createElement(StyledLink, { to: href, "aria-label": "Happyswap home page" }, innerLogo))));
 };
-var Logo$3 = React.memo(Logo$2, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
-var templateObject_1$B;
+var Logo$1 = React.memo(Logo, function (prev, next) { return prev.isPushed === next.isPushed && prev.isDark === next.isDark; });
+var templateObject_1$b;
 
 var links = [
     {
@@ -2392,12 +5333,12 @@ var MENU_ENTRY_HEIGHT = 32;
 var SIDEBAR_WIDTH_FULL = 240;
 var SIDEBAR_WIDTH_REDUCED = 56;
 
-var rainbowAnimation = keyframes(templateObject_1$C || (templateObject_1$C = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
-var LinkLabel = styled.div(templateObject_2$c || (templateObject_2$c = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
+var rainbowAnimation = keyframes(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"], ["\n  0%,\n  100% {\n    background-position: 0 0;\n  }\n  50% {\n    background-position: 100% 0;\n  }\n"])));
+var LinkLabel = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTemplateObject(["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"], ["\n  color: ", ";\n  transition: color 0.4s;\n  flex-grow: 1;\n"])), function (_a) {
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.textSubtle : "transparent");
 });
-var MenuEntry = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", ";;\n  padding: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  font-family: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n   \n  flex-direction: ", "\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", ";;\n  padding: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  font-family: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n   \n  flex-direction: ", "\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), function (_a) {
+var MenuEntry = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", ";;\n  padding: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  font-family: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n   \n  flex-direction: ", "\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", ";;\n  padding: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  font-family: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n   \n  flex-direction: ", "\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "26px" : MENU_ENTRY_HEIGHT + "px");
 }, function (_a) {
@@ -2441,7 +5382,7 @@ MenuEntry.defaultProps = {
     sub: false
 };
 var LinkLabelMemo = React.memo(LinkLabel, function (prev, next) { return prev.isPushed === next.isPushed; });
-var templateObject_1$C, templateObject_2$c, templateObject_3$6;
+var templateObject_1$a, templateObject_2$4, templateObject_3$3;
 
 var MenuLink = function (_a) {
     var href = _a.href, otherProps = __rest(_a, ["href"]);
@@ -2453,17 +5394,17 @@ var MenuLink = function (_a) {
     return React.createElement(Tag, __assign({}, props, otherProps));
 };
 
-var Icons = IconModule;
-var Container$2 = styled.div(templateObject_1$D || (templateObject_1$D = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  background-image: url(/images/background-left-bottom-quatter.png);\n  background-position: left 0px top 350px;\n    background-repeat: no-repeat;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  background-image: url(/images/background-left-bottom-quatter.png);\n  background-position: left 0px top 350px;\n    background-repeat: no-repeat;\n"])));
-var SubMenuContainer = styled.div(templateObject_2$d || (templateObject_2$d = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  margin-bottom: 1em\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  margin-bottom: 1em\n"])));
-var MenuA = styled.a(templateObject_3$7 || (templateObject_3$7 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n"], ["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n"])));
+var Icons$1 = IconModule;
+var Container$1 = styled.div(templateObject_1$9 || (templateObject_1$9 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  background-image: url(/images/background-left-bottom-quatter.png);\n  background-position: left 0px top 350px;\n    background-repeat: no-repeat;\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  background-image: url(/images/background-left-bottom-quatter.png);\n  background-position: left 0px top 350px;\n    background-repeat: no-repeat;\n"])));
+var SubMenuContainer = styled.div(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  margin-bottom: 1em\n"], ["\n  display: flex;\n  flex-direction: column;\n  overflow-y: auto;\n  overflow-x: hidden;\n  height: 100%;\n  margin-bottom: 1em\n"])));
+var MenuA = styled.a(templateObject_3$2 || (templateObject_3$2 = __makeTemplateObject(["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n"], ["\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n"])));
 var PanelBody = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav, isMobile = _a.isMobile, links = _a.links;
     var location = useLocation();
     // Close the menu when a user clicks a link on mobile
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
-    return (React.createElement(Container$2, null, links.map(function (entry) {
-        var Icon = Icons[entry.icon];
+    return (React.createElement(Container$1, null, links.map(function (entry) {
+        var Icon = Icons$1[entry.icon];
         var iconElement = React.createElement(Icon, { width: "24px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
@@ -2484,11 +5425,11 @@ var PanelBody = function (_a) {
                 React.createElement(LinkLabelMemo, { isPushed: isPushed }, entry.label))));
     })));
 };
-var templateObject_1$D, templateObject_2$d, templateObject_3$7;
+var templateObject_1$9, templateObject_2$3, templateObject_3$2;
 
-var Icons$1 = IconModule;
+var Icons = IconModule;
 var SocialLinks = function () { return (React.createElement(Flex, null, socials.map(function (social, index) {
-    var Icon = Icons$1[social.icon];
+    var Icon = Icons[social.icon];
     var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
     var mr = index < socials.length - 1 ? "24px" : 0;
     if (social.items) {
@@ -2499,13 +5440,13 @@ var SocialLinks = function () { return (React.createElement(Flex, null, socials.
 }))); };
 var SocialLinks$1 = React.memo(SocialLinks, function () { return true; });
 
-var Container$3 = styled.div(templateObject_1$E || (templateObject_1$E = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
+var Container = styled.div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });
-var SettingsEntry = styled.div(templateObject_2$e || (templateObject_2$e = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
-styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
-var TokenInfo = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  padding: 0 16px;\n  margin-bottom: 1px;\n  border-bottom:  ", ";\n  font-family: 'Roboto', Helvetica, Arial, sans-serif;\n  font-size: 12px;\n  font-weight: 500;\n  color: ", ";\n  background-color:  ", ";\n  .title {    \n    display: flex;\n    font-weight: 600;\n    justify-content: flex-start;\n    margin: 8px 0 10px;\n  }\n  .row{\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 10px;\n  }\n  .cap{\n    text-align: left;\n  }\n  .val {\n    text-align: right;\n  }\n  \n"], ["\n  padding: 0 16px;\n  margin-bottom: 1px;\n  border-bottom:  ", ";\n  font-family: 'Roboto', Helvetica, Arial, sans-serif;\n  font-size: 12px;\n  font-weight: 500;\n  color: ", ";\n  background-color:  ", ";\n  .title {    \n    display: flex;\n    font-weight: 600;\n    justify-content: flex-start;\n    margin: 8px 0 10px;\n  }\n  .row{\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 10px;\n  }\n  .cap{\n    text-align: left;\n  }\n  .val {\n    text-align: right;\n  }\n  \n"])), function (_a) {
+var SettingsEntry = styled.div(templateObject_2$2 || (templateObject_2$2 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
+styled.div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 16px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  height: ", "px;\n  padding: 0 16px;\n"])), MENU_ENTRY_HEIGHT);
+var TokenInfo = styled.div(templateObject_4$1 || (templateObject_4$1 = __makeTemplateObject(["\n  padding: 0 16px;\n  margin-bottom: 1px;\n  border-bottom:  ", ";\n  font-family: 'Roboto', Helvetica, Arial, sans-serif;\n  font-size: 12px;\n  font-weight: 500;\n  color: ", ";\n  background-color:  ", ";\n  .title {    \n    display: flex;\n    font-weight: 600;\n    justify-content: flex-start;\n    margin: 8px 0 10px;\n  }\n  .row{\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 10px;\n  }\n  .cap{\n    text-align: left;\n  }\n  .val {\n    text-align: right;\n  }\n  \n"], ["\n  padding: 0 16px;\n  margin-bottom: 1px;\n  border-bottom:  ", ";\n  font-family: 'Roboto', Helvetica, Arial, sans-serif;\n  font-size: 12px;\n  font-weight: 500;\n  color: ", ";\n  background-color:  ", ";\n  .title {    \n    display: flex;\n    font-weight: 600;\n    justify-content: flex-start;\n    margin: 8px 0 10px;\n  }\n  .row{\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 10px;\n  }\n  .cap{\n    text-align: left;\n  }\n  .val {\n    text-align: right;\n  }\n  \n"])), function (_a) {
     var theme = _a.theme;
     return "solid 1px " + theme.colors.backgroundDisabled;
 }, function (_a) {
@@ -2518,11 +5459,11 @@ var TokenInfo = styled.div(templateObject_4$3 || (templateObject_4$3 = __makeTem
 var PanelFooter = function (_a) {
     var isPushed = _a.isPushed, pushNav = _a.pushNav; _a.toggleTheme; _a.isDark; _a.cakePriceUsd; _a.currentLang; _a.langs; _a.setLang; var tokenInfo = _a.tokenInfo;
     if (!isPushed) {
-        return (React.createElement(Container$3, null,
+        return (React.createElement(Container, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
-                React.createElement(Icon$l, null))));
+                React.createElement(Icon$T, null))));
     }
-    return (React.createElement(Container$3, null,
+    return (React.createElement(Container, null,
         React.createElement(TokenInfo, null,
             React.createElement("div", { className: 'title' }, "Swappies (SWPY) information:"),
             tokenInfo.map(function (item) { return (React.createElement("div", { className: 'row' },
@@ -2531,9 +5472,9 @@ var PanelFooter = function (_a) {
         React.createElement(SettingsEntry, null,
             React.createElement(SocialLinks$1, null))));
 };
-var templateObject_1$E, templateObject_2$e, templateObject_3$8, templateObject_4$3;
+var templateObject_1$8, templateObject_2$2, templateObject_3$1, templateObject_4$1;
 
-var StyledPanel = styled.div(templateObject_1$F || (templateObject_1$F = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background: linear-gradient(to right, #9247e2, #8442e2);\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background: linear-gradient(to right, #9247e2, #8442e2);\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n\n    width: ", ";\n  }\n"])), function (_a) {
+var StyledPanel = styled.div(templateObject_1$7 || (templateObject_1$7 = __makeTemplateObject(["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background: linear-gradient(to right, #9247e2, #8442e2);\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n\n    width: ", ";\n  }\n"], ["\n  position: fixed;\n  padding-top: ", ";\n  top: 0;\n  left: 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  flex-shrink: 0;\n  background: linear-gradient(to right, #9247e2, #8442e2);\n  width: ", ";\n  height: 100vh;\n  transition: padding-top 0.2s, width 0.2s;\n\n  z-index: 11;\n  overflow: ", ";\n  transform: translate3d(0, 0, 0);\n\n  ", " {\n\n    width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? "80px" : 0);
 }, function (_a) {
@@ -2555,31 +5496,31 @@ var Panel = function (props) {
         React.createElement(PanelBody, __assign({}, props)),
         React.createElement(PanelFooter, __assign({}, props))));
 };
-var templateObject_1$F;
+var templateObject_1$7;
 
-var PriceLink = styled.a(templateObject_1$G || (templateObject_1$G = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border:", ";\n  border-radius: 20px;\n  padding-left: 2px;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n  .price{\n    margin: 2px 10px;\n  }\n  \n"], ["\n  display: flex;\n  align-items: center;\n  border:", ";\n  border-radius: 20px;\n  padding-left: 2px;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n  .price{\n    margin: 2px 10px;\n  }\n  \n"])), function (_a) {
+var PriceLink = styled.a(templateObject_1$6 || (templateObject_1$6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border:", ";\n  border-radius: 20px;\n  padding-left: 2px;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n  .price{\n    margin: 2px 10px;\n  }\n  \n"], ["\n  display: flex;\n  align-items: center;\n  border:", ";\n  border-radius: 20px;\n  padding-left: 2px;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n  .price{\n    margin: 2px 10px;\n  }\n  \n"])), function (_a) {
     var theme = _a.theme;
     return "solid 1px " + theme.colors.backgroundDisabled;
 });
 var CakePrice = function (_a) {
     var cakePriceUsd = _a.cakePriceUsd;
     return cakePriceUsd ? (React.createElement(PriceLink, { href: "https://dex.guru/token/0x0BbFaB36fFC86Ce9de5f5e8C27665D894508b958-bsc", target: "_blank" },
-        React.createElement(Logo$1, { className: "logo", isDark: true }),
+        React.createElement(Logo$2, { className: "logo", isDark: true }),
         React.createElement(Text, { color: "borderColor", className: "price", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 }));
 };
 var CakePrice$1 = React.memo(CakePrice);
-var templateObject_1$G;
+var templateObject_1$6;
 
-var Wrapper$1 = styled.div(templateObject_1$H || (templateObject_1$H = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled.nav(templateObject_2$f || (templateObject_2$f = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0px 5px 4px #6666;\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0px 5px 4px #6666;\n"])), function (_a) {
+var Wrapper = styled.div(templateObject_1$5 || (templateObject_1$5 = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
+var StyledNav = styled.nav(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0px 5px 4px #6666;\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n  box-shadow: 0px 5px 4px #6666;\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {
     var theme = _a.theme;
     return theme.nav.headBackground;
 });
-var BodyWrapper = styled.div(templateObject_3$9 || (templateObject_3$9 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
-var Inner = styled.div(templateObject_4$4 || (templateObject_4$4 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"])), function (_a) {
+var BodyWrapper = styled.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
+var Inner = styled.div(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s;\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? MENU_HEIGHT + "px" : 0);
 }, function (_a) {
@@ -2592,7 +5533,7 @@ var Inner = styled.div(templateObject_4$4 || (templateObject_4$4 = __makeTemplat
     var isPushed = _a.isPushed;
     return "calc(100% - " + (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px)";
 });
-var MobileOnlyOverlay = styled(Overlay)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+var MobileOnlyOverlay = styled(Overlay)(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -2634,9 +5575,9 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     var homeLink = links.find(function (link) { return link.label === "Home"; });
-    return (React.createElement(Wrapper$1, null,
+    return (React.createElement(Wrapper, null,
         React.createElement(StyledNav, { showMenu: showMenu },
-            React.createElement(Logo$3, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/images/logo.png" }),
+            React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/images/logo.png" }),
             React.createElement(Flex, null,
                 React.createElement(CakePrice$1, { isDark: true, cakePriceUsd: cakePriceUsd }))),
         React.createElement(BodyWrapper, null,
@@ -2644,7 +5585,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$9, templateObject_4$4, templateObject_5$1;
+var templateObject_1$5, templateObject_2$1, templateObject_3, templateObject_4, templateObject_5;
 
 var ToastAction = function (_a) {
     var action = _a.action;
@@ -2661,14 +5602,14 @@ var types = {
     INFO: "info",
 };
 
-var _a$2;
-var alertTypeMap = (_a$2 = {},
-    _a$2[types.INFO] = variants$1.INFO,
-    _a$2[types.SUCCESS] = variants$1.SUCCESS,
-    _a$2[types.DANGER] = variants$1.DANGER,
-    _a$2[types.WARNING] = variants$1.WARNING,
-    _a$2);
-var StyledToast = styled.div(templateObject_1$I || (templateObject_1$I = __makeTemplateObject(["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"], ["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"])), function (_a) {
+var _a;
+var alertTypeMap = (_a = {},
+    _a[types.INFO] = variants.INFO,
+    _a[types.SUCCESS] = variants.SUCCESS,
+    _a[types.DANGER] = variants.DANGER,
+    _a[types.WARNING] = variants.WARNING,
+    _a);
+var StyledToast = styled.div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"], ["\n  right: 16px;\n  position: fixed;\n  max-width: calc(100% - 32px);\n  transition: all 250ms ease-in;\n  width: 100%;\n\n  ", " {\n    max-width: 400px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.sm;
 });
@@ -2707,11 +5648,11 @@ var Toast = function (_a) {
                 React.createElement(Text, { as: "p", mb: "8px" }, description),
                 React.createElement(ToastAction, { action: action }))) : (description)))));
 };
-var templateObject_1$I;
+var templateObject_1$4;
 
 var ZINDEX = 1000;
 var TOP_POSITION = 80; // Initial position from the top
-var StyledToastContainer = styled.div(templateObject_1$J || (templateObject_1$J = __makeTemplateObject(["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"], ["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"])));
+var StyledToastContainer = styled.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"], ["\n  .enter,\n  .appear {\n    opacity: 0.01;\n  }\n\n  .enter.enter-active,\n  .appear.appear-active {\n    opacity: 1;\n    transition: opacity 250ms ease-in;\n  }\n\n  .exit {\n    opacity: 1;\n  }\n\n  .exit.exit-active {\n    opacity: 0.01;\n    transition: opacity 250ms ease-out;\n  }\n"])));
 var ToastContainer = function (_a) {
     var toasts = _a.toasts, onRemove = _a.onRemove, _b = _a.ttl, ttl = _b === void 0 ? 6000 : _b, _c = _a.stackSpacing, stackSpacing = _c === void 0 ? 24 : _c;
     return (React.createElement(StyledToastContainer, null,
@@ -2721,9 +5662,9 @@ var ToastContainer = function (_a) {
             return (React.createElement(Toast, { key: toast.id, toast: toast, onRemove: onRemove, ttl: ttl, style: { top: top + "px", zIndex: zIndex } }));
         }))));
 };
-var templateObject_1$J;
+var templateObject_1$3;
 
-var Icon$16 = function (props) {
+var Icon$6 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { d: "M77.7602 16.9155L51.9419 36.0497L56.7382 24.7733L77.7602 16.9155Z", fill: "#E17726" }),
@@ -2757,20 +5698,20 @@ var Icon$16 = function (props) {
         React.createElement("path", { d: "M51.9415 50.3617L52.8344 35.4115L56.7378 24.7729H39.262L43.1653 35.4115L44.0583 50.3617L44.3899 55.0559L44.4154 66.664H51.5843L51.6099 55.0559L51.9415 50.3617Z", fill: "#F5841F" })));
 };
 
-var Icon$17 = function (props) {
+var Icon$5 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { fillRule: "evenodd", clipRule: "evenodd", d: "M66.4573 43.7107C64.8919 42.1452 64.8919 39.6071 66.4573 38.0416C68.0228 36.4762 70.5609 36.4762 72.1264 38.0416C73.6918 39.6071 73.6918 42.1452 72.1264 43.7107C70.5609 45.2762 68.0228 45.2762 66.4573 43.7107ZM52.9933 57.1747C51.8192 56.0006 51.8192 54.097 52.9933 52.9229C54.1674 51.7488 56.071 51.7488 57.2451 52.9229C58.4192 54.097 58.4192 56.0006 57.2451 57.1747C56.071 58.3488 54.1674 58.3488 52.9933 57.1747ZM74.2523 50.0884C73.0782 48.9143 73.0782 47.0107 74.2523 45.8366C75.4263 44.6625 77.3299 44.6625 78.504 45.8366C79.6781 47.0107 79.6781 48.9143 78.504 50.0884C77.3299 51.2625 75.4263 51.2625 74.2523 50.0884ZM67.166 57.1747C65.9919 56.0006 65.9919 54.097 67.166 52.9229C68.34 51.7488 70.2436 51.7488 71.4177 52.9229C72.5918 54.097 72.5918 56.0006 71.4177 57.1747C70.2436 58.3488 68.34 58.3488 67.166 57.1747ZM82.0472 56.466C81.2645 55.6833 81.2645 54.4142 82.0472 53.6315C82.8299 52.8488 84.099 52.8488 84.8817 53.6315C85.6644 54.4142 85.6644 55.6833 84.8817 56.466C84.099 57.2488 82.8299 57.2488 82.0472 56.466ZM74.9609 63.5523C74.1782 62.7696 74.1782 61.5005 74.9609 60.7178C75.7436 59.9351 77.0127 59.9351 77.7954 60.7178C78.5781 61.5005 78.5781 62.7696 77.7954 63.5523C77.0127 64.3351 75.7436 64.3351 74.9609 63.5523ZM59.371 50.797C57.8056 49.2315 57.8056 46.6934 59.371 45.1279C60.9365 43.5625 63.4746 43.5625 65.0401 45.1279C66.6055 46.6934 66.6055 49.2315 65.0401 50.797C63.4746 52.3625 60.9365 52.3625 59.371 50.797ZM59.371 36.6244C57.8056 35.0589 57.8056 32.5208 59.371 30.9553C60.9365 29.3899 63.4746 29.3899 65.0401 30.9553C66.6055 32.5208 66.6055 35.0589 65.0401 36.6244C63.4746 38.1898 60.9365 38.1898 59.371 36.6244ZM52.2847 43.7107C50.7193 42.1452 50.7193 39.6071 52.2847 38.0416C53.8502 36.4762 56.3883 36.4762 57.9538 38.0416C59.5192 39.6071 59.5192 42.1452 57.9538 43.7107C56.3883 45.2762 53.8502 45.2762 52.2847 43.7107ZM38.0462 43.7107C36.4808 42.1452 36.4808 39.6071 38.0462 38.0416C39.6117 36.4762 42.1498 36.4762 43.7153 38.0416C45.2807 39.6071 45.2807 42.1452 43.7153 43.7107C42.1498 45.2762 39.6117 45.2762 38.0462 43.7107ZM24.5823 57.1747C23.4082 56.0006 23.4082 54.097 24.5823 52.9229C25.7564 51.7488 27.66 51.7488 28.8341 52.9229C30.0081 54.097 30.0081 56.0006 28.8341 57.1747C27.66 58.3488 25.7564 58.3488 24.5823 57.1747ZM45.8412 50.0884C44.6671 48.9143 44.6671 47.0107 45.8412 45.8366C47.0153 44.6625 48.9189 44.6625 50.093 45.8366C51.2671 47.0107 51.2671 48.9143 50.093 50.0884C48.9189 51.2625 47.0153 51.2625 45.8412 50.0884ZM38.7549 57.1747C37.5808 56.0006 37.5808 54.097 38.7549 52.9229C39.929 51.7488 41.8326 51.7488 43.0067 52.9229C44.1807 54.097 44.1807 56.0006 43.0067 57.1747C41.8326 58.3488 39.929 58.3488 38.7549 57.1747ZM11.1183 56.466C10.3356 55.6833 10.3356 54.4142 11.1183 53.6315C11.901 52.8488 13.1701 52.8488 13.9528 53.6315C14.7356 54.4142 14.7356 55.6833 13.9528 56.466C13.1701 57.2488 11.901 57.2488 11.1183 56.466ZM18.2046 63.5523C17.4219 62.7696 17.4219 61.5005 18.2046 60.7178C18.9873 59.9351 20.2564 59.9351 21.0391 60.7178C21.8219 61.5005 21.8219 62.7696 21.0391 63.5523C20.2564 64.3351 18.9873 64.3351 18.2046 63.5523ZM46.5498 63.5523C45.7671 62.7696 45.7671 61.5005 46.5498 60.7178C47.3325 59.9351 48.6016 59.9351 49.3843 60.7178C50.1671 61.5005 50.1671 62.7696 49.3843 63.5523C48.6016 64.3351 47.3325 64.3351 46.5498 63.5523ZM17.496 50.0884C16.3219 48.9143 16.3219 47.0107 17.496 45.8366C18.6701 44.6625 20.5737 44.6625 21.7478 45.8366C22.9218 47.0107 22.9218 48.9143 21.7478 50.0884C20.5737 51.2625 18.6701 51.2625 17.496 50.0884ZM30.9599 50.797C29.3945 49.2315 29.3945 46.6934 30.9599 45.1279C32.5254 43.5625 35.0635 43.5625 36.629 45.1279C38.1944 46.6934 38.1944 49.2315 36.629 50.797C35.0635 52.3625 32.5254 52.3625 30.9599 50.797ZM30.9599 36.6244C29.3945 35.0589 29.3945 32.5208 30.9599 30.9553C32.5254 29.3899 35.0635 29.3899 36.629 30.9553C38.1944 32.5208 38.1944 35.0589 36.629 36.6244C35.0635 38.1898 32.5254 38.1898 30.9599 36.6244ZM23.8736 43.7107C22.3082 42.1452 22.3082 39.6071 23.8736 38.0416C25.4391 36.4762 27.9772 36.4762 29.5427 38.0416C31.1081 39.6071 31.1081 42.1452 29.5427 43.7107C27.9772 45.2762 25.4391 45.2762 23.8736 43.7107Z", fill: "#1D222A" })));
 };
 
-var Icon$18 = function (props) {
+var Icon$4 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "white" }),
         React.createElement("path", { d: "M44.3288 35.3546V21.7134H19.0926C18.581 21.7134 18.24 22.0544 18.24 22.566V41.8342C18.24 42.3457 18.581 42.6867 19.0926 42.6867H28.8119V77.8129C28.8119 78.3244 29.153 78.6654 29.6645 78.6654H45.5224C46.0339 78.6654 46.375 78.3244 46.375 77.8129V35.3546H44.3288Z", fill: "#29AEFF" }),
         React.createElement("path", { d: "M61.8919 17.2798H55.7534H39.2134C38.7019 17.2798 38.3608 17.6208 38.3608 18.1324V73.3792C38.3608 73.8908 38.7019 74.2318 39.2134 74.2318H55.0713C55.5829 74.2318 55.9239 73.8908 55.9239 73.3792V59.397H62.0624C73.6575 59.397 83.0358 50.0187 83.0358 38.4237C83.0358 26.6581 73.487 17.2798 61.8919 17.2798Z", fill: "#2761E7" })));
 };
 
-var Icon$19 = function (props) {
+var Icon$3 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("g", { clipPath: "url(#clip0)" },
             React.createElement("path", { d: "M48.0048 96.0097C74.5172 96.0097 96.0097 74.5172 96.0097 48.0048C96.0097 21.4925 74.5172 0 48.0048 0C21.4925 0 0 21.4925 0 48.0048C0 74.5172 21.4925 96.0097 48.0048 96.0097Z", fill: "#3375BB" }),
@@ -2780,13 +5721,13 @@ var Icon$19 = function (props) {
                 React.createElement("rect", { width: "96", height: "96", fill: "white" })))));
 };
 
-var Icon$1a = function (props) {
+var Icon$2 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("path", { d: "M96 48C96 21.4903 74.5097 0 48 0C21.4903 0 0 21.4903 0 48C0 74.5097 21.4903 96 48 96C74.5097 96 96 74.5097 96 48Z", fill: "#3389FB" }),
         React.createElement("path", { d: "M29.6927 35.4245C39.8036 25.5252 56.1965 25.5252 66.3074 35.4245L67.5242 36.6159C68.0298 37.1109 68.0298 37.9134 67.5242 38.4084L63.3616 42.4839C63.1088 42.7314 62.699 42.7314 62.4462 42.4839L60.7717 40.8444C53.7181 33.9384 42.282 33.9384 35.2284 40.8444L33.4351 42.6002C33.1823 42.8477 32.7725 42.8477 32.5197 42.6002L28.3571 38.5247C27.8515 38.0297 27.8515 37.2272 28.3571 36.7322L29.6927 35.4245ZM74.9161 43.8532L78.6208 47.4805C79.1264 47.9755 79.1264 48.778 78.6208 49.2729L61.9159 65.6288C61.4103 66.1237 60.5907 66.1237 60.0851 65.6288C60.0851 65.6288 60.0851 65.6288 60.0851 65.6288L48.229 54.0206C48.1026 53.8968 47.8977 53.8968 47.7713 54.0206C47.7713 54.0206 47.7713 54.0206 47.7713 54.0206L35.9153 65.6288C35.4098 66.1237 34.5902 66.1237 34.0846 65.6288C34.0846 65.6288 34.0846 65.6288 34.0846 65.6288L17.3792 49.2727C16.8736 48.7778 16.8736 47.9753 17.3792 47.4803L21.0839 43.853C21.5895 43.3581 22.4091 43.3581 22.9146 43.853L34.771 55.4614C34.8974 55.5851 35.1023 55.5851 35.2287 55.4614C35.2287 55.4614 35.2287 55.4614 35.2287 55.4614L47.0844 43.853C47.59 43.358 48.4096 43.358 48.9152 43.853C48.9152 43.853 48.9152 43.853 48.9152 43.853L60.7715 55.4614C60.8979 55.5851 61.1028 55.5851 61.2292 55.4614L73.0854 43.8532C73.5909 43.3583 74.4105 43.3583 74.9161 43.8532Z", fill: "white" })));
 };
 
-var Icon$1b = function (props) {
+var Icon$1 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 32 32" }, props),
         React.createElement("path", { d: "M24 0H8C3.58172 0 0 3.58172 0 8V24C0 28.4183 3.58172 32 8 32H24C28.4183 32 32 28.4183 32 24V8C32 3.58172 28.4183 0 24 0Z", fill: "#1E2026" }),
         React.createElement("path", { d: "M16.2857 4L9.97035 7.6761L12.2922 9.03415L16.2857 6.7161L20.2792 9.03415L22.6011 7.6761L16.2857 4Z", fill: "#F0B90B" }),
@@ -2801,7 +5742,7 @@ var Icon$1b = function (props) {
         React.createElement("path", { d: "M6 14.6302L8.32183 15.9883V20.6244L12.3154 22.9424V25.6585L6 21.9824V14.6302Z", fill: "#F0B90B" })));
 };
 
-var Icon$1c = function (props) {
+var Icon = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("circle", { cx: "48", cy: "48", r: "48", fill: "#F5F5F5" }),
         React.createElement("path", { d: "M56.5504425,41.9387033 L56.5504425,50.4659601 L47.3948342,50.4659601 L47.3948342,85.5971142 L45.0078131,84.7075452 C43.8992633,84.2955753 42.1136272,83.5937969 39.9052997,82.5918134 L38.8675775,82.1177881 L38.8675775,14.6817622 L47.9569067,11.8769231 L56.5504425,14.5267861 L56.5504425,23.7259307 L47.9569067,21.0669705 L47.3948342,21.2411155 L47.3948342,41.9387033 L56.5504425,41.9387033 Z M16,50.4659926 L16,21.7739797 L36.1702794,15.548296 L36.1702794,24.7052039 L24.526282,28.3200122 L24.526282,41.9387358 L36.1702794,41.9387358 L36.1702794,81.3806284 L33.591244,80.0543973 C25.5662786,75.923652 16,68.9585019 16,59.2339983 L16,54.6496962 L24.526282,54.6496962 L24.526282,59.2339983 C24.526282,61.2460878 25.5734263,63.3605199 27.6426978,65.5373324 L27.6426978,50.4659926 L16,50.4659926 Z M59.1389325,15.3302574 L79.8040306,21.7261873 L79.8040306,50.4659601 L67.6710627,50.4659601 L67.6710627,62.9111544 C67.6710627,62.9111544 64.9581695,66.4674811 59.1464051,69.4451657 C59.1464051,67.0682164 59.1389325,15.3302574 59.1389325,15.3302574 Z M71.2780734,41.9387033 L71.2780734,28.2783928 L67.6710627,27.1649695 L67.6710627,41.9387033 L71.2780734,41.9387033 Z M71.2780734,59.8661186 L71.2780734,54.6495662 L79.8040306,54.6495662 L79.8040306,59.8661186 C79.8040306,74.3588162 58.7760221,82.7005566 52.330058,84.9127828 L49.9859233,85.7230769 L49.9859233,76.7068496 L51.1311866,76.2744112 C61.1591444,72.5004032 71.2780734,65.962818 71.2780734,59.8661186 Z", fill: "#000000" })));
@@ -2817,37 +5758,37 @@ var ConnectorNames;
 var connectors = [
     {
         title: "Metamask",
-        icon: Icon$16,
+        icon: Icon$6,
         connectorId: ConnectorNames.Injected,
     },
     {
         title: "TrustWallet",
-        icon: Icon$19,
+        icon: Icon$3,
         connectorId: ConnectorNames.Injected,
     },
     {
         title: "MathWallet",
-        icon: Icon$17,
+        icon: Icon$5,
         connectorId: ConnectorNames.Injected,
     },
     {
         title: "TokenPocket",
-        icon: Icon$18,
+        icon: Icon$4,
         connectorId: ConnectorNames.Injected,
     },
     {
         title: "WalletConnect",
-        icon: Icon$1a,
+        icon: Icon$2,
         connectorId: ConnectorNames.WalletConnect,
     },
     {
         title: "Binance Chain Wallet",
-        icon: Icon$1b,
+        icon: Icon$1,
         connectorId: ConnectorNames.BSC,
     },
     {
         title: "SafePal Wallet",
-        icon: Icon$1c,
+        icon: Icon,
         connectorId: ConnectorNames.Injected,
     },
 ];
@@ -2865,22 +5806,22 @@ var WalletCard = function (_a) {
         React.createElement(Icon, { width: "32px" })));
 };
 
-var HelpLink = styled(Link)(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
+var HelpLink = styled(Link)(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"], ["\n  display: flex;\n  align-self: center;\n  align-items: center;\n  margin-top: 24px;\n"])));
 var ConnectModal = function (_a) {
     var login = _a.login, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
     return (React.createElement(Modal, { title: "Connect to a wallet", onDismiss: onDismiss },
         connectors.map(function (entry, index) { return (React.createElement(WalletCard, { key: entry.title, login: login, walletConfig: entry, onDismiss: onDismiss, mb: index < connectors.length - 1 ? "8px" : "0" })); }),
         React.createElement(HelpLink, { href: "https://docs.pancakeswap.finance/guides/faq#how-do-i-set-up-my-wallet-on-binance-smart-chain", external: true },
-            React.createElement(Icon$o, { color: "primary", mr: "6px" }),
+            React.createElement(Icon$Q, { color: "primary", mr: "6px" }),
             "Learn how to connect")));
 };
-var templateObject_1$K;
+var templateObject_1$2;
 
-var StyleButton = styled(Text).attrs({ role: "button" })(templateObject_1$L || (templateObject_1$L = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
+var StyleButton = styled(Text).attrs({ role: "button" })(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"], ["\n  position: relative;\n  display: flex;\n  align-items: center;\n  color: ", ";\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.primary;
 });
-var Tooltip = styled.div(templateObject_2$g || (templateObject_2$g = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
+var Tooltip = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"], ["\n  display: ", ";\n  position: absolute;\n  bottom: -22px;\n  right: 0;\n  left: 0;\n  text-align: center;\n  background-color: ", ";\n  color: ", ";\n  border-radius: 16px;\n  opacity: 0.7;\n"])), function (_a) {
     var isTooltipDisplayed = _a.isTooltipDisplayed;
     return (isTooltipDisplayed ? "block" : "none");
 }, function (_a) {
@@ -2903,10 +5844,10 @@ var CopyToClipboard = function (_a) {
             }
         } }, props),
         children,
-        React.createElement(Icon$n, { width: "20px", color: "primary", ml: "4px" }),
+        React.createElement(Icon$R, { width: "20px", color: "primary", ml: "4px" }),
         React.createElement(Tooltip, { isTooltipDisplayed: isTooltipDisplayed }, "Copied")));
 };
-var templateObject_1$L, templateObject_2$g;
+var templateObject_1$1, templateObject_2;
 
 var AccountModal = function (_a) {
     var account = _a.account, logout = _a.logout, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
@@ -2929,14 +5870,14 @@ var useWalletModal = function (login, logout, account) {
     return { onPresentConnectModal: onPresentConnectModal, onPresentAccountModal: onPresentAccountModal };
 };
 
-var ResetCSS = createGlobalStyle(templateObject_1$M || (templateObject_1$M = __makeTemplateObject(["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  body {\n    font-family: 'Roboto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n\n"], ["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  body {\n    font-family: 'Roboto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n\n"])), function (_a) {
+var ResetCSS = createGlobalStyle(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  body {\n    font-family: 'Roboto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n\n"], ["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 16px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  body {\n    font-family: 'Roboto', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 });
-var templateObject_1$M;
+var templateObject_1;
 
 var baseColors = {
     failure: "#e02f58",
@@ -2957,14 +5898,14 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { pr
         bubblegum: "linear-gradient(139.73deg, #A34FFE 0%, #5934FC 100%)",
     }, hamburger: "#cccccc" });
 
-var light = {
+var light$6 = {
     background: lightColors.card,
 };
-var dark = {
+var dark$6 = {
     background: darkColors.card,
 };
 
-var light$1 = {
+var light$5 = {
     background: lightColors.card,
     boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     boxShadowActive: shadows.active,
@@ -2973,7 +5914,7 @@ var light$1 = {
     cardHeaderBackground: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
     dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };
-var dark$1 = {
+var dark$5 = {
     background: darkColors.card,
     boxShadow: "0px 2px 12px -8px rgba(25, 19, 38, 0.1), 0px 1px 1px rgba(25, 19, 38, 0.05)",
     boxShadowActive: shadows.active,
@@ -2983,10 +5924,10 @@ var dark$1 = {
     dropShadow: "drop-shadow(0px 1px 4px rgba(25, 19, 38, 0.15))",
 };
 
-var light$2 = {
+var light$4 = {
     handleBackground: lightColors.card,
 };
-var dark$2 = {
+var dark$4 = {
     handleBackground: darkColors.card,
 };
 
@@ -2997,37 +5938,37 @@ var dark$3 = {
     handleBackground: darkColors.card,
 };
 
-var light$4 = {
+var light$2 = {
     background: lightColors.menuBackground,
     headBackground: lightColors.menuNavBackground,
     hover: "#EEEAF4",
 };
-var dark$4 = {
+var dark$2 = {
     background: darkColors.menuBackground,
     headBackground: darkColors.menuNavBackground,
     hover: "#473d5d",
 };
 
-var light$5 = {
+var light$1 = {
     background: lightColors.card,
 };
-var dark$5 = {
+var dark$1 = {
     background: darkColors.card,
 };
 
-var light$6 = {
+var light = {
     background: darkColors.card,
     text: darkColors.text,
     boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.2), 0px 4px 12px -8px rgba(14, 14, 44, 0.1)",
 };
-var dark$6 = {
+var dark = {
     background: lightColors.card,
     text: lightColors.text,
     boxShadow: "0px 0px 2px rgba(0, 0, 0, 0.2), 0px 4px 12px -8px rgba(14, 14, 44, 0.1)",
 };
 
-var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark, colors: darkColors, card: dark$1, toggle: dark$3, nav: dark$4, modal: dark$5, radio: dark$2, tooltip: dark$6 });
+var darkTheme = __assign(__assign({}, base), { isDark: true, alert: dark$6, colors: darkColors, card: dark$5, toggle: dark$3, nav: dark$2, modal: dark$1, radio: dark$4, tooltip: dark });
 
-var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light, colors: lightColors, card: light$1, toggle: light$3, nav: light$4, modal: light$5, radio: light$2, tooltip: light$6 });
+var lightTheme = __assign(__assign({}, base), { isDark: false, alert: light$6, colors: lightColors, card: light$5, toggle: light$3, nav: light$2, modal: light$1, radio: light$4, tooltip: light });
 
-export { Icon$4 as AddIcon, Alert, Icon$5 as ArrowBackIcon, Icon$6 as ArrowDownIcon, Icon$7 as ArrowDropDownIcon, Icon$8 as ArrowDropUpIcon, Icon$9 as ArrowForwardIcon, Icon$a as AutoRenewIcon, BackgroundImage, GridLayout as BaseLayout, Icon$b as BinanceIcon, Icon$2 as BlockIcon, Box, Breadcrumbs, Icon$c as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$e as CalculateIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$d as CardViewIcon, GridLayout$1 as CardsLayout, Checkbox, Icon as CheckmarkCircleIcon, Icon$f as CheckmarkIcon, Icon$g as ChevronDownIcon, Icon$h as ChevronLeftIcon, Icon$i as ChevronRightIcon, Icon$j as ChevronUpIcon, Icon$k as CloseIcon, Icon$l as CogIcon, Icon$m as CommunityIcon, ConnectorNames, Icon$n as CopyIcon, Dropdown, Icon$1 as ErrorIcon, FallingBunnies, Flex, Heading, Icon$o as HelpIcon, IconButton, Image, Icon$3 as InfoIcon, Input, Link, LinkExternal, Icon$p as ListViewIcon, Icon$q as LogoIcon, Icon$r as LogoRoundIcon, Menu, Icon$s as MetamaskIcon, Icon$t as MinusIcon, Modal, ModalProvider, Icon$u as NoProfileAvatarIcon, Icon$v as OpenNewIcon, Icon$x as PancakeRoundIcon, Icon$w as PancakesIcon, Icon$y as PrizeIcon, Progress, Icon$B as ProgressBunny, Radio, Icon$z as RemoveIcon, ResetCSS, Icon$F as SearchIcon, Skeleton, Spinner, Svg, Icon$G as SwapVertIcon, Icon$H as SyncAltIcon, Tag, Text, Icon$D as Ticket, Icon$E as TicketRound, ToastContainer, Toggle, Icon$A as VerifiedIcon, Icon$I as WarningIcon, Icon$C as Won, variants$1 as alertVariants, byTextAscending, byTextDescending, connectorLocalStorageKey, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useKonamiCheatCode, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };
+export { Icon$18 as AddIcon, Alert, Icon$17 as ArrowBackIcon, Icon$16 as ArrowDownIcon, Icon$15 as ArrowDropDownIcon, Icon$14 as ArrowDropUpIcon, Icon$13 as ArrowForwardIcon, Icon$12 as AutoRenewIcon, BackgroundImage, GridLayout$1 as BaseLayout, Icon$11 as BinanceIcon, Icon$1a as BlockIcon, Box, Breadcrumbs, Icon$10 as BunnyPlaceholderIcon, Button, ButtonMenu, ButtonMenuItem, Icon$_ as CalculateIcon, Card, CardBody, CardFooter, CardHeader, CardRibbon, Icon$$ as CardViewIcon, GridLayout as CardsLayout, Checkbox, Icon$1c as CheckmarkCircleIcon, Icon$Z as CheckmarkIcon, Icon$Y as ChevronDownIcon, Icon$X as ChevronLeftIcon, Icon$W as ChevronRightIcon, Icon$V as ChevronUpIcon, Icon$U as CloseIcon, Icon$T as CogIcon, Icon$S as CommunityIcon, ConnectorNames, Icon$R as CopyIcon, Dropdown, Icon$1b as ErrorIcon, FallingBunnies, Flex, Heading, Icon$Q as HelpIcon, IconButton, Image, Icon$19 as InfoIcon, Input$1 as Input, Link, LinkExternal, Icon$P as ListViewIcon, Icon$O as LogoIcon, Icon$N as LogoRoundIcon, Menu, Icon$M as MetamaskIcon, Icon$L as MinusIcon, Modal, ModalProvider, Icon$K as NoProfileAvatarIcon, Icon$J as OpenNewIcon, Icon$H as PancakeRoundIcon, Icon$I as PancakesIcon, Icon$G as PrizeIcon, Progress, Icon$D as ProgressBunny, Radio, Icon$F as RemoveIcon, ResetCSS, Icon$z as SearchIcon, Skeleton, Spinner, Svg, Icon$y as SwapVertIcon, Icon$x as SyncAltIcon, Tag, Text, Icon$B as Ticket, Icon$A as TicketRound, ToastContainer, Toggle, Icon$E as VerifiedIcon, Icon$w as WarningIcon, Welcome, Icon$C as Won, variants as alertVariants, byTextAscending, byTextDescending, connectorLocalStorageKey, darkTheme as dark, darkColors, lightTheme as light, lightColors, makeRender, links as menuConfig, types as toastTypes, useKonamiCheatCode, useMatchBreakpoints, useModal, useParticleBurst, useTable, useWalletModal };
