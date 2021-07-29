@@ -6,9 +6,10 @@ import "./flipclock-style.css";
 import "./flipclock.js";
 import "./index.css";
 import "./template-counter.css";
-import { WelcomeProps } from "./types";
 
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+interface WelcomeProps{}
 
 
 
