@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import "@fontsource/roboto-condensed";
 import "@fontsource/roboto";
+import "@fontsource/comfortaa";
 
 const ResetCSS = createGlobalStyle`
   /* prettier-ignore */

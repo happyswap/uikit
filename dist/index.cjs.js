@@ -13,6 +13,7 @@ var reactRouterDom = require('react-router-dom');
 var reactTransitionGroup = require('react-transition-group');
 require('@fontsource/roboto-condensed');
 require('@fontsource/roboto');
+require('@fontsource/comfortaa');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 

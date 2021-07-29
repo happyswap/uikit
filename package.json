@@ -41,6 +41,7 @@
     "@storybook/react": "^6.1.18",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.5",
+    "@types/jquery": "^3.5.6",
     "@types/react": "^17.0.2",
     "@types/react-router-dom": "^5.1.6",
     "@types/react-transition-group": "^4.4.0",
@@ -73,10 +74,13 @@
     "styled-components": "^5.2.0"
   },
   "dependencies": {
+    "@fontsource/comfortaa": "^4.5.0",
     "@fontsource/roboto": "^4.5.0",
     "@fontsource/roboto-condensed": "^4.5.0",
     "@types/lodash": "^4.14.162",
     "@types/styled-system": "^5.1.10",
+    "flipclock": "^0.10.8",
+    "jquery": "^3.6.0",
     "lodash": "^4.17.20",
     "react-transition-group": "^4.4.1",
     "styled-system": "^5.1.5"

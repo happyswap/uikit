@@ -9,6 +9,7 @@ import { Link as Link$1, NavLink, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import '@fontsource/roboto-condensed';
 import '@fontsource/roboto';
+import '@fontsource/comfortaa';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.

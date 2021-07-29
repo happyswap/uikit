@@ -19,18 +19,21 @@
 
 .clock-counter{
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: 5rem;
+    justify-content: center;
+
 }
 
 .clock-counter .flip-clock-wrapper{
     width: unset;
 }
 section.head-area .head-content{
-    padding-top: 8.125rem;
+    padding-top: 2.125rem;
 }
 
-
+h1.h1-roboto{
+    font-family: "Roboto", sans-serif;
+    font-size: 4rem !important;
+}
 .buy-container{
     display: flex;
 }
@@ -94,6 +97,71 @@ section.head-area .head-content{
     bottom: 50px;
     left: 24px;
     width: 300px;
+}
+.content-wrapper{
+    /*height : 100vh;*/
+    color : #FFFFFF;
+    z-index : 6;
+    /*padding-top : 5.125rem;*/
+    background : -webkit-gradient(linear, left top, right top, from(#A34FFE), to(#5934FC));
+    background : -webkit-linear-gradient(left, #A34FFE, #5934FC);
+    background :    -moz-linear-gradient(left, #A34FFE, #5934FC);
+    background :      -o-linear-gradient(left, #A34FFE, #5934FC);
+    background :         linear-gradient(to right, #A34FFE, #5934FC);
+    position: fixed;
+    width:100%;
+    height:100%;
+
+    font-family: Comfortaa,Roboto,'Helvetica Neue',Arial,sans-serif;
+    overflow: auto;
+}
+.content-wrapper::before {
+    content : '';
+    background-image: url('/images/counter/banner-shape.png');
+    background-repeat: no-repeat;
+    background-position: top 172px right 0px;
+    background-size: 60%;
+    height : 436px;
+    width : 899px;
+    position : fixed;
+    right : 0;
+    top : 30%;
+}
+
+.advantages-list {
+    font-family: "Roboto", sans-serif;
+}
+.advantages-list .h3-advantages-list {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.advantages-list ul {
+    list-style-type: "✓"
+}
+.advantages-list li {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.advantages-list li span.points{
+    position: relative;
+    left: 10px;
+}
+.advantages-list li sup {
+    font-size: 0.7rem;
+}
+
+.advantages-list li a.read-more {
+    text-decoration: underline;
+}
+.advantages-list li span.soon {
+    color: darkorange;
+    font-size: 0.8rem;
+}
+
+
+section#about {
+    background-color: white;
 }
 
 @media screen and (max-width: 575.98px){
