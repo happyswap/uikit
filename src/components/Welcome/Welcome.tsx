@@ -6,13 +6,7 @@ import "./flipclock-style.css";
 import "./flipclock.js";
 import "./index.css";
 import "./template-counter.css";
-
-
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface WelcomeProps{}
-
-
-
+import { WelcomeProps } from "./types";
 
 const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
 

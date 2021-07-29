@@ -22,7 +22,7 @@ export * from "./components/Spinner";
 export * from "./components/Skeleton";
 export * from "./components/Toggle";
 export * from "./components/Table";
-export { default as Welcome } from "./components/Welcome/Welcome";
+export * from "./components/Welcome";
 
 
 // Hooks
