@@ -91,10 +91,10 @@ const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
             </div>
              <div className="bg-ripple-animation d-none d-md-block">
               <div className="left-bottom-ripples">
-                <div className="ripples" />
+                {/*<div className="ripples" />*/}
               </div>
               <div className="top-right-ripples">
-                <div className="ripples" />
+                {/*<div className="ripples" />*/}
               </div>
              </div>
           </section>

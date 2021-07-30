@@ -18,6 +18,135 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
+const PinnedBack = styled.div`
+  position: fixed;
+  height : 100vh;
+  color : #FFFFFF;
+  z-index : 0;
+  background :         linear-gradient(to right, #A34FFE, #5934FC);
+  position: fixed;
+  width:100%;
+  
+  .d-none {
+    display : none !important;
+  }
+
+  .d-md-block {
+    display : block !important;
+  }
+  
+  .bg-ripple-animation {
+    overflow : hidden;
+    position : absolute;
+    z-index : 1;
+    top : 0;
+    right : 0;
+    left : 0;
+    bottom : 0;
+  }
+  
+  .left-bottom-ripples {
+    margin-bottom : -80vh;
+    margin-left : -80vh;
+    width : 160vh;
+    height : 160vh;
+    position : absolute;
+    left : 0;
+    bottom : 0;
+  }
+  .top-right-ripples {
+  margin-top : -80vh;
+  margin-right : -80vh;
+  width : 160vh;
+  height : 160vh;
+  position : absolute;
+  top : 0;
+  right : 0;
+}
+
+.ripples {
+  width : 100%;
+  height : 100%;
+  text-align : center;
+}
+.ripples:before {
+  content : '';
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background : -webkit-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+  background :    -moz-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+  background :      -o-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+  background :         radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+  border : 0.5px solid white;
+  border-radius : 50%;
+  opacity : 0;
+  -webkit-transform : scale(1);
+     -moz-transform : scale(1);
+      -ms-transform : scale(1);
+       -o-transform : scale(1);
+          transform : scale(1);
+  -webkit-animation-name : k1;
+     -moz-animation-name : k1;
+       -o-animation-name : k1;
+          animation-name : k1;
+  -webkit-animation-duration : 6s;
+     -moz-animation-duration : 6s;
+       -o-animation-duration : 6s;
+          animation-duration : 6s;
+  -webkit-animation-delay : 0s;
+     -moz-animation-delay : 0s;
+       -o-animation-delay : 0s;
+          animation-delay : 0s;
+  -webkit-animation-iteration-count : infinite;
+     -moz-animation-iteration-count : infinite;
+       -o-animation-iteration-count : infinite;
+          animation-iteration-count : infinite;
+  -webkit-animation-timing-function : linear;
+     -moz-animation-timing-function : linear;
+       -o-animation-timing-function : linear;
+          animation-timing-function : linear;
+}
+.ripples:after {
+  content : '';
+  position : absolute;
+  top : 0;
+  left : 0;
+  width : 100%;
+  height : 100%;
+  background : -webkit-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+  background :    -moz-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+  background :      -o-radial-gradient(center, ellipse, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+  background :         radial-gradient(ellipse at center, rgba(182, 225, 235, 0) 0%, rgba(182, 225, 235, 0.05) 40%, rgba(182, 225, 235, 0.4) 100%);
+  border : 0.5px solid white;
+  border-radius : 50%;
+  opacity : 0;
+  -webkit-animation-name : k1;
+     -moz-animation-name : k1;
+       -o-animation-name : k1;
+          animation-name : k1;
+  -webkit-animation-duration : 6s;
+     -moz-animation-duration : 6s;
+       -o-animation-duration : 6s;
+          animation-duration : 6s;
+  -webkit-animation-delay : 3s;
+     -moz-animation-delay : 3s;
+       -o-animation-delay : 3s;
+          animation-delay : 3s;
+  -webkit-animation-iteration-count : infinite;
+     -moz-animation-iteration-count : infinite;
+       -o-animation-iteration-count : infinite;
+          animation-iteration-count : infinite;
+  -webkit-animation-timing-function : linear;
+     -moz-animation-timing-function : linear;
+       -o-animation-timing-function : linear;
+          animation-timing-function : linear;
+}
+  
+`
+
 const StyledNav = styled.nav<{ showMenu: boolean }>`
   position: fixed;
   top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
@@ -119,6 +248,17 @@ const Menu: React.FC<NavProps> = ({
 
   return (
     <Wrapper>
+      <PinnedBack>
+
+        <div className="bg-ripple-animation d-md-block">
+          <div className="left-bottom-ripples">
+            <div className="ripples" />
+          </div>
+          <div className="top-right-ripples">
+            <div className="ripples" />
+          </div>
+        </div>
+      </PinnedBack>
       <StyledNav showMenu={showMenu}>
         <Logo
           isPushed={isPushed}

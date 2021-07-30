@@ -59,7 +59,7 @@ export const lightColors: Colors = {
   borderColor: "#7d41cb",
   card: "#5c35fc", //
   nav: "#5c35fc", //
-  menuBackground:"#7d41cb",
+  menuBackground:"rgba(71,3,153,0.68)",
 
   menuHover:"rgba(57,31,66,0.25)",
   menuNavBackground:"#FFFFFF",
