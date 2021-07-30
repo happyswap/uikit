@@ -40,12 +40,15 @@ const MenuEntry = styled.div<Props>`
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
    
   flex-direction: ${({ sub }) => (sub ? "column" : "row")}
-
+  white-space: nowrap;
+  
   a {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
+    white-space: nowrap;
+    color: ${({ isPushed, theme }) => isPushed ? theme.colors.secondary: "transparent"};
   }
 
   svg {

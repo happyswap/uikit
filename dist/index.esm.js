@@ -5352,7 +5352,7 @@ var LinkLabel = styled.div(templateObject_2$4 || (templateObject_2$4 = __makeTem
     var isPushed = _a.isPushed, theme = _a.theme;
     return (isPushed ? theme.colors.secondary : "transparent");
 });
-var MenuEntry = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", ";;\n  padding: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  font-family: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n   \n  flex-direction: ", "\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", ";;\n  padding: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  font-family: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n   \n  flex-direction: ", "\n\n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), function (_a) {
+var MenuEntry = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTemplateObject(["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", ";;\n  padding: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  font-family: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n   \n  flex-direction: ", "\n  white-space: nowrap;\n  \n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n    white-space: nowrap;\n    color: ", ";\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"], ["\n  cursor: pointer;\n  display: flex;\n  align-items: center;\n  height: ", ";;\n  padding: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  font-family: ", ";\n  background-color: ", ";\n  color: ", ";\n  box-shadow: ", ";\n   \n  flex-direction: ", "\n  white-space: nowrap;\n  \n  a {\n    display: flex;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n    white-space: nowrap;\n    color: ", ";\n  }\n\n  svg {\n    fill: ", ";\n  }\n\n  &:hover {\n    background-color: ", ";\n  }\n\n  // Safari fix\n  flex-shrink: 0;\n\n  &.rainbow {\n    background-clip: text;\n    animation: ", " 3s ease-in-out infinite;\n    background: ", ";\n    background-size: 400% 100%;\n  }\n"])), function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "26px" : MENU_ENTRY_HEIGHT + "px");
 }, function (_a) {
@@ -5379,6 +5379,9 @@ var MenuEntry = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTem
 }, function (_a) {
     var sub = _a.sub;
     return (sub ? "column" : "row");
+}, function (_a) {
+    var isPushed = _a.isPushed, theme = _a.theme;
+    return isPushed ? theme.colors.secondary : "transparent";
 }, function (_a) {
     var theme = _a.theme;
     return theme.colors.secondary;
