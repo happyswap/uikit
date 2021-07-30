@@ -7,6 +7,7 @@ export interface Props {
   sub?: boolean;
   isActive?: boolean;
   theme: DefaultTheme;
+  isPushed?: boolean;
 }
 
 const rainbowAnimation = keyframes`
@@ -20,7 +21,7 @@ const rainbowAnimation = keyframes`
 `;
 
 const LinkLabel = styled.div<{ isPushed: boolean }>`
-  color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
+  color: ${({ isPushed, theme }) => (isPushed ? theme.colors.secondary : "transparent")};
   transition: color 0.4s;
   flex-grow: 1;
 `;
@@ -35,7 +36,7 @@ const MenuEntry = styled.div<Props>`
   font-weight: ${({ secondary }) => (secondary ? "600" : "600")};
   font-family: ${({ secondary }) => (secondary ? "'Roboto', Helvetica, Arial, sans-serif" : "'Roboto', Helvetica, Arial, sans-serif")};
   background-color: ${({ secondary, theme }) => (secondary ? theme.colors.background : "transparent")};
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ isPushed, theme }) => isPushed ? theme.colors.secondary: "transparent"};
   box-shadow: ${({ isActive, theme }) => (isActive ? `inset 4px 0px 0px ${theme.colors.primary}` : "none")};
    
   flex-direction: ${({ sub }) => (sub ? "column" : "row")}

@@ -99,7 +99,7 @@ h1.h1-roboto{
     width: 300px;
 }
 .content-wrapper{
-    /*height : 100vh;*/
+    height : 100vh;
     color : #FFFFFF;
     z-index : 6;
     /*padding-top : 5.125rem;*/
@@ -110,7 +110,7 @@ h1.h1-roboto{
     background :         linear-gradient(to right, #A34FFE, #5934FC);
     position: fixed;
     width:100%;
-    height:100%;
+
 
     font-family: Comfortaa,Roboto,'Helvetica Neue',Arial,sans-serif;
     overflow: auto;

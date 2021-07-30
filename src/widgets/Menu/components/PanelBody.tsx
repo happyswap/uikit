@@ -58,10 +58,10 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         if (entry.items) {
           const itemsMatchIndex = entry.items.findIndex((item) => item.href === location.pathname);
           const initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
-          console.log('initialOpenState:', initialOpenState, entry );
+          // console.log('initialOpenState:', initialOpenState, entry );
           return (
             <div>
-            <MenuEntry  key={entry.label} className={calloutClass}>
+            <MenuEntry  key={entry.label} isPushed={isPushed} className={calloutClass}>
 
               <MenuA href={entry.href} target={entry.target} onClick={handleClick}>
                 {iconElement}
@@ -71,7 +71,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               <SubMenuContainer>
               {
                 entry.items.map((item) => (
-                  <MenuEntry key={item.href}   secondary isActive={item.href === location.pathname} onClick={handleClick}>
+                  <MenuEntry key={item.href} isPushed={isPushed}  secondary isActive={item.href === location.pathname} onClick={handleClick}>
                     <MenuLink href={item.href} target={item.target}>{item.label}</MenuLink>
                   </MenuEntry>
                 ))}

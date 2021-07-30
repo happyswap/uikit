@@ -5,6 +5,7 @@ export interface Props {
     sub?: boolean;
     isActive?: boolean;
     theme: DefaultTheme;
+    isPushed?: boolean;
 }
 declare const MenuEntry: import("styled-components").StyledComponent<"div", DefaultTheme, Props, never>;
 declare const LinkLabelMemo: React.MemoExoticComponent<import("styled-components").StyledComponent<"div", DefaultTheme, {
