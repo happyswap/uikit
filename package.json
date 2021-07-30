@@ -1,6 +1,6 @@
 {
   "name": "@happyswapfinance/uikit",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -61,6 +61,7 @@
     "react-is": "^17.0.1",
     "react-router-dom": "^5.2.0",
     "rollup": "^2.39.0",
+    "rollup-plugin-styles": "^3.14.1",
     "styled-components": "^5.2.0",
     "themeprovider-storybook": "^1.6.4",
     "ts-jest": "^26.5.1",
@@ -83,7 +84,6 @@
     "jquery": "^3.6.0",
     "lodash": "^4.17.20",
     "react-transition-group": "^4.4.1",
-    "rollup-plugin-import-css": "^3.0.0",
     "styled-system": "^5.1.5"
   }
 }
