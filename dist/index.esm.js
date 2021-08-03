@@ -5689,7 +5689,7 @@ var MenuEntry = styled.div(templateObject_3$3 || (templateObject_3$3 = __makeTem
     return (secondary ? "14px" : "20px");
 }, function (_a) {
     var secondary = _a.secondary;
-    return (secondary ? "600" : "600");
+    return (secondary ? "400" : "600");
 }, function (_a) {
     var secondary = _a.secondary;
     return (secondary ? "'Roboto', Helvetica, Arial, sans-serif" : "'Roboto', Helvetica, Arial, sans-serif");
