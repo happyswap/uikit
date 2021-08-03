@@ -102,18 +102,8 @@ h1.h1-roboto{
     height : 100vh;
     color : #FFFFFF;
     z-index : 6;
-    /*padding-top : 5.125rem;*/
-    /*background : -webkit-gradient(linear, left top, right top, from(#A34FFE), to(#5934FC));*/
-    /*background : -webkit-linear-gradient(left, #A34FFE, #5934FC);*/
-    /*background :    -moz-linear-gradient(left, #A34FFE, #5934FC);*/
-    /*background :      -o-linear-gradient(left, #A34FFE, #5934FC);*/
-    /*background :         linear-gradient(to right, #A34FFE, #5934FC);*/
-    position: fixed;
     width:100%;
-
-
     font-family: Comfortaa,Roboto,'Helvetica Neue',Arial,sans-serif;
-    overflow: auto;
 }
 .content-wrapper::before {
     content : '';
@@ -161,7 +151,7 @@ h1.h1-roboto{
 
 
 section#about {
-    background-color: white;
+    background-color: #ffffffdb;
 }
 
 @media screen and (max-width: 575.98px){

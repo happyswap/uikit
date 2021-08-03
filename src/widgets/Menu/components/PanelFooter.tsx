@@ -4,10 +4,10 @@ import { CogIcon } from "../../../components/Svg";
 import IconButton from "../../../components/Button/IconButton";
 import { MENU_ENTRY_HEIGHT } from "../config";
 import { PanelProps, PushedProps } from "../types";
-import CakePrice from "./CakePrice";
-import ThemeSwitcher from "./ThemeSwitcher";
+
 import SocialLinks from "./SocialLinks";
-import LangSelector from "./LangSelector";
+import { FormattedText } from "../../../components/Text";
+
 
 interface Props extends PanelProps, PushedProps {}
 
@@ -42,7 +42,7 @@ const TokenInfo = styled.div`
   font-size: 12px;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.textSubtle};
-  background-color:  ${({ theme }) => theme.colors.menuBackground};
+
   .title {    
     display: flex;
     font-weight: 600;
@@ -97,7 +97,7 @@ const PanelFooter: React.FC<Props> = ({
           tokenInfo.map((item) => (
 
         <div className='row'>
-          <div className='cap'>{item.label}</div><div className='val'>{item.value}</div>
+          <div className='cap'>{item.label}</div><div className='val'><FormattedText value={parseInt(item.value,10)} decimals={0}/></div>
         </div>
           ))}
       </TokenInfo>

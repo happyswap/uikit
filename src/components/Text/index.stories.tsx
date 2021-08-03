@@ -1,5 +1,6 @@
 import React from "react";
 import Text from "./Text";
+import FormattedText from "./FormattedText";
 
 export default {
   title: "Components/Text",
@@ -38,6 +39,7 @@ export default {
   },
 };
 
+
 export const Default: React.FC = () => {
   return (
     <div>
@@ -51,6 +53,7 @@ export const Default: React.FC = () => {
         with text transform
       </Text>
       <Text textAlign="center">center</Text>
+      <FormattedText value={100000000} decimals={2} prefix='$' />
     </div>
   );
 };
