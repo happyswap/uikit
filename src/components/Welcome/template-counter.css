@@ -2466,9 +2466,11 @@ header .navbar.navbar-shadow {
 /* Counter header section : Head area css */
 .head-area {
   position : relative;
+  height : 100vh;
+  max-height: 800px;
 }
 .head-area .head-content {
-  height : 100vh;
+
   color : #FFFFFF;
   z-index : 6;
   padding-top : 5.125rem;
