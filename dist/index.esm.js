@@ -5502,7 +5502,8 @@ var PanelFooter = function (_a) {
             tokenInfo.map(function (item) { return (React.createElement("div", { className: 'row' },
                 React.createElement("div", { className: 'cap' }, item.label),
                 React.createElement("div", { className: 'val' },
-                    React.createElement(FormattedText, { value: parseInt(item.value, 10), decimals: 0 })))); })),
+                    React.createElement(FormattedText, { value: parseInt(item.value, 10), decimals: 0 }),
+                    "!"))); })),
         React.createElement(SettingsEntry, null,
             React.createElement(SocialLinks$1, null))));
 };
