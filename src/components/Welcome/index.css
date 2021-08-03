@@ -149,6 +149,9 @@ h1.h1-roboto{
     font-size: 0.8rem;
 }
 
+a.btn-link{
+    color: black !important;
+}
 
 section#about {
     background-color: #ffffffdb;
