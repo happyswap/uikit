@@ -97,7 +97,7 @@ const PanelFooter: React.FC<Props> = ({
           tokenInfo.map((item) => (
 
         <div className='row'>
-          <div className='cap'>{item.label}</div><div className='val'><FormattedText value={parseInt(item.value,10)} decimals={0}/>!</div>
+          <div className='cap'>{item.label}</div><div className='val'><FormattedText value={parseInt(item.value,10)} decimals={0}/></div>
         </div>
           ))}
       </TokenInfo>
