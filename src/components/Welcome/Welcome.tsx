@@ -241,7 +241,7 @@ const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
             </div>
           </section>
 
-          <section id="whitepaper" className="whitepaper section-padding">
+          <section id="whitepaper" className="whitepaper section-padding bg-color">
             <div className="container-fluid">
               <div className="container">
                 <div className="heading text-center">
@@ -399,7 +399,7 @@ const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
             </div>
           </section>
 
-          <section id="token-distribution" className="token-distribution section-padding">
+          <section id="token-distribution" className="token-distribution section-padding bg-color">
             <div className="container-fluid">
               <div className="container">
                 <div className="heading text-center">
