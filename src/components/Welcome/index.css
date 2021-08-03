@@ -104,6 +104,7 @@ h1.h1-roboto{
     z-index : 6;
     width:100%;
     font-family: Comfortaa,Roboto,'Helvetica Neue',Arial,sans-serif;
+    line-height: 1.6;
 }
 .content-wrapper::before {
     content : '';

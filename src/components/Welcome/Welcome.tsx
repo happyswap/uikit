@@ -14,8 +14,7 @@ const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
   useEffect(()=>{
 
       /* FlipClock Counter */
-      let clock;
-      clock = (window as any).$('.clock').FlipClock({
+      const clock = (window as any).$('.clock').FlipClock({
         clockFace: 'DailyCounter',
         autoStart: false,
         callbacks: {
