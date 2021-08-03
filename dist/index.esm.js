@@ -4509,7 +4509,6 @@ n(css,{});
 
 var Welcome = function (_a) {
     var props = __rest(_a, []);
-    var date = 60000;
     useEffect(function () {
         /* FlipClock Counter */
         var clock = window.$('.clock').FlipClock({
@@ -4521,7 +4520,7 @@ var Welcome = function (_a) {
                 }
             }
         });
-        clock.setTime(date);
+        clock.setTime(props.countStartTimeSec);
         clock.setCountdown(true);
         clock.start();
     });

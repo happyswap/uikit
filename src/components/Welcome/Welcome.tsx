@@ -10,7 +10,7 @@ import { WelcomeProps } from "./types";
 
 const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
 
-  const date=60000;
+
   useEffect(()=>{
 
       /* FlipClock Counter */
@@ -23,7 +23,7 @@ const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
           }
         }
       });
-      clock.setTime(date);
+      clock.setTime(props.countStartTimeSec);
       clock.setCountdown(true);
       clock.start();
 
