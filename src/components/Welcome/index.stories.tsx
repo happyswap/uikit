@@ -15,7 +15,7 @@ export default {
 export const Default: React.FC = () => {
   return (
     <>
-      <Welcome countStartTimeSec={12600032}/>
+      <Welcome count={12600032}/>
     </>
   );
 };

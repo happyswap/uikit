@@ -4520,7 +4520,7 @@ var Welcome = function (_a) {
                 }
             }
         });
-        clock.setTime(props.countStartTimeSec);
+        clock.setTime(props.count);
         clock.setCountdown(true);
         clock.start();
     });

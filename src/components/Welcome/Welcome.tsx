@@ -23,7 +23,7 @@ const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
           }
         }
       });
-      clock.setTime(props.countStartTimeSec);
+      clock.setTime(props.count);
       clock.setCountdown(true);
       clock.start();
 
