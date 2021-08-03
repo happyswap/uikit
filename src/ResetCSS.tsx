@@ -34,6 +34,9 @@ const ResetCSS = createGlobalStyle`
     line-height: 1;
     font-size: 16px;
   }
+  body {
+    overflow:hidden;
+  }
   ol,
   ul {
     list-style: disc;
