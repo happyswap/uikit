@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
-import "./bootstrap.css";
+import "../_styles/bootstrap.css";
 
 import "./flipclock-style.css";
 // eslint-disable-next-line import/extensions
 import "./flipclock.js";
 import "./index.css";
 import "./template-counter.css";
+import "../_styles/fadeIn.css";
+import "../_styles/tabs-faq.css";
+import "../_styles/animate.min.css"
 import { WelcomeProps } from "./types";
 
 const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {

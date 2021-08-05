@@ -59,6 +59,7 @@ export type Colors = {
   // Brand colors
   binance: string;
   menuBackground:string,
+  menuLightBackground:string,
   menuNavBackground:string,
   hamburger:string,
   menuHover:string

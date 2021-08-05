@@ -1,9 +1,12 @@
 import React from "react";
-import "./bootstrap.css";
+import "../_styles/bootstrap.css";
 import "./flipclock-style.css";
 import "./flipclock.js";
 import "./index.css";
 import "./template-counter.css";
+import "../_styles/fadeIn.css";
+import "../_styles/tabs-faq.css";
+import "../_styles/animate.min.css";
 import { WelcomeProps } from "./types";
 declare const Welcome: React.FC<WelcomeProps>;
 export default Welcome;

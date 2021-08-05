@@ -49,6 +49,7 @@ export declare type Colors = {
     gradients: Gradients;
     binance: string;
     menuBackground: string;
+    menuLightBackground: string;
     menuNavBackground: string;
     hamburger: string;
     menuHover: string;

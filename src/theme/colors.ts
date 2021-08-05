@@ -32,6 +32,7 @@ export const darkColors: Colors = {
   card: "#FFFFFF",
   nav: "#16256b", //
   menuBackground:"#5c35fc",
+  menuLightBackground:"#d6d1ea",
   menuHover:"rgba(186,54,232,0.67)",
   menuNavBackground:"white",
   hamburger:"#eeeeee",
@@ -60,6 +61,7 @@ export const lightColors: Colors = {
   card: "#5c35fc", //
   nav: "#5c35fc", //
   menuBackground:"rgba(71,3,153,0.25)",
+  menuLightBackground:"rgba(212,193,231,0.43)",
 
   menuHover:"rgba(57,31,66,0.25)",
   menuNavBackground:"#FFFFFF",

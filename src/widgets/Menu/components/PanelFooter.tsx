@@ -35,18 +35,18 @@ const SocialEntry = styled.div`
 `;
 
 const TokenInfo = styled.div`
-  padding: 0 16px;
+  padding: 0 24px;
   margin-bottom: 1px;
-  border-bottom:  ${({ theme }) => `solid 1px ${theme.colors.backgroundDisabled}`};
+  border-bottom:  ${({ theme }) => `solid 1px ${theme.colors.menuLightBackground}`};
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   color: ${({ theme }) => theme.colors.textSubtle};
 
   .title {    
     display: flex;
     font-weight: 600;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 8px 0 10px;
   }
   .row{
