@@ -27,6 +27,7 @@ export interface NavTheme {
 export interface MenuSubEntry {
   label: string;
   href: string;
+  hashLink?: boolean;
   target?: string;
   calloutClass?: string;
 }

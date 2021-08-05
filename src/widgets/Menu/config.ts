@@ -12,7 +12,8 @@ export const links = [
       },
       {
         label: "TOKONOMICS",
-        href: "https://pancakeswap.finance/#tokonomics",
+        href: "/#tokonomics",
+        hashLink:true
       },
       {
         label: "Roadmap",

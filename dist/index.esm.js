@@ -7,6 +7,7 @@ import noop from 'lodash/noop';
 import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
 import { Link as Link$1, NavLink, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import '@fontsource/roboto-condensed';
 import '@fontsource/roboto';
@@ -5586,7 +5587,8 @@ var links = [
             },
             {
                 label: "TOKONOMICS",
-                href: "https://pancakeswap.finance/#tokonomics",
+                href: "/#tokonomics",
+                hashLink: true
             },
             {
                 label: "Roadmap",
@@ -5759,6 +5761,7 @@ var PanelBody = function (_a) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             var itemsMatchIndex = entry.items.findIndex(function (item) { return item.href === location.pathname; });
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
             // console.log('initialOpenState:', initialOpenState, entry );
             return (React.createElement("div", null,
@@ -5766,8 +5769,9 @@ var PanelBody = function (_a) {
                     React.createElement(MenuA, { href: entry.href, target: entry.target, onClick: handleClick },
                         iconElement,
                         React.createElement(LinkLabelMemo, { isPushed: isPushed }, entry.label))),
-                React.createElement(SubMenuContainer, null, entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, isPushed: isPushed, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
-                    React.createElement(MenuLink, { href: item.href, target: item.target }, item.label))); }))));
+                React.createElement(SubMenuContainer, null, entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, isPushed: isPushed, secondary: true, isActive: item.href === location.pathname, onClick: handleClick }, item.hashLink
+                    ? React.createElement(HashLink, { to: item.href }, item.label)
+                    : React.createElement(MenuLink, { href: item.href, target: item.target }, item.label))); }))));
         }
         return (React.createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
             React.createElement(MenuLink, { href: entry.href, target: entry.target, onClick: handleClick },

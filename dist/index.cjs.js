@@ -11,6 +11,7 @@ var noop = require('lodash/noop');
 var debounce = require('lodash/debounce');
 var throttle = require('lodash/throttle');
 var reactRouterDom = require('react-router-dom');
+var reactRouterHashLink = require('react-router-hash-link');
 var reactTransitionGroup = require('react-transition-group');
 require('@fontsource/roboto-condensed');
 require('@fontsource/roboto');
@@ -5599,7 +5600,8 @@ var links = [
             },
             {
                 label: "TOKONOMICS",
-                href: "https://pancakeswap.finance/#tokonomics",
+                href: "/#tokonomics",
+                hashLink: true
             },
             {
                 label: "Roadmap",
@@ -5772,6 +5774,7 @@ var PanelBody = function (_a) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             var itemsMatchIndex = entry.items.findIndex(function (item) { return item.href === location.pathname; });
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
             // console.log('initialOpenState:', initialOpenState, entry );
             return (React__default['default'].createElement("div", null,
@@ -5779,8 +5782,9 @@ var PanelBody = function (_a) {
                     React__default['default'].createElement(MenuA, { href: entry.href, target: entry.target, onClick: handleClick },
                         iconElement,
                         React__default['default'].createElement(LinkLabelMemo, { isPushed: isPushed }, entry.label))),
-                React__default['default'].createElement(SubMenuContainer, null, entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, isPushed: isPushed, secondary: true, isActive: item.href === location.pathname, onClick: handleClick },
-                    React__default['default'].createElement(MenuLink, { href: item.href, target: item.target }, item.label))); }))));
+                React__default['default'].createElement(SubMenuContainer, null, entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, isPushed: isPushed, secondary: true, isActive: item.href === location.pathname, onClick: handleClick }, item.hashLink
+                    ? React__default['default'].createElement(reactRouterHashLink.HashLink, { to: item.href }, item.label)
+                    : React__default['default'].createElement(MenuLink, { href: item.href, target: item.target }, item.label))); }))));
         }
         return (React__default['default'].createElement(MenuEntry, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
             React__default['default'].createElement(MenuLink, { href: entry.href, target: entry.target, onClick: handleClick },

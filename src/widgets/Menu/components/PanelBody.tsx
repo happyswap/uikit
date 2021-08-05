@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { SvgProps } from "../../../components/Svg";
 import * as IconModule from "../icons";
-import Accordion from "./Accordion";
 import { MenuEntry, LinkLabel } from "./MenuEntry";
 import MenuLink from "./MenuLink";
 import { PanelProps, PushedProps } from "../types";
@@ -55,6 +55,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
 
         if (entry.items) {
           const itemsMatchIndex = entry.items.findIndex((item) => item.href === location.pathname);
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           const initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
           // console.log('initialOpenState:', initialOpenState, entry );
           return (
@@ -70,7 +71,10 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               {
                 entry.items.map((item) => (
                   <MenuEntry key={item.href} isPushed={isPushed}  secondary isActive={item.href === location.pathname} onClick={handleClick}>
-                    <MenuLink href={item.href} target={item.target}>{item.label}</MenuLink>
+                    {item.hashLink
+                      ?<HashLink to={item.href}>{item.label}</HashLink>
+                      : <MenuLink href={item.href} target={item.target}>{item.label}</MenuLink>
+                    }
                   </MenuEntry>
                 ))}
               </SubMenuContainer>

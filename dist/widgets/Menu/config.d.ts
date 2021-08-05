@@ -3,10 +3,15 @@ export declare const links: ({
     label: string;
     icon: string;
     href: string;
-    items: {
+    items: ({
         label: string;
         href: string;
-    }[];
+        hashLink?: undefined;
+    } | {
+        label: string;
+        href: string;
+        hashLink: boolean;
+    })[];
 } | {
     label: string;
     icon: string;
