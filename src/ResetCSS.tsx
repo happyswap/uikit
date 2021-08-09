@@ -36,7 +36,7 @@ const ResetCSS = createGlobalStyle`
     font-size: 16px;
   }
   body {
-    overflow:hidden;
+    // overflow:hidden;
   }
   ol,
   ul {
