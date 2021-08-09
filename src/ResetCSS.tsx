@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import "@fontsource/roboto-condensed";
 import "@fontsource/roboto";
 import "@fontsource/comfortaa";
+import "./assets/themify/style.css";
 
 const ResetCSS = createGlobalStyle`
   /* prettier-ignore */

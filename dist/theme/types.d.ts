@@ -39,6 +39,7 @@ export declare type Colors = {
     input: string;
     inputSecondary: string;
     background: string;
+    backgroundPanel: string;
     backgroundDisabled: string;
     text: string;
     textDisabled: string;

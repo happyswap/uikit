@@ -15,7 +15,7 @@ const Tabs: React.FC<TabsProps> = ({ onChange,...props }) => {
   const {delay,tabs}=props;
   const [active, setActive] = useState(0);
   const tabStyle = {
-    position: 'absolute',
+   // position: 'absolute',
   } as React.CSSProperties;
   useEffect(()=>{
     onChange(active);
@@ -23,7 +23,7 @@ const Tabs: React.FC<TabsProps> = ({ onChange,...props }) => {
 
   const handleClick = (e:any):false =>{
     const index = parseInt(e.target.id, 10);
-    console.log("click",e.target.id, index )
+
     if (index !== active) {
       setActive(index);
     }

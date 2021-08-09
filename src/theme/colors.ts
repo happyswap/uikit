@@ -18,6 +18,7 @@ export const darkColors: Colors = {
   ...baseColors,
   ...brandColors,
   background: "#ffffff",
+  backgroundPanel: "rgba(255,255,255,0.45)",
   secondary: "#16256b", //
   backgroundDisabled: "#E9EAEB",
   contrast: "#191326",
@@ -47,6 +48,7 @@ export const lightColors: Colors = {
   primary: "#4c0384",
   secondary: "#fff", //
   background: "linear-gradient(139.73deg, #8544fd 0%, #9247e2 100%)", //
+  backgroundPanel: "rgba(255,255,255,0.45)",
   backgroundDisabled: "#8442e2", //
   contrast: "#EEEEEE",
   invertedContrast: "#262513",
