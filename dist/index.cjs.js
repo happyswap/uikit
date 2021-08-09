@@ -5952,11 +5952,11 @@ var Menu = function (_a) {
             }
             refPrevOffset.current = currentOffset;
         };
-        var throttledHandleScroll = throttle__default['default'](handleScroll, 200);
-        window.addEventListener("scroll", throttledHandleScroll);
-        return function () {
-            window.removeEventListener("scroll", throttledHandleScroll);
-        };
+        throttle__default['default'](handleScroll, 200);
+        // window.addEventListener("scroll", throttledHandleScroll);
+        // return () => {
+        //   window.removeEventListener("scroll", throttledHandleScroll);
+        // };
     }, []);
     // Find the home link if provided
     var homeLink = links.find(function (link) { return link.label === "Home"; });

@@ -238,10 +238,10 @@ const Menu: React.FC<NavProps> = ({
     };
     const throttledHandleScroll = throttle(handleScroll, 200);
 
-    window.addEventListener("scroll", throttledHandleScroll);
-    return () => {
-      window.removeEventListener("scroll", throttledHandleScroll);
-    };
+    // window.addEventListener("scroll", throttledHandleScroll);
+    // return () => {
+    //   window.removeEventListener("scroll", throttledHandleScroll);
+    // };
   }, []);
 
   // Find the home link if provided
