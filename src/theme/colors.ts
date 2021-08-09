@@ -48,7 +48,7 @@ export const lightColors: Colors = {
   primary: "#4c0384",
   secondary: "#fff", //
   background: "linear-gradient(139.73deg, #8544fd 0%, #9247e2 100%)", //
-  backgroundPanel: "rgba(255,255,255,0.45)",
+  backgroundPanel: "rgba(255,255,255,0.10)",
   backgroundDisabled: "#8442e2", //
   contrast: "#EEEEEE",
   invertedContrast: "#262513",
