@@ -202,6 +202,14 @@ const ComingSoon = styled.div`
   
 `
 
+const Treepoint = styled.div`
+  position:absolute;
+  top: 65px;
+  right: 0px;
+  width: 360px;
+  height: 26px;
+`;
+
 const MobileOnlyOverlay = styled(Overlay)`
   position: fixed;
   height: 100%;
@@ -287,6 +295,10 @@ const Menu: React.FC<NavProps> = ({
         <Flex>
           <CakePrice isDark cakePriceUsd={cakePriceUsd} />
           <ComingSoon >Coming Soon</ComingSoon>
+          <Treepoint>
+            <iframe frameBorder="0"  id="tpWidget" width="357px" height="25px"
+                    title="Treepoints widget"
+                    src="https://widget.treepoints.green?company_slug=happyswap&color=true&layout=wide&data=all" /></Treepoint>
           {/*<UserBlock account={account} login={login} logout={logout} />*/}
         </Flex>
       </StyledNav>

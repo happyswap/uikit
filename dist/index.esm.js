@@ -5912,7 +5912,8 @@ var ComingSoon = styled.div(templateObject_6 || (templateObject_6 = __makeTempla
     var theme = _a.theme;
     return theme.colors.gradients.orange;
 });
-var MobileOnlyOverlay = styled(Overlay)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+var Treepoint = styled.div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  position:absolute;\n  top: 65px;\n  right: 0px;\n  width: 360px;\n  height: 26px;\n"], ["\n  position:absolute;\n  top: 65px;\n  right: 0px;\n  width: 360px;\n  height: 26px;\n"])));
+var MobileOnlyOverlay = styled(Overlay)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -5965,13 +5966,15 @@ var Menu = function (_a) {
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/images/logo.png" }),
             React.createElement(Flex, null,
                 React.createElement(CakePrice$1, { isDark: true, cakePriceUsd: cakePriceUsd }),
-                React.createElement(ComingSoon, null, "Coming Soon"))),
+                React.createElement(ComingSoon, null, "Coming Soon"),
+                React.createElement(Treepoint, null,
+                    React.createElement("iframe", { frameBorder: "0", id: "tpWidget", width: "357px", height: "25px", title: "Treepoints widget", src: "https://widget.treepoints.green?company_slug=happyswap&color=true&layout=wide&data=all" })))),
         React.createElement(BodyWrapper, null,
             React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, tokenInfo: tokenInfo }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$5, templateObject_2$1, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;
+var templateObject_1$5, templateObject_2$1, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8;
 
 var ToastAction = function (_a) {
     var action = _a.action;
