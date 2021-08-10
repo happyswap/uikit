@@ -197,7 +197,7 @@ const ComingSoon = styled.div`
   color:${({ theme }) => theme.colors.secondary};
   background:${({ theme }) => theme.colors.gradients.orange};
   margin-left: 12px;
-  width: 100px;
+  width: 120px;
   justify-content: center;
   
 `
