@@ -185,6 +185,23 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   }
 `;
 
+const ComingSoon = styled.div`
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Roboto',Helvetica,Arial,sans-serif;
+  font-size:12px;
+  font-weight: 600;
+  color:${({ theme }) => theme.colors.secondary};
+  background:${({ theme }) => theme.colors.gradients.orange};
+  margin-left: 12px;
+  width: 100px;
+  justify-content: center;
+  
+`
+
 const MobileOnlyOverlay = styled(Overlay)`
   position: fixed;
   height: 100%;
@@ -269,6 +286,7 @@ const Menu: React.FC<NavProps> = ({
         />
         <Flex>
           <CakePrice isDark cakePriceUsd={cakePriceUsd} />
+          <ComingSoon >Coming Soon</ComingSoon>
           {/*<UserBlock account={account} login={login} logout={logout} />*/}
         </Flex>
       </StyledNav>

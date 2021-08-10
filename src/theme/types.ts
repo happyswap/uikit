@@ -29,6 +29,7 @@ export type Shadows = {
 
 export type Gradients = {
   bubblegum: string;
+  orange:string;
 };
 
 export type Colors = {

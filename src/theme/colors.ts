@@ -39,6 +39,7 @@ export const darkColors: Colors = {
   hamburger:"#eeeeee",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #9247e2 0%, #8442e2 100%)",
+    orange: "linear-gradient(90deg, #ff4812, #fe9134)"
   },
 };
 export const lightColors: Colors = {
@@ -69,6 +70,7 @@ export const lightColors: Colors = {
   menuNavBackground:"#FFFFFF",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #A34FFE 0%, #5934FC 100%)", //
+    orange: "linear-gradient(90deg, #ff4812, #fe9134)"
   },
   hamburger:"#cccccc",
 };

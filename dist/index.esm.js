@@ -5905,7 +5905,14 @@ var Inner = styled.div(templateObject_5 || (templateObject_5 = __makeTemplateObj
     var isPushed = _a.isPushed;
     return "calc(100% - " + (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px)";
 });
-var MobileOnlyOverlay = styled(Overlay)(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+var ComingSoon = styled.div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border-radius: 25px;\n  padding-left: 10px;\n  padding-right: 10px;\n  font-family: 'Roboto',Helvetica,Arial,sans-serif;\n  font-size:12px;\n  font-weight: 600;\n  color:", ";\n  background:", ";\n  margin-left: 12px;\n  width: 100px;\n  justify-content: center;\n  \n"], ["\n  display: flex;\n  align-items: center;\n  border-radius: 25px;\n  padding-left: 10px;\n  padding-right: 10px;\n  font-family: 'Roboto',Helvetica,Arial,sans-serif;\n  font-size:12px;\n  font-weight: 600;\n  color:", ";\n  background:", ";\n  margin-left: 12px;\n  width: 100px;\n  justify-content: center;\n  \n"])), function (_a) {
+    var theme = _a.theme;
+    return theme.colors.secondary;
+}, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.gradients.orange;
+});
+var MobileOnlyOverlay = styled(Overlay)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -5957,13 +5964,14 @@ var Menu = function (_a) {
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/images/logo.png" }),
             React.createElement(Flex, null,
-                React.createElement(CakePrice$1, { isDark: true, cakePriceUsd: cakePriceUsd }))),
+                React.createElement(CakePrice$1, { isDark: true, cakePriceUsd: cakePriceUsd }),
+                React.createElement(ComingSoon, null, "Coming Soon"))),
         React.createElement(BodyWrapper, null,
             React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, tokenInfo: tokenInfo }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$5, templateObject_2$1, templateObject_3, templateObject_4, templateObject_5, templateObject_6;
+var templateObject_1$5, templateObject_2$1, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;
 
 var ToastAction = function (_a) {
     var action = _a.action;
@@ -6274,9 +6282,11 @@ var brandColors = {
 };
 var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { background: "#ffffff", backgroundPanel: "rgba(255,255,255,0.45)", secondary: "#16256b", backgroundDisabled: "#E9EAEB", contrast: "#191326", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#487CFF", textDisabled: "#BDC2C4", textSubtle: "#16256b", borderColor: "#E9EAEB", card: "#FFFFFF", nav: "#16256b", menuBackground: "#5c35fc", menuLightBackground: "#d6d1ea", menuHover: "rgba(186,54,232,0.67)", menuNavBackground: "white", hamburger: "#eeeeee", gradients: {
         bubblegum: "linear-gradient(139.73deg, #9247e2 0%, #8442e2 100%)",
+        orange: "linear-gradient(90deg, #ff4812, #fe9134)"
     } });
 var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { primary: "#4c0384", secondary: "#fff", background: "linear-gradient(139.73deg, #8544fd 0%, #9247e2 100%)", backgroundPanel: "rgba(255,255,255,0.10)", backgroundDisabled: "#8442e2", contrast: "#EEEEEE", invertedContrast: "#262513", input: "#483F5A", inputSecondary: "#7b22e2", primaryDark: "#6527a8", tertiary: "#ffa338", text: "#fcfae2", textDisabled: "#b3a5c7", textSubtle: "#fff", borderColor: "#7d41cb", card: "#5c35fc", nav: "#5c35fc", menuBackground: "rgba(71,3,153,0.25)", menuLightBackground: "rgba(212,193,231,0.43)", menuHover: "rgba(57,31,66,0.25)", menuNavBackground: "#FFFFFF", gradients: {
         bubblegum: "linear-gradient(139.73deg, #A34FFE 0%, #5934FC 100%)",
+        orange: "linear-gradient(90deg, #ff4812, #fe9134)"
     }, hamburger: "#cccccc" });
 
 var light$6 = {
