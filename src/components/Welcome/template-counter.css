@@ -45,7 +45,9 @@ ul {
   z-index : 100000;
 }
 
-#loader-wrapper .logo-wrapper{
+#loader-wrapper .logo-wrapper,
+.logo-wrapper
+{
     position: relative;
     width: 100%;
     height: 50%;
@@ -2267,14 +2269,18 @@ header .navbar.navbar-shadow {
       -ms-flex : 0 1 auto;
           flex : 0 1 auto;
 }
-.head-area .logo-wrapper {
+.head-area .logo-wrapper,
+.logo-wrapper
+{
   overflow : hidden;
   width : 25.35rem;
   height : 25.35rem;
   background-color : #FFFFFF;
   border-radius : 20rem;
 }
-.head-area .logo-wrapper .crypto-logo {
+.head-area .logo-wrapper .crypto-logo,
+.logo-wrapper .crypto-logo
+{
   z-index : 1;
   position : relative;
   width : 22.87rem;
@@ -2283,18 +2289,22 @@ header .navbar.navbar-shadow {
   background :    -moz-radial-gradient(circle, #FDC800, #FF4137);
   background :      -o-radial-gradient(circle, #FDC800, #FF4137);
   background :         radial-gradient(circle, #FDC800, #FF4137);
-  top : 1.25rem;
-  left : -1.75rem;
+    top : 0rem;
+    left : 1.25rem;
   border-radius : 20rem;
   -webkit-box-shadow : -2px 3px 26px 0 #FF4137;
           box-shadow : -2px 3px 26px 0 #FF4137;
 }
-.head-area .logo-wrapper .crypto-logo .crypto-logo-img {
+.head-area .logo-wrapper .crypto-logo .crypto-logo-img,
+.logo-wrapper .crypto-logo .crypto-logo-img
+{
   position : absolute;
   left : 9%;
   top : 18%;
 }
-.head-area #ripple, .head-area #ripple2, .head-area #ripple3 {
+.head-area #ripple, .head-area #ripple2, .head-area #ripple3,
+.logo-wrapper #ripple, .logo-wrapper #ripple2, .logo-wrapper #ripple3
+{
   border-radius : 9999px;
   border : 1px solid rgba(255, 255, 255, 0.4);
   -webkit-box-shadow : 0 0 20px rgba(255, 255, 255, 0.4);
@@ -3947,7 +3957,8 @@ p.content-desc {
 }
 
 @media (min-width: 1200px) and (max-width: 1499.98px) {
-  .head-area .logo-wrapper {
+  .head-area .logo-wrapper,
+  .logo-wrapper {
     margin-left : -2.5rem !important;
   }
   .head-area .head-content::after {
@@ -3963,20 +3974,25 @@ p.content-desc {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .head-area .logo-wrapper {
+  .head-area .logo-wrapper,
+  .logo-wrapper
+  {
     margin : 1rem auto 0 auto !important;
     width : 18.35rem;
     height : 18.35rem;
     border-radius : 10rem;
   }
-  .head-area .logo-wrapper .crypto-logo {
+  .head-area .logo-wrapper .crypto-logo,
+  .logo-wrapper .crypto-logo
+  {
     width : 16.87rem;
     height : 16.87rem;
     border-radius : 10rem;
-    top : 0.75rem;
-    left : -2.25rem;
+    top : 0rem;
+    left : 0.75rem;
   }
-  .head-area .logo-wrapper .crypto-logo .crypto-logo-img {
+  .head-area .logo-wrapper .crypto-logo .crypto-logo-img,
+  .logo-wrapper .crypto-logo .crypto-logo-img{
     position : absolute;
     left : 20%;
     top : 28%;
@@ -4044,21 +4060,26 @@ p.content-desc {
   .head-area .head-content:after {
     content : none;
   }
-  .head-area .head-content .logo-wrapper {
+  .head-area .head-content .logo-wrapper,
+  .logo-wrapper{
     margin : 1rem auto 0 auto !important;
     width : 15.35rem;
     height : 15.35rem;
     border-radius : 10rem;
   }
-  .head-area .head-content .logo-wrapper .crypto-logo {
+  .head-area .head-content .logo-wrapper .crypto-logo,
+  .logo-wrapper .crypto-logo{
     width : 13.87rem;
     height : 13.87rem;
     border-radius : 10rem;
-    top : 0.75rem;
-    left : -2.25rem;
+    top : 0rem;
+    left : 0.75rem;
   }
-  .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img {
-    width : 100px;
+  .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img,
+  .logo-wrapper .crypto-logo .crypto-logo-img{
+      width: 140px;
+      left: 18%;
+      top: 25%;
   }
   .head-area .head-content .loading-bar {
     margin : 0 auto !important;
@@ -4123,21 +4144,26 @@ p.content-desc {
   .head-area .head-content .banner-content h3 {
     padding-top : 0.5rem !important;
   }
-  .head-area .head-content .logo-wrapper {
+  .head-area .head-content .logo-wrapper,
+  .logo-wrapper{
     margin : 1rem auto 0 auto !important;
     width : 15.35rem;
     height : 15.35rem;
     border-radius : 10rem;
   }
-  .head-area .head-content .logo-wrapper .crypto-logo {
+  .head-area .head-content .logo-wrapper .crypto-logo,
+  .logo-wrapper .crypto-logo{
     width : 13.87rem;
     height : 13.87rem;
     border-radius : 10rem;
-    top : 0.75rem;
-    left : -2.25rem;
+    top : 0rem;
+    left : 0.75rem;
   }
-  .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img {
-    width : 100px;
+  .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img,
+  .logo-wrapper .crypto-logo .crypto-logo-img{
+    width : 150px;
+      left: 15%;
+      top: 23%;
   }
   .head-area .head-content .loading-bar {
     margin : 0 auto !important;
@@ -4283,23 +4309,26 @@ p.content-desc {
     font-size : 0.8rem;
     padding : 0.8rem;
   }
-  .head-area .head-content .logo-wrapper {
+  .head-area .head-content .logo-wrapper,
+  .logo-wrapper{
     margin : 1rem auto 0 auto !important;
     width : 12.35rem;
     height : 12.35rem;
     border-radius : 10rem;
   }
-  .head-area .head-content .logo-wrapper .crypto-logo {
+  .head-area .head-content .logo-wrapper .crypto-logo,
+  .logo-wrapper .crypto-logo{
     width : 10.87rem;
     height : 10.87rem;
     border-radius : 10rem;
-    top : 0.75rem;
-    left : -2.25rem;
+    top : 0rem;
+    left : 0.75rem;
   }
-  .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img {
+  .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img,
+  .logo-wrapper .crypto-logo .crypto-logo-img{
     width: 123px;
-    left: 2%;
-    top: 12%;
+      left: 15%;
+      top: 23%;
   }
   .head-area .head-content .loading-bar {
     margin : 0 auto !important;

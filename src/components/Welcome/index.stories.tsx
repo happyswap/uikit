@@ -2,6 +2,7 @@
 import React from "react";
 
 import Welcome from "./Welcome";
+import RippleLogo from "./RippleLogo";
 
 
 export default {
@@ -16,6 +17,13 @@ export const Default: React.FC = () => {
   return (
     <>
       <Welcome count={12600032}/>
+    </>
+  );
+};
+export const RippleLogoShow: React.FC = () => {
+  return (
+    <>
+      <RippleLogo />
     </>
   );
 };

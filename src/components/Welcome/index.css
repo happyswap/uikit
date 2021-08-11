@@ -208,11 +208,15 @@ section#about {
          height: 100vh !important;
     }
 
-    .head-area .head-content .logo-wrapper .crypto-logo{
+    .head-area .head-content .logo-wrapper .crypto-logo,
+    .logo-wrapper .crypto-logo
+    {
         width: 7.87rem;
         height: 7.87rem;
     }
-    .head-area .head-content .logo-wrapper{
+    .head-area .head-content .logo-wrapper,
+    .logo-wrapper
+    {
         width: 9.35rem;
         height: 9.35rem;
     }

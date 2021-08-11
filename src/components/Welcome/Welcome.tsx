@@ -10,6 +10,7 @@ import "../_styles/fadeIn.css";
 import "../_styles/tabs-faq.css";
 import "../_styles/animate.min.css"
 import { WelcomeProps } from "./types";
+import RippleLogo from "./RippleLogo";
 
 const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
 
@@ -77,15 +78,7 @@ const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
                     </div>
                     <div className="col-lg-4 col-md-12 move-first animated" data-animation="zoomIn"
                          data-animation-delay="2s">
-                      <div className="logo-wrapper ml-5 pl-5 align-items-center">
-                        <div className="crypto-logo">
-                           <div id="ripple" />
-                           <div id="ripple2" />
-                           <div id="ripple3" />
-                          <img src="/images/logo-big.png"
-                               className="crypto-logo-img rounded mx-auto d-block pulse2" alt="SWPY"/>
-                        </div>
-                      </div>
+                      <RippleLogo/>
                     </div>
                   </div>
                 </div>
