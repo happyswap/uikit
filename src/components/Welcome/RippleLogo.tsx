@@ -1,11 +1,20 @@
 import React from "react";
 import "../_styles/bootstrap.css";
 import "./template-counter.css";
+import "./logo.css";
+import { IRippleLogoProps } from "./types";
 
 
-const RippleLogo:React.FC = () => {
+
+const RippleLogo:React.FC<IRippleLogoProps> = ({...props}) => {
+  const {size} = props;
+  let class1="logo-wrapper align-items-center";
+  if(size){
+    class1= `${size } logo-wrapper align-items-center`;
+  }
+
   return (
-    <div className="logo-wrapper align-items-center">
+    <div className={class1}>
       <div className="crypto-logo">
         <div id="ripple" />
         <div id="ripple2" />

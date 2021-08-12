@@ -2301,7 +2301,9 @@ header .navbar.navbar-shadow {
   position : absolute;
   left : 9%;
   top : 18%;
-  width: 300px
+  width: 300px;
+  height: unset !important;
+
 
 
 }
@@ -4001,6 +4003,7 @@ p.content-desc {
     left : 20%;
     top : 28%;
     width : 160px;
+      height: unset !important;
   }
   .head-area .head-content::after {
     -webkit-background-size : 60% 60%;
@@ -4082,6 +4085,7 @@ p.content-desc {
   .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img,
   .logo-wrapper .crypto-logo .crypto-logo-img{
       width: 140px;
+      height: unset !important;
       left: 18%;
       top: 25%;
   }
@@ -4166,6 +4170,7 @@ p.content-desc {
   .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img,
   .logo-wrapper .crypto-logo .crypto-logo-img{
     width : 150px;
+      height: unset !important;
       left: 15%;
       top: 23%;
   }
@@ -4331,6 +4336,7 @@ p.content-desc {
   .head-area .head-content .logo-wrapper .crypto-logo .crypto-logo-img,
   .logo-wrapper .crypto-logo .crypto-logo-img{
     width: 123px;
+      height: unset !important;
       left: 15%;
       top: 23%;
   }

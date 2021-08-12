@@ -20,10 +20,21 @@ export const Default: React.FC = () => {
     </>
   );
 };
+
 export const RippleLogoShow: React.FC = () => {
   return (
     <>
       <RippleLogo />
+    </>
+  );
+};
+
+export const RippleLogoSizeShow: React.FC = () => {
+  return (
+    <>
+      <RippleLogo size="large" />
+      <RippleLogo size="middle" />
+      <RippleLogo size="small" />
     </>
   );
 };

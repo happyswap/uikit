@@ -1,0 +1,70 @@
+
+.large.logo-wrapper
+{
+    margin : 1rem auto 0 auto !important;
+    width : 18.35rem;
+    height : 18.35rem;
+    border-radius : 10rem;
+}
+
+.large.logo-wrapper .crypto-logo
+{
+    width : 16.87rem !important;;
+    height : 16.87rem !important;;
+    border-radius : 10rem !important;;
+    top : 0rem !important;;
+    left : 0.75rem !important;;
+}
+
+.large.logo-wrapper .crypto-logo .crypto-logo-img{
+    position : absolute;
+    left : 20% !important;;
+    top : 28% !important;;
+    width : 160px !important;;
+    height: unset !important;
+}
+
+
+.middle.logo-wrapper{
+    margin : 1rem auto 0 auto !important;
+    width : 15.35rem;
+    height : 15.35rem;
+    border-radius : 10rem;
+}
+
+.middle.logo-wrapper .crypto-logo{
+    width : 13.87rem !important;
+    height : 13.87rem !important;
+    border-radius : 10rem !important;
+    top : 0rem !important;
+    left : 0.75rem !important;
+}
+
+.middle.logo-wrapper .crypto-logo .crypto-logo-img{
+    width : 150px !important;;
+    height: unset !important;
+    left: 15% !important;;
+    top: 23% !important;;
+}
+
+.small.logo-wrapper{
+    margin : 1rem auto 0 auto !important;
+    width : 12.35rem;
+    height : 12.35rem;
+    border-radius : 10rem;
+}
+
+.small.logo-wrapper .crypto-logo{
+    width : 10.87rem !important;
+    height : 10.87rem !important;
+    border-radius : 10rem !important;
+    top : 0rem !important;
+    left : 0.75rem !important;
+}
+
+.small.logo-wrapper .crypto-logo .crypto-logo-img{
+    width: 123px !important;
+    height: unset !important;
+    left: 15% !important;
+    top: 23% !important;
+}
