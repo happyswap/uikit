@@ -2301,6 +2301,9 @@ header .navbar.navbar-shadow {
   position : absolute;
   left : 9%;
   top : 18%;
+  width: 300px
+
+
 }
 .head-area #ripple, .head-area #ripple2, .head-area #ripple3,
 .logo-wrapper #ripple, .logo-wrapper #ripple2, .logo-wrapper #ripple3
@@ -2443,7 +2446,8 @@ header .navbar.navbar-shadow {
     opacity : 0;
   }
 }
-.head-area .pulse2 {
+.head-area .pulse2,
+.logo-wrapper .crypto-logo img.pulse2 {
   -webkit-animation : pulse2 5s linear infinite;
      -moz-animation : pulse2 5s linear infinite;
        -o-animation : pulse2 5s linear infinite;
