@@ -7,6 +7,7 @@ import { PanelProps, PushedProps } from "../types";
 
 import SocialLinks from "./SocialLinks";
 import { FormattedText } from "../../../components/Text";
+import PanelTreepoints from "./PanelTreepoints";
 
 
 interface Props extends PanelProps, PushedProps {}
@@ -64,17 +65,14 @@ const TokenInfo = styled.div`
 `;
 
 
-const PanelFooter: React.FC<Props> = ({
-  isPushed,
-  pushNav,
-  toggleTheme,
-  isDark,
-  cakePriceUsd,
-  currentLang,
-  langs,
-  setLang,
-  tokenInfo
-}) => {
+const PanelFooter: React.FC<Props> = (props) => {
+  const {
+    isPushed,
+    pushNav,
+    tokenInfo,
+
+  } = props;
+
   if (!isPushed) {
     return (
       <Container>
@@ -101,6 +99,8 @@ const PanelFooter: React.FC<Props> = ({
         </div>
           ))}
       </TokenInfo>
+
+      <PanelTreepoints {...props} />
 
       <SettingsEntry>
         {/* <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} /> */}

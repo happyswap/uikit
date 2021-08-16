@@ -180,34 +180,36 @@ export const links = [
 
 export const socials = [
   {
+    label: "Docs",
+    icon: "DocsIcon",
+    href: "https://docs.happyswap.finance/"
+  },{
     label: "Telegram",
     icon: "TelegramIcon",
-    items: [
-      {
-        label: "English",
-        href: "https://t.me/happyswapchat",
-      },
-      {
-        label: "Announcements",
-        href: "https://t.me/happyswap",
-      },
-    ],
+    href: "https://t.me/happyswapfi"
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/happyswap",
-  },
-  {
-    label: "Instagram",
-    icon: "InstagramIcon",
-    href: "https://www.instagram.com/happyswap",
+    href: "https://twitter.com/happyswapfi",
   },
   {
     label: "Discord",
     icon: "DiscordIcon",
-    href: "https://discord.gg/VudTtXrZ3W",
+    href: "https://discord.gg/cDNReXWBBb",
   },
+  {
+    label: "Medium",
+    icon: "MediumIcon",
+    href: "https://medium.com/@happyswap",
+    width: "32px"
+  },
+  {
+    label: "Instagram",
+    icon: "InstagramIcon",
+    href: "https://www.instagram.com/happyswap.finance/",
+  },
+
 ];
 
 export const tokenInfo:INamedValues[]  = [

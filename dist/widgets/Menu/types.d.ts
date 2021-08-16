@@ -39,6 +39,10 @@ export interface INamedValues {
     label: string;
     value: string;
 }
+export interface ITreePointsData {
+    planted: number;
+    carbon: string;
+}
 export interface PanelProps {
     isDark: boolean;
     toggleTheme: (isDark: boolean) => void;
@@ -48,6 +52,7 @@ export interface PanelProps {
     setLang: (lang: LangType) => void;
     links: Array<MenuEntry>;
     tokenInfo: INamedValues[];
+    treePointsData: ITreePointsData;
 }
 export interface NavProps extends PanelProps {
     account?: string;

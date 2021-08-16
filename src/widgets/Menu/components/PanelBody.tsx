@@ -7,6 +7,7 @@ import * as IconModule from "../icons";
 import { MenuEntry, LinkLabel } from "./MenuEntry";
 import MenuLink from "./MenuLink";
 import { PanelProps, PushedProps } from "../types";
+import Accordion from "./Accordion";
 
 interface Props extends PanelProps, PushedProps {
   isMobile: boolean;
@@ -48,10 +49,38 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
 
   return (
     <Container>
-      {links.map((entry) => {
+
+
+
+      {links.map((entry,index) => {
         const Icon = Icons[entry.icon];
         const iconElement = <Icon width="24px" mr="8px" />;
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
+        if(index === 0){
+          return (
+            <div>
+              <MenuEntry  key={entry.label} isPushed={isPushed} className={calloutClass}>
+
+                <MenuA href={entry.href} target={entry.target} onClick={handleClick}>
+                  {iconElement}
+                  <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
+                </MenuA>
+              </MenuEntry>
+              <SubMenuContainer>
+                {
+                  entry?.items?.map((item) => (
+                    <MenuEntry key={item.href} isPushed={isPushed}  secondary isActive={item.href === location.pathname} onClick={handleClick}>
+                      {item.hashLink
+                        ?<HashLink to={item.href}>{item.label}</HashLink>
+                        : <MenuLink href={item.href} target={item.target}>{item.label}</MenuLink>
+                      }
+                    </MenuEntry>
+                  ))}
+              </SubMenuContainer>
+            </div>
+          )
+        }
+
 
         if (entry.items) {
           const itemsMatchIndex = entry.items.findIndex((item) => item.href === location.pathname);
@@ -60,14 +89,17 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           // console.log('initialOpenState:', initialOpenState, entry );
           return (
             <div>
-            <MenuEntry  key={entry.label} isPushed={isPushed} className={calloutClass}>
 
-              <MenuA href={entry.href} target={entry.target} onClick={handleClick}>
-                {iconElement}
-                <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
-              </MenuA>
-            </MenuEntry>
-              <SubMenuContainer>
+              <Accordion
+                key={entry.label}
+                isPushed={isPushed}
+                pushNav={pushNav}
+                icon={iconElement}
+                label={entry.label}
+                initialOpenState={initialOpenState}
+                className={calloutClass}
+              >
+
               {
                 entry.items.map((item) => (
                   <MenuEntry key={item.href} isPushed={isPushed}  secondary isActive={item.href === location.pathname} onClick={handleClick}>
@@ -77,7 +109,9 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
                     }
                   </MenuEntry>
                 ))}
-              </SubMenuContainer>
+
+              </Accordion>
+
             </div>
 
           );
@@ -89,6 +123,7 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
             </MenuLink>
           </MenuEntry>
+
         );
       })}
     </Container>

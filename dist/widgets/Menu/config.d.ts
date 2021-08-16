@@ -24,16 +24,13 @@ export declare const links: ({
 export declare const socials: ({
     label: string;
     icon: string;
-    items: {
-        label: string;
-        href: string;
-    }[];
-    href?: undefined;
+    href: string;
+    width?: undefined;
 } | {
     label: string;
     icon: string;
     href: string;
-    items?: undefined;
+    width: string;
 })[];
 export declare const tokenInfo: INamedValues[];
 export declare const MENU_HEIGHT = 64;

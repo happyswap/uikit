@@ -6,7 +6,7 @@ import Heading from "../../components/Heading/Heading";
 import Text from "../../components/Text/Text";
 import { MenuEntry } from "./components/MenuEntry";
 import Menu from "./Menu";
-import { LangType } from "./types";
+import { ITreePointsData, LangType } from "./types";
 import { links, tokenInfo } from "./config";
 
 export default {
@@ -16,6 +16,12 @@ export default {
 };
 
 const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
+
+
+const treePointsData: ITreePointsData ={
+  carbon: "10.00t",
+  planted: 1000
+}
 
 // This hook is used to simulate a props change, and force a re rendering
 const useProps = () => {
@@ -30,8 +36,9 @@ const useProps = () => {
     currentLang: "EN",
     cakePriceUsd: 24.023158668932877668,
     links,
-    profile: null,
-    tokenInfo
+    profile: undefined,
+    tokenInfo,
+    treePointsData
   });
 
   useEffect(() => {
@@ -47,8 +54,9 @@ const useProps = () => {
         currentLang: "EN",
         cakePriceUsd: 24.023158668932877668,
         links,
-        profile: null,
-        tokenInfo
+        profile: undefined,
+        tokenInfo,
+        treePointsData
       });
     }, 2000);
     return () => {

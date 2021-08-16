@@ -23,3 +23,5 @@ export { default as BushIcon } from "./Bush";
 export { default as CasinoIcon } from "./Casino";
 export { default as InstagramIcon } from "./Instagram";
 export { default as DiscordIcon } from "./Discord";
+export { default as DocsIcon } from "./Docs";
+export { default as MediumIcon } from "./Medium";

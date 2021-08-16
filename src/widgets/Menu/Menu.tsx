@@ -232,7 +232,9 @@ const Menu: React.FC<NavProps> = ({
   links,
   profile,
   children,
-  tokenInfo
+  tokenInfo,
+  treePointsData
+
 }) => {
   const { isXl } = useMatchBreakpoints();
   const isMobile = isXl === false;
@@ -295,10 +297,7 @@ const Menu: React.FC<NavProps> = ({
         <Flex>
           <CakePrice isDark cakePriceUsd={cakePriceUsd} />
           <ComingSoon >Coming Soon</ComingSoon>
-          <Treepoint>
-            <iframe frameBorder="0"  id="tpWidget" width="357px" height="25px"
-                    title="Treepoints widget"
-                    src="https://widget.treepoints.green?company_slug=happyswap&color=true&layout=wide&data=all" /></Treepoint>
+
           {/*<UserBlock account={account} login={login} logout={logout} />*/}
         </Flex>
       </StyledNav>
@@ -316,6 +315,7 @@ const Menu: React.FC<NavProps> = ({
           pushNav={setIsPushed}
           links={links}
           tokenInfo={tokenInfo}
+          treePointsData={treePointsData}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}
