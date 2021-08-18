@@ -16,3 +16,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/codeStyles/Project.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/thriftCompiler.xml
+/.idea/uikit.iml
+/.idea/vcs.xml
