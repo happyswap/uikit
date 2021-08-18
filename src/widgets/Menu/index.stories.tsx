@@ -7,6 +7,7 @@ import Text from "../../components/Text/Text";
 import { MenuEntry } from "./components/MenuEntry";
 import Menu from "./Menu";
 import { ITreePointsData, LangType } from "./types";
+import { LangType } from "./types";
 import { links, tokenInfo } from "./config";
 
 export default {

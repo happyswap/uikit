@@ -12,7 +12,7 @@ HappySwap UIkit is a set of React components and hooks used to build pages on Ha
 
 ### Theme
 
-Before using HappySwap UIkit, you need to provide the theme file to styled-component.
+Before using HappySwap UIKit, you need to provide the theme file to styled-component.
 
 ```
 import { ThemeProvider } from 'styled-components'
