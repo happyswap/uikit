@@ -14,10 +14,10 @@ const SocialLinks: React.FC = () => (
       const Icon = Icons[social.icon];
       const iconProps = { width: social.width?social.width:"24px", color: "textSubtle", style: { cursor: "pointer" } };
       const mr = index < socials.length - 1 ? "12px" : 0;
-      if (social.items) {
+      if ((social as any).items) {
         return (
           <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
-            {social.items.map((item) => (
+            {(social as any).items.map((item:any) => (
               <Link external key={item.label} href={item.href} aria-label={item.label} color="secondary">
                 {item.label}
               </Link>
