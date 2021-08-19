@@ -71,7 +71,7 @@ const Welcome: React.FC<WelcomeProps> = ({  ...props }) => {
                           <li><span className="points">No deposit fees for most vaults</span></li>
                           <li><span className="points">Up to 100% fee reward for most token price</span></li>
                           <li><span className="points">Competitive yields</span></li>
-                          <li><span className="points">CO<sup>2</sup> positive service <a href="#CO-friendly" className="read-more">Read more</a></span></li>
+                          <li><span className="points">CO<sup>2</sup> positive service <a href="https://medium.com/@happyswap" className="read-more">Read more</a></span></li>
                           <li><span className="points">Improve yield by stacking NFTs <span className="soon">Coming soon</span></span></li>
                         </ul>
                       </div>

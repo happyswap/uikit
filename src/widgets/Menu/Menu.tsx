@@ -233,7 +233,8 @@ const Menu: React.FC<NavProps> = ({
   profile,
   children,
   tokenInfo,
-  treePointsData
+  treePointsData,
+  showTokenInfo
 
 }) => {
   const { isXl } = useMatchBreakpoints();
@@ -316,6 +317,7 @@ const Menu: React.FC<NavProps> = ({
           links={links}
           tokenInfo={tokenInfo}
           treePointsData={treePointsData}
+          showTokenInfo={showTokenInfo}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}

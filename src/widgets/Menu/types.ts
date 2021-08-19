@@ -62,6 +62,7 @@ export interface PanelProps {
   links: Array<MenuEntry>;
   tokenInfo:INamedValues[];
   treePointsData: ITreePointsData
+  showTokenInfo: boolean;
 }
 
 export interface NavProps extends PanelProps {

@@ -70,6 +70,7 @@ const PanelFooter: React.FC<Props> = (props) => {
     isPushed,
     pushNav,
     tokenInfo,
+    showTokenInfo
 
   } = props;
 
@@ -89,16 +90,19 @@ const PanelFooter: React.FC<Props> = (props) => {
       {/*  /!*<CakePrice cakePriceUsd={cakePriceUsd} />*!/*/}
       {/*  /!* <LangSelector currentLang={currentLang} langs={langs} setLang={setLang} /> *!/*/}
       {/*</SocialEntry>*/}
-      <TokenInfo>
+      {showTokenInfo?
+        <TokenInfo>
+
         <div className='title'>Swappies (SWPY) information:</div>
         {
-          tokenInfo.map((item) => (
+          tokenInfo.map((item,index) => (
 
-        <div className='row'>
+            // eslint-disable-next-line react/no-array-index-key
+        <div className='row' key={index}>
           <div className='cap'>{item.label}</div><div className='val'><FormattedText value={parseInt(item.value,10)} decimals={0}/></div>
         </div>
           ))}
-      </TokenInfo>
+      </TokenInfo>:<></>}
 
       <PanelTreepoints {...props} />
 

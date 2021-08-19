@@ -7,7 +7,6 @@ import Text from "../../components/Text/Text";
 import { MenuEntry } from "./components/MenuEntry";
 import Menu from "./Menu";
 import { ITreePointsData, LangType } from "./types";
-import { LangType } from "./types";
 import { links, tokenInfo } from "./config";
 
 export default {
@@ -18,6 +17,7 @@ export default {
 
 const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
 
+const showTokenInfo = true;
 
 const treePointsData: ITreePointsData ={
   carbon: "10.00t",
@@ -39,7 +39,8 @@ const useProps = () => {
     links,
     profile: undefined,
     tokenInfo,
-    treePointsData
+    treePointsData,
+    showTokenInfo
   });
 
   useEffect(() => {
@@ -57,7 +58,8 @@ const useProps = () => {
         links,
         profile: undefined,
         tokenInfo,
-        treePointsData
+        treePointsData,
+        showTokenInfo
       });
     }, 2000);
     return () => {

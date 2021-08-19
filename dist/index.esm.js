@@ -5138,7 +5138,7 @@ var Welcome = function (_a) {
                                                         "CO",
                                                         React.createElement("sup", null, "2"),
                                                         " positive service ",
-                                                        React.createElement("a", { href: "#CO-friendly", className: "read-more" }, "Read more"))),
+                                                        React.createElement("a", { href: "https://medium.com/@happyswap", className: "read-more" }, "Read more"))),
                                                 React.createElement("li", null,
                                                     React.createElement("span", { className: "points" },
                                                         "Improve yield by stacking NFTs ",
@@ -6765,7 +6765,9 @@ var PanelBody = function (_a) {
         var iconElement = React.createElement(Icon, { width: "24px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (index === 0) {
-            return (React.createElement("div", null,
+            return (
+            // eslint-disable-next-line react/no-array-index-key
+            React.createElement("div", { key: index },
                 React.createElement(MenuEntry, { key: entry.label, isPushed: isPushed, className: calloutClass },
                     React.createElement(MenuA, { href: entry.href, target: entry.target, onClick: handleClick },
                         iconElement,
@@ -6779,7 +6781,9 @@ var PanelBody = function (_a) {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             var initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
             // console.log('initialOpenState:', initialOpenState, entry );
-            return (React.createElement("div", null,
+            return (
+            // eslint-disable-next-line react/no-array-index-key
+            React.createElement("div", { key: index },
                 React.createElement(Accordion$1, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: initialOpenState, className: calloutClass }, entry.items.map(function (item) { return (React.createElement(MenuEntry, { key: item.href, isPushed: isPushed, secondary: true, isActive: item.href === location.pathname, onClick: handleClick }, item.hashLink
                     ? React.createElement(HashLink, { to: item.href }, item.label)
                     : React.createElement(MenuLink, { href: item.href, target: item.target }, item.label))); }))));
@@ -6849,19 +6853,22 @@ var TokenInfo = styled.div(templateObject_4$1 || (templateObject_4$1 = __makeTem
     return theme.colors.textSubtle;
 });
 var PanelFooter = function (props) {
-    var isPushed = props.isPushed, pushNav = props.pushNav, tokenInfo = props.tokenInfo;
+    var isPushed = props.isPushed, pushNav = props.pushNav, tokenInfo = props.tokenInfo, showTokenInfo = props.showTokenInfo;
     if (!isPushed) {
         return (React.createElement(Container, null,
             React.createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
                 React.createElement(Icon$1r, null))));
     }
     return (React.createElement(Container, null,
-        React.createElement(TokenInfo, null,
-            React.createElement("div", { className: 'title' }, "Swappies (SWPY) information:"),
-            tokenInfo.map(function (item) { return (React.createElement("div", { className: 'row' },
-                React.createElement("div", { className: 'cap' }, item.label),
-                React.createElement("div", { className: 'val' },
-                    React.createElement(FormattedText, { value: parseInt(item.value, 10), decimals: 0 })))); })),
+        showTokenInfo ?
+            React.createElement(TokenInfo, null,
+                React.createElement("div", { className: 'title' }, "Swappies (SWPY) information:"),
+                tokenInfo.map(function (item, index) { return (
+                // eslint-disable-next-line react/no-array-index-key
+                React.createElement("div", { className: 'row', key: index },
+                    React.createElement("div", { className: 'cap' }, item.label),
+                    React.createElement("div", { className: 'val' },
+                        React.createElement(FormattedText, { value: parseInt(item.value, 10), decimals: 0 })))); })) : React.createElement(React.Fragment, null),
         React.createElement(PanelTreepoints, __assign({}, props)),
         React.createElement(SettingsEntry, null,
             React.createElement(SocialLinks$1, null))));
@@ -6942,7 +6949,7 @@ var MobileOnlyOverlay = styled(Overlay)(templateObject_8 || (templateObject_8 = 
 });
 var Menu = function (_a) {
     var _b;
-    _a.account; _a.login; _a.logout; var isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links; _a.profile; var children = _a.children, tokenInfo = _a.tokenInfo, treePointsData = _a.treePointsData;
+    _a.account; _a.login; _a.logout; var isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links; _a.profile; var children = _a.children, tokenInfo = _a.tokenInfo, treePointsData = _a.treePointsData, showTokenInfo = _a.showTokenInfo;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -6991,7 +6998,7 @@ var Menu = function (_a) {
                 React.createElement(CakePrice$1, { isDark: true, cakePriceUsd: cakePriceUsd }),
                 React.createElement(ComingSoon, null, "Coming Soon"))),
         React.createElement(BodyWrapper, null,
-            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, tokenInfo: tokenInfo, treePointsData: treePointsData }),
+            React.createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, tokenInfo: tokenInfo, treePointsData: treePointsData, showTokenInfo: showTokenInfo }),
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };

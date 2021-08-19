@@ -58,7 +58,8 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if(index === 0){
           return (
-            <div>
+            // eslint-disable-next-line react/no-array-index-key
+            <div key={index}>
               <MenuEntry  key={entry.label} isPushed={isPushed} className={calloutClass}>
 
                 <MenuA href={entry.href} target={entry.target} onClick={handleClick}>
@@ -88,7 +89,8 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
           const initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
           // console.log('initialOpenState:', initialOpenState, entry );
           return (
-            <div>
+            // eslint-disable-next-line react/no-array-index-key
+            <div key={index}>
 
               <Accordion
                 key={entry.label}

@@ -5152,7 +5152,7 @@ var Welcome = function (_a) {
                                                         "CO",
                                                         React__default['default'].createElement("sup", null, "2"),
                                                         " positive service ",
-                                                        React__default['default'].createElement("a", { href: "#CO-friendly", className: "read-more" }, "Read more"))),
+                                                        React__default['default'].createElement("a", { href: "https://medium.com/@happyswap", className: "read-more" }, "Read more"))),
                                                 React__default['default'].createElement("li", null,
                                                     React__default['default'].createElement("span", { className: "points" },
                                                         "Improve yield by stacking NFTs ",
@@ -6779,7 +6779,9 @@ var PanelBody = function (_a) {
         var iconElement = React__default['default'].createElement(Icon, { width: "24px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (index === 0) {
-            return (React__default['default'].createElement("div", null,
+            return (
+            // eslint-disable-next-line react/no-array-index-key
+            React__default['default'].createElement("div", { key: index },
                 React__default['default'].createElement(MenuEntry, { key: entry.label, isPushed: isPushed, className: calloutClass },
                     React__default['default'].createElement(MenuA, { href: entry.href, target: entry.target, onClick: handleClick },
                         iconElement,
@@ -6793,7 +6795,9 @@ var PanelBody = function (_a) {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
             var initialOpenState = entry.initialOpenState === true ? entry.initialOpenState : itemsMatchIndex >= 0;
             // console.log('initialOpenState:', initialOpenState, entry );
-            return (React__default['default'].createElement("div", null,
+            return (
+            // eslint-disable-next-line react/no-array-index-key
+            React__default['default'].createElement("div", { key: index },
                 React__default['default'].createElement(Accordion$1, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: initialOpenState, className: calloutClass }, entry.items.map(function (item) { return (React__default['default'].createElement(MenuEntry, { key: item.href, isPushed: isPushed, secondary: true, isActive: item.href === location.pathname, onClick: handleClick }, item.hashLink
                     ? React__default['default'].createElement(reactRouterHashLink.HashLink, { to: item.href }, item.label)
                     : React__default['default'].createElement(MenuLink, { href: item.href, target: item.target }, item.label))); }))));
@@ -6863,19 +6867,22 @@ var TokenInfo = styled__default['default'].div(templateObject_4$1 || (templateOb
     return theme.colors.textSubtle;
 });
 var PanelFooter = function (props) {
-    var isPushed = props.isPushed, pushNav = props.pushNav, tokenInfo = props.tokenInfo;
+    var isPushed = props.isPushed, pushNav = props.pushNav, tokenInfo = props.tokenInfo, showTokenInfo = props.showTokenInfo;
     if (!isPushed) {
         return (React__default['default'].createElement(Container, null,
             React__default['default'].createElement(IconButton, { variant: "text", onClick: function () { return pushNav(true); } },
                 React__default['default'].createElement(Icon$1r, null))));
     }
     return (React__default['default'].createElement(Container, null,
-        React__default['default'].createElement(TokenInfo, null,
-            React__default['default'].createElement("div", { className: 'title' }, "Swappies (SWPY) information:"),
-            tokenInfo.map(function (item) { return (React__default['default'].createElement("div", { className: 'row' },
-                React__default['default'].createElement("div", { className: 'cap' }, item.label),
-                React__default['default'].createElement("div", { className: 'val' },
-                    React__default['default'].createElement(FormattedText, { value: parseInt(item.value, 10), decimals: 0 })))); })),
+        showTokenInfo ?
+            React__default['default'].createElement(TokenInfo, null,
+                React__default['default'].createElement("div", { className: 'title' }, "Swappies (SWPY) information:"),
+                tokenInfo.map(function (item, index) { return (
+                // eslint-disable-next-line react/no-array-index-key
+                React__default['default'].createElement("div", { className: 'row', key: index },
+                    React__default['default'].createElement("div", { className: 'cap' }, item.label),
+                    React__default['default'].createElement("div", { className: 'val' },
+                        React__default['default'].createElement(FormattedText, { value: parseInt(item.value, 10), decimals: 0 })))); })) : React__default['default'].createElement(React__default['default'].Fragment, null),
         React__default['default'].createElement(PanelTreepoints, __assign({}, props)),
         React__default['default'].createElement(SettingsEntry, null,
             React__default['default'].createElement(SocialLinks$1, null))));
@@ -6956,7 +6963,7 @@ var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_8 || 
 });
 var Menu = function (_a) {
     var _b;
-    _a.account; _a.login; _a.logout; var isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links; _a.profile; var children = _a.children, tokenInfo = _a.tokenInfo, treePointsData = _a.treePointsData;
+    _a.account; _a.login; _a.logout; var isDark = _a.isDark, toggleTheme = _a.toggleTheme, langs = _a.langs, setLang = _a.setLang, currentLang = _a.currentLang, cakePriceUsd = _a.cakePriceUsd, links = _a.links; _a.profile; var children = _a.children, tokenInfo = _a.tokenInfo, treePointsData = _a.treePointsData, showTokenInfo = _a.showTokenInfo;
     var isXl = useMatchBreakpoints().isXl;
     var isMobile = isXl === false;
     var _c = React.useState(!isMobile), isPushed = _c[0], setIsPushed = _c[1];
@@ -7005,7 +7012,7 @@ var Menu = function (_a) {
                 React__default['default'].createElement(CakePrice$1, { isDark: true, cakePriceUsd: cakePriceUsd }),
                 React__default['default'].createElement(ComingSoon, null, "Coming Soon"))),
         React__default['default'].createElement(BodyWrapper, null,
-            React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, tokenInfo: tokenInfo, treePointsData: treePointsData }),
+            React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, tokenInfo: tokenInfo, treePointsData: treePointsData, showTokenInfo: showTokenInfo }),
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React__default['default'].createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
